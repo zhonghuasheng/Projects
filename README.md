@@ -1,10 +1,17 @@
 # Music Store(音乐商店) - JSP + Servlet + JDBC + MySQL版本
 
-## 前言
+## `前言`
 Music Store是微软的一个开源项目，旨在通过一步步的教程帮助.NET学习者快速搭建一个ASP.NET MVC的项目。大学期间我通过学习，在2天内搭建了这个项目，作为模板供老师教学使用。现在已经毕业几年了，对软件开发有了新的认识，想以Music Store项目为蓝本，打造一个Java版本的Music Store。
 
-## 项目计划
-### 版本计划
+## `项目描述`
+音乐商店，不只是音乐，更多的是技术的融合；音乐商店是一个很简单的业务的缩影，包含了常用技术的体现。让我们慢慢雕琢，像雕琢自己一样。
+
+`需求就是这么简单`
+音乐商店管理员可以通过后台添加艺术家，添加音乐，对艺术家和音乐能够进行管理，也可以管理普通用户和他们的订单。
+普通用户注册后，登陆音乐商店，完善个人信息，选购自己喜欢的音乐加入购物车，然后去购物车结账。
+
+## `项目计划`
+### `版本计划`
 * V1: Music Store(音乐商店) - JSP + Servlet + JDBC + MySQL版本
 * V2: Music Store(音乐商店) - Spring + SpringMVC + MyBatis + MySQL版本
 * V3: Music Store(音乐商店) - SpringBoot + MyBatis + MySQL版本
@@ -13,7 +20,8 @@ Music Store是微软的一个开源项目，旨在通过一步步的教程帮助
 ### 功能计划
 ![](requirement/musicstore-jsp-2019-06-17.png)
 
-## 项目计划
+## `进度安排`
+* [Story #0: 项目需求分析、功能描述、技术选型、数据库设计、框架搭建](https://github.com/zhonghuasheng/musicstore-jsp/issues/22)
 * [Story #1: 管理员能够登陆后端系统](https://github.com/zhonghuasheng/musicstore-jsp/issues/1)
 * [Story #2: 管理员能够对艺术家进行增删改查](https://github.com/zhonghuasheng/musicstore-jsp/issues/6)
 * [Story #3: 管理员能够对音乐进行增删改查](https://github.com/zhonghuasheng/musicstore-jsp/issues/7)
