@@ -25,27 +25,27 @@ Music Store是微软的一个开源项目，旨在通过一步步的教程帮助
 ## 项目实施
 ### 开发技术选型
 
- 技术 | 说明 | 官方网址
- ---- | --------- | -------
- JSP | 前端页面 | https://www.tutorialspoint.com/jsp/
- Bootstrap | 前端样式 | https://getbootstrap.com/
- Font Awesome | 前端图标样式库 | https://fontawesome.com
- Tomcat 8 | 服务器 | https://tomcat.apache.org/download-80.cgi
- Java 8 | 后端代码开发语言 | https://www.oracle.com
+ | 技术 | 说明 | 官方网址 |
+ |:---- |:--------- |:-------|
+ | JSP |前端页面 | https://www.tutorialspoint.com/jsp/ |
+ | Bootstrap | 前端样式 | https://getbootstrap.com/ |
+ | Font Awesome | 前端图标样式库 | https://fontawesome.com |
+ | Tomcat 8 | 服务器 | https://tomcat.apache.org/download-80.cgi |
+ | Java 8 | 后端代码开发语言 | https://www.oracle.com |
 
 ### 项目结构
 
 ### 数据库设计
- 表名 | 说明
- ---- | -----
- user_ | 用户表
- artist | 艺术家表
- music | 音乐表
- cart | 购物车表
- address | 地址表
- order | 订单表
- order_status | 订单状态表
- message | 消息表
+ | 表名 | 说明 |
+ |:---- |:-----|
+ | user_ | 用户表 |
+ | artist | 艺术家表 |
+ | music | 音乐表 |
+ | cart | 购物车表 |
+ | address | 地址表 |
+ | order | 订单表 |
+ | order_status | 订单状态表 |
+ | message | 消息表 |
 ![](sql/musicstore_jsp_database_diagram.png)
 
 ## `进度安排`
