@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.ws.Response;
 
+import com.zhonghuasheng.musicstore.service.UserService;
+import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
+
 @WebServlet(urlPatterns = "/user/login")
 public class LoginAction extends HttpServlet {
 
@@ -16,7 +19,8 @@ public class LoginAction extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        System.out.println(username + password);
+        UserService userService = new UserServiceImpl();
+        
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
