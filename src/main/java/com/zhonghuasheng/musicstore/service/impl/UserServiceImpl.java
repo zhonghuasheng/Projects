@@ -14,4 +14,9 @@ public class UserServiceImpl implements UserService {
         return userDao.getUserByEmailAndPassword(email, password);
     }
 
+    @Override
+    public User create(User user) {
+        return userDao.create(user);
+    }
+
 }
