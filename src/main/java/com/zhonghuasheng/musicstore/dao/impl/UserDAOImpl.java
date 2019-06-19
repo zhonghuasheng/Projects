@@ -16,13 +16,24 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
 
     private final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND is_active=TRUE AND is_deleted=FALSE";
     private final String CREATE_USER = "INSERT user_(uuid, username, email, password, role, gender, is_active, is_deleted,"
-            + " create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ,? 'user', ?, true, false, now(), now(), '-1')";
+            + " create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, '-1')";
 
     @Override
     public User create(User user) {
         Connection connection = JDBCUtils.getConnection();
+
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_USER);
+            preparedStatement.setString(1, String.valueOf(user.getUuid()));
+            preparedStatement.setString(2, user.getUsername());
+            preparedStatement.setString(3, user.getEmail());
+            preparedStatement.setString(4, user.getPassword());
+            preparedStatement.setString(5, user.getRole().toString());
+            preparedStatement.setString(6, user.getGender().toString());
+            preparedStatement.setTimestamp(7, user.getCreateTime());
+            preparedStatement.setTimestamp(8, user.getLastModifiedTime());
+
+            boolean result = preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -50,8 +61,8 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
                 user.setAvatar(resultSet.getString("avatar"));
                 user.setActive(resultSet.getBoolean("is_active"));
                 user.setDeleted(resultSet.getBoolean("is_deleted"));
-                user.setCreateTime(resultSet.getDate("create_time"));
-                user.setLastModifiedTime(resultSet.getDate("last_modified_time"));
+                user.setCreateTime(resultSet.getTimestamp("create_time"));
+                user.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
                 user.setLastModifiedBy(resultSet.getString("last_modified_by"));
             }
         } catch (SQLException e) {

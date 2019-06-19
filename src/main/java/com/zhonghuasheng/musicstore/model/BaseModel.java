@@ -1,13 +1,13 @@
 package com.zhonghuasheng.musicstore.model;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.UUID;
 
 public class BaseModel {
 
     private UUID uuid;
-    private Date createTime;
-    private Date lastModifiedTime;
+    private Timestamp createTime;
+    private Timestamp lastModifiedTime;
     private String lastModifiedBy;
 
     public UUID getUuid() {
@@ -18,19 +18,19 @@ public class BaseModel {
         this.uuid = uuid;
     }
 
-    public Date getCreateTime() {
+    public Timestamp getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(Timestamp createTime) {
         this.createTime = createTime;
     }
 
-    public Date getLastModifiedTime() {
+    public Timestamp getLastModifiedTime() {
         return lastModifiedTime;
     }
 
-    public void setLastModifiedTime(Date lastModifiedTime) {
+    public void setLastModifiedTime(Timestamp lastModifiedTime) {
         this.lastModifiedTime = lastModifiedTime;
     }
 

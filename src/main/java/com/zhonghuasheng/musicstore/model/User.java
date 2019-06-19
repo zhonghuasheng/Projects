@@ -1,6 +1,6 @@
 package com.zhonghuasheng.musicstore.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class User extends BaseModel {
 
