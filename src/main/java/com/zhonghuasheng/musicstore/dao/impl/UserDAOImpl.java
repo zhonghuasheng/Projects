@@ -16,7 +16,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
 
     private final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND is_active=TRUE AND is_deleted=FALSE";
     private final String CREATE_USER = "INSERT user_(uuid, username, email, password, role, gender, is_active, is_deleted,"
-            + " create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, '-1')";
+            + " create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
 
     @Override
     public User create(User user) {
@@ -32,7 +32,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
             preparedStatement.setString(6, user.getGender().toString());
             preparedStatement.setTimestamp(7, user.getCreateTime());
             preparedStatement.setTimestamp(8, user.getLastModifiedTime());
-
+            preparedStatement.setString(9, user.getLastModifiedBy());
             boolean result = preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
