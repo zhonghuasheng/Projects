@@ -1,20 +1,36 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <title>登陆</title>
+  <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="../static/css/login.css"/>
   </head>
   <body>
-    <form action="<%=request.getContextPath()%>/user/login" method="post">
-      <span>Username: </span>
-      <input type="text" name="username">
-      <br>
-      <span>Password: </span>
-      <input type="password" name="password">
-      <br>
-      <input type="submit" value="LOGIN">
-    </form>
+    <div class="row register">
+      <div class="col-md-7"></div>
+      <div class="col-md-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 container">
+          <div></div>
+          <div class="register-form w-75 mt-5 transucent-fillet pt-4 pb-4">
+            <form action="${pageContext.request.contextPath }/user/register" method="post" class="w-75 m-auto">
+              <div class="form-group">
+                <label>邮箱</label>
+                <input type="text" name="email" class="form-control" placeholder="邮箱"/>
+              </div>
+              <div class="form-group">
+                <label>密码</label>
+                <input type="password" name="password" class="form-control" placeholder="密码"/>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">登陆</button>
+            </form>
+          </div>
+          <div></div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
   </body>
 </html>
