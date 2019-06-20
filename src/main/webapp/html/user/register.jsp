@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +14,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-10 container">
           <div class="register-form w-75 mt-5 transucent-fillet pt-4 pb-4">
-            <form action="" class="w-75 m-auto">
+            <form action="${pageContext.request.contextPath }/user/register" method="post" class="w-75 m-auto">
               <div class="form-group">
                 <label>用户名</label>
                 <input type="text" name="username" class="form-control" placeholder="用户名" />

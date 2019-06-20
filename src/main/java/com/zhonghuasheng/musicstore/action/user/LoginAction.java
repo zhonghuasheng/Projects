@@ -19,10 +19,9 @@ public class LoginAction extends HttpServlet {
         String password = request.getParameter("password");
 
         UserService userService = new UserServiceImpl();
-        
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("jsp/user/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/html/user/login.jsp").forward(request, response);
     }
 }

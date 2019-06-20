@@ -1,7 +1,14 @@
 package com.zhonghuasheng.musicstore.service.impl;
 
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.UUID;
+
+import com.zhonghuasheng.musicstore.common.Constants;
 import com.zhonghuasheng.musicstore.dao.UserDAO;
 import com.zhonghuasheng.musicstore.dao.impl.UserDAOImpl;
+import com.zhonghuasheng.musicstore.model.Gender;
+import com.zhonghuasheng.musicstore.model.Role;
 import com.zhonghuasheng.musicstore.model.User;
 import com.zhonghuasheng.musicstore.service.UserService;
 
@@ -16,6 +23,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User create(User user) {
+        user.setUuid(UUID.randomUUID());
+        user.setAvatar(Constants.BLANK);
+        user.setRole(Role.USER);
+        user.setGender(Gender.UNKNOW);
+        user.setCreateTime(new Timestamp(new Date().getTime()));
+        user.setLastModifiedTime(new Timestamp(new Date().getTime()));
+        user.setLastModifiedBy(user.getUuid().toString());
+
         return userDao.create(user);
     }
 
