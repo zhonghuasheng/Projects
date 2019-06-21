@@ -4,6 +4,7 @@
   <head>
   <meta charset="UTF-8">
   <title>注册</title>
+  <link rel="shortcut icon" href="../static/image/favicon.ico">
   <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="../static/css/register.css"/>
   </head>
