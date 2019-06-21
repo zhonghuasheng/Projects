@@ -14,7 +14,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-10 container">
           <div></div>
-          <div class="register-form w-75 mt-5 transucent-fillet pt-4 pb-4">
+          <div class="register-form w-75 transucent-fillet pt-4 pb-4">
             <form action="${pageContext.request.contextPath }/user/login" method="post" class="w-75 m-auto">
               <div class="form-group">
                 <label>邮箱</label>

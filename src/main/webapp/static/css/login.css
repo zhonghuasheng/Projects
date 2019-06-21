@@ -8,6 +8,10 @@ body {
     margin-right: 0px;
 }
 
+.register-form {
+    margin-top: 40%;
+}
+
 .transucent-fillet {
     background-color: rgba(245, 245, 245, 0.4);
     border-radius: 7px;
