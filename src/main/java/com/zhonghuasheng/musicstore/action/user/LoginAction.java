@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.zhonghuasheng.musicstore.model.User;
 import com.zhonghuasheng.musicstore.service.UserService;
 import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
 
@@ -15,10 +16,15 @@ import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
 public class LoginAction extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String username = request.getParameter("username");
+        String email = request.getParameter("email");
         String password = request.getParameter("password");
 
         UserService userService = new UserServiceImpl();
+        User user = userService.getUserByEmailAndPassword(email, password);
+
+        if (user != null) {
+            response.sendRedirect(request.getContextPath() + "/home");
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

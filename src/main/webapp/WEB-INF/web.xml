@@ -4,4 +4,14 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>HomeAction</servlet-name>
+  	<display-name>HomeAction</display-name>
+  	<description></description>
+  	<servlet-class>com.zhonghuasheng.musicstore.action.HomeAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HomeAction</servlet-name>
+  	<url-pattern>/HomeAction</url-pattern>
+  </servlet-mapping>
 </web-app>

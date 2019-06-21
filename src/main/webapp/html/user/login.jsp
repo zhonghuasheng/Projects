@@ -15,7 +15,7 @@
         <div class="col-md-10 container">
           <div></div>
           <div class="register-form w-75 mt-5 transucent-fillet pt-4 pb-4">
-            <form action="${pageContext.request.contextPath }/user/register" method="post" class="w-75 m-auto">
+            <form action="${pageContext.request.contextPath }/user/login" method="post" class="w-75 m-auto">
               <div class="form-group">
                 <label>邮箱</label>
                 <input type="text" name="email" class="form-control" placeholder="邮箱"/>
