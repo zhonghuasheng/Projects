@@ -3,7 +3,8 @@
 <html>
   <head>
   <meta charset="UTF-8">
-  <title>登陆</title>
+  <title>登录</title>
+  <link rel="shortcut icon" href="../static/image/favicon.ico">
   <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="../static/css/login.css"/>
   </head>
