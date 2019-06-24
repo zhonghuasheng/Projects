@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.icon{
+    font-family: FontAwesome;
+}
+body{
+    margin: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.pg-header{
+    height: 48px;
+    background-color: #2459a2;
+    color: white;
+    line-height: 48px;
+}
+.pg-header .logo{
+    width: 200px;
+    background-color: #204982;
+    text-align: center;
+}
+.pg-header .icons{
+    padding: 0 20px;
+}
+.pg-header .icons:hover{
+    background-color: #204982;
+}
+.pg-header .user{
+    margin-right: 60px;
+    padding: 0 20px;
+    color: white;
+    height: 48px;
+    position: relative;
+}
+.pg-header .user:hover{
+    background-color: #204982;
+}
+.pg-header .user .a img{
+    height: 40px;width: 40px;margin-top: 4px;border-radius: 50%;
+}
+.pg-header .user .b{
+    z-index: 20;
+    position: absolute;
+    /*相对于用户div定位*/
+    top: 48px;
+    right: 0;
+    background-color: white;
+    color: black;
+    width: 160px;
+    display: none;
+    font-size: 14px;
+    line-height: 30px;
+}
+.pg-header .user .b a{
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+.pg-header .user .b a:hover{
+    background-color: #dddddd;
+}
+.pg-header .user:hover .b{
+    display: block;
+}
+.pg-header .user .b a{
+    display: block;
+}
+.pg-content .menu{
+    position: absolute;
+    top:48px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #dddddd;
+}
+
+.pg-content .content{
+    position: absolute;
+    top: 48px;
+    right: 0;
+    bottom: 0;
+    left: 200px;
+    overflow: auto;
+    z-index: 9;
+}
+/* 设置消息样式，数字外边加个圆圈 */
+.info {
+    border-radius: 50%;
+    line-height: 1px;
+    background-color: red;
+    padding: 10px 7px;
+    font-size: 12px;
+    display: inline-block;
+}
