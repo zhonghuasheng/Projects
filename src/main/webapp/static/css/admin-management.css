@@ -5,28 +5,28 @@
 body{
     margin: 0;
 }
-.left{
+.f-left{
     float: left;
 }
-.right{
+.f-right{
     float: right;
 }
 .pg-header{
     height: 48px;
-    background-color: #2459a2;
     color: white;
     line-height: 48px;
+    background-color: #009688;
 }
 .pg-header .logo{
-    width: 200px;
-    background-color: #204982;
+    width: 13%;
+    background-color: #007d71;
     text-align: center;
 }
 .pg-header .icons{
     padding: 0 20px;
 }
 .pg-header .icons:hover{
-    background-color: #204982;
+    background-color: #007d71;
 }
 .pg-header .user{
     margin-right: 60px;
@@ -36,10 +36,13 @@ body{
     position: relative;
 }
 .pg-header .user:hover{
-    background-color: #204982;
+    background-color: #007d71;
 }
 .pg-header .user .a img{
-    height: 40px;width: 40px;margin-top: 4px;border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    border-radius: 50%;
 }
 .pg-header .user .b{
     z-index: 20;
@@ -68,23 +71,49 @@ body{
 .pg-header .user .b a{
     display: block;
 }
-.pg-content .menu{
+.menu{
     position: absolute;
     top:48px;
     left: 0;
     bottom: 0;
-    width: 200px;
-    background-color: #dddddd;
+    width: 13%;
+    background-color: #222d32;
+    color: white;
 }
 
-.pg-content .content{
+.menu ul {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-bottom: 40px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu-item {
+    border-left: 3px solid transparent;
+    align-items: center;
+    padding: 12px 15px;
+    display: -webkit-box;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item-active {
+    border-left-color: #009688;
+    background-color: #0d1214;
+}
+
+.content{
     position: absolute;
     top: 48px;
     right: 0;
     bottom: 0;
-    left: 200px;
+    left: 13%;
     overflow: auto;
     z-index: 9;
+    background-color: #E5E5E5;
 }
 /* 设置消息样式，数字外边加个圆圈 */
 .info {
