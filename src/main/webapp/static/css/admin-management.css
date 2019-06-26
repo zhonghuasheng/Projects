@@ -5,11 +5,11 @@
 body{
     margin: 0;
 }
-.f-left{
-    float: left;
+.ml-0 {
+    margin-left: 0px;
 }
-.f-right{
-    float: right;
+.mr-0 {
+    margin-right: 0px;
 }
 .pg-header{
     height: 48px;
@@ -35,6 +35,11 @@ body{
     height: 48px;
     position: relative;
 }
+
+.pg-header .user a {
+    color: white;
+}
+
 .pg-header .user:hover{
     background-color: #007d71;
 }
@@ -114,7 +119,24 @@ body{
     overflow: auto;
     z-index: 9;
     background-color: #E5E5E5;
+    padding: 20px;
 }
+
+.content .panel {
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.line-head {
+    border-top: 1px solid #ddd;
+    padding: 10px 0px 10px 0px;
+}
+
+.action a {
+    color: white;
+}
+
 /* 设置消息样式，数字外边加个圆圈 */
 .info {
     border-radius: 50%;
