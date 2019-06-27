@@ -5,29 +5,48 @@
 body{
     margin: 0;
 }
+
 .ml-0 {
     margin-left: 0px;
 }
+
 .mr-0 {
     margin-right: 0px;
 }
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.pr-0 {
+    padding-right: 0px !important;
+}
+
+.pl-0 {
+    padding-right: 0px !important;
+}
+
 .pg-header{
     height: 48px;
     color: white;
     line-height: 48px;
     background-color: #009688;
 }
+
 .pg-header .logo{
     width: 13%;
     background-color: #007d71;
     text-align: center;
 }
+
 .pg-header .icons{
     padding: 0 20px;
 }
+
 .pg-header .icons:hover{
     background-color: #007d71;
 }
+
 .pg-header .user{
     margin-right: 60px;
     padding: 0 20px;
@@ -43,12 +62,14 @@ body{
 .pg-header .user:hover{
     background-color: #007d71;
 }
+
 .pg-header .user .a img{
     height: 40px;
     width: 40px;
     margin-top: 4px;
     border-radius: 50%;
 }
+
 .pg-header .user .b{
     z-index: 20;
     position: absolute;
@@ -62,20 +83,25 @@ body{
     font-size: 14px;
     line-height: 30px;
 }
+
 .pg-header .user .b a{
     padding: 5px;
     color: black;
     text-decoration: none;
 }
+
 .pg-header .user .b a:hover{
     background-color: #dddddd;
 }
+
 .pg-header .user:hover .b{
     display: block;
 }
+
 .pg-header .user .b a{
     display: block;
 }
+
 .menu{
     position: absolute;
     top:48px;
@@ -104,7 +130,6 @@ body{
     text-decoration: none;
     color: white;
 }
-
 
 .menu-item-active, .menu-item:hover, .menu-item:focus {
     border-left-color: #009688;
