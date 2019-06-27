@@ -10,21 +10,26 @@
     <div class="content float-left">
       <div class="panel">
         <div class="row ml-0 mr-0">
-          <div class="col-lg-12">
-            <div>
-              <div class="float-left">
-                <h4>艺术家</h4>
-              </div>
-              <div class="action float-right">
-                <a class="btn btn-sm btn-success">创建</a>
-                <a class="btn btn-sm btn-info">修改</a>
-                <a class="btn btn-sm btn-secondary">删除</a>
+          <div class="float-left col-sm-3">
+            <h4>艺术家</h4>
+          </div>
+          <div class="col-sm-8">
+            <div class="float-right">
+              <div class="app-search">
+                <input class="app-search_input" type="search" placeholder="搜索">
+                <button class="app-search_button">
+                  <i class="fa fa-search"></i>
+                </button>
               </div>
             </div>
+          </div>
+          <div class="action col-sm-1">
+            <div class="float-right">
+              <a class="btn btn-sm btn-success">创建</a>
+            </div>
+          </div>
         </div>
-        </div>
-          <div>
-        </div>
+
         <div class="row ml-0 mr-0">
            <div class="col-lg-12">
              <div class="line-head"></div>

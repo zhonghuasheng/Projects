@@ -105,9 +105,12 @@ body{
     color: white;
 }
 
-.menu-item-active {
+
+.menu-item-active, .menu-item:hover, .menu-item:focus {
     border-left-color: #009688;
     background-color: #0d1214;
+    text-decoration: none;
+    color: white;
 }
 
 .content{
@@ -135,6 +138,21 @@ body{
 
 .action a {
     color: white;
+}
+
+.app-search .app-search_input {
+    border: 0;
+    padding: 4px 10px;
+    border-radius: 2px;
+    background-color: rgba(241, 238, 238, 0.8);
+}
+
+.app-search .app-search_button {
+    border: 0;
+    color: rgba(0, 0, 0, 0.8);
+    background: none;
+    margin-left: -37px;
+    cursor: pointer;
 }
 
 /* 设置消息样式，数字外边加个圆圈 */
