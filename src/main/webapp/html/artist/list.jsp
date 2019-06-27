@@ -36,7 +36,7 @@
            </div>
         </div>
       </div>
+      <%@include file="/html/admin/footer.jsp" %>
     </div>
-    <%@include file="/html/admin/footer.jsp" %>
   </body>
 </html>

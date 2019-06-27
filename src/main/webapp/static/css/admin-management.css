@@ -180,6 +180,10 @@ body{
     cursor: pointer;
 }
 
+.pg-footer {
+    padding-top: 20px;
+}
+
 /* 设置消息样式，数字外边加个圆圈 */
 .info {
     border-radius: 50%;
