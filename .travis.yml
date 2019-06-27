@@ -1,3 +1,4 @@
 language: java
 script: mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true
-email: false
+notifications:
+  email: false
