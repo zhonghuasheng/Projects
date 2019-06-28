@@ -9,7 +9,7 @@
     <%@ include file="/html/admin/header.jsp" %>
     <div class="content float-left">
       <div class="panel">
-        <form action="/admin/artist/create" method="post" class="w-50 m-auto">
+        <form action="${pageContext.request.contextPath }/admin/artist/create" method="post" class="w-50 m-auto">
           <div class="form-group row">
             <div class="col-md-2 mt-auto">
               <label class="control-label">照片</label>
@@ -47,7 +47,7 @@
               <label class="control-label">个人经历</label>
             </div>
             <div class="col-md-8">
-              <textarea rows="4" class="form-control" placeholder="个人经历"></textarea>
+              <textarea name="experience" rows="4" class="form-control" placeholder="个人经历"></textarea>
             </div>
           </div>
           <div class="row">
