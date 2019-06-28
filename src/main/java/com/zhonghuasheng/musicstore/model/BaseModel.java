@@ -9,6 +9,7 @@ public class BaseModel {
     private Timestamp createTime;
     private Timestamp lastModifiedTime;
     private String lastModifiedBy;
+    private boolean isDeleted;
 
     public UUID getUuid() {
         return uuid;
@@ -40,5 +41,13 @@ public class BaseModel {
 
     public void setLastModifiedBy(String lastModifiedBy) {
         this.lastModifiedBy = lastModifiedBy;
+    }
+
+    public boolean isDeleted() {
+        return isDeleted;
+    }
+
+    public void setDeleted(boolean isDeleted) {
+        this.isDeleted = isDeleted;
     }
 }

@@ -12,7 +12,6 @@ public class User extends BaseModel {
     private Gender gender;
     private String avatar;
     private boolean isActive;
-    private boolean isDeleted;
 
     public String getUsername() {
         return username;
@@ -76,13 +75,5 @@ public class User extends BaseModel {
 
     public void setActive(boolean isActive) {
         this.isActive = isActive;
-    }
-
-    public boolean isDeleted() {
-        return isDeleted;
-    }
-
-    public void setDeleted(boolean isDeleted) {
-        this.isDeleted = isDeleted;
     }
 }
