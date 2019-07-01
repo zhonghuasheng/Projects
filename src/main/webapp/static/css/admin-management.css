@@ -193,3 +193,8 @@ body{
     font-size: 12px;
     display: inline-block;
 }
+
+/*Artist Create*/
+.avatar {
+    height: 100%;
+}

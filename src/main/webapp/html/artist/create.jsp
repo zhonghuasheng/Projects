@@ -9,13 +9,13 @@
     <%@ include file="/html/admin/header.jsp" %>
     <div class="content float-left">
       <div class="panel">
-        <form action="${pageContext.request.contextPath }/admin/artist/create" method="post" class="w-50 m-auto">
+        <form action="${pageContext.request.contextPath }/admin/artist/create" method="post" class="w-50 m-auto" enctype="multipart/form-data">
           <div class="form-group row">
             <div class="col-md-2 mt-auto">
               <label class="control-label">照片</label>
             </div>
             <div class="col-md-8">
-              <input type="text" name="avtar" class="form-control" placeholder="照片"/>
+              <input type="file" name="avatar" class="form-control avatar" placeholder="照片"/>
             </div>
           </div>
           <div class="form-group row">

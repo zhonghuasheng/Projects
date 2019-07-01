@@ -8,7 +8,7 @@ public class Artist extends BaseModel {
     private Date birthday;
     private String region;
     private String experience;
-    private String avtar;
+    private String avatar;
 
     public String getName() {
         return name;
@@ -42,11 +42,11 @@ public class Artist extends BaseModel {
         this.experience = experience;
     }
 
-    public String getAvtar() {
-        return avtar;
+    public String getAvatar() {
+        return avatar;
     }
 
-    public void setAvtar(String avtar) {
-        this.avtar = avtar;
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }

@@ -24,7 +24,7 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
             preparedStatement.setDate(3, new Date(artist.getBirthday().getTime()));
             preparedStatement.setString(4, artist.getRegion());
             preparedStatement.setString(5, artist.getExperience());
-            preparedStatement.setString(6, artist.getAvtar());
+            preparedStatement.setString(6, artist.getAvatar());
             preparedStatement.setTimestamp(7, artist.getCreateTime());
             preparedStatement.setTimestamp(8, artist.getLastModifiedTime());
             preparedStatement.setString(9, artist.getLastModifiedBy());
