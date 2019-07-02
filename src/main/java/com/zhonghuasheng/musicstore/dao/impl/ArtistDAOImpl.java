@@ -3,7 +3,11 @@ package com.zhonghuasheng.musicstore.dao.impl;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 import com.zhonghuasheng.musicstore.common.JDBCUtils;
 import com.zhonghuasheng.musicstore.dao.ArtistDAO;
@@ -11,7 +15,8 @@ import com.zhonghuasheng.musicstore.model.Artist;
 
 public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements ArtistDAO {
 
-    private final String CREATE_ARTIST = "INSERT INTO artist(uuid, name, birthday, region, experience, avatar, create_time, last_modified_time, last_modified_by, is_deleted)"
+    private static final String SELECT_ARTISTS = "SELECT * FROM artist;";
+    private static final String CREATE_ARTIST = "INSERT INTO artist(uuid, name, birthday, region, experience, avatar, create_time, last_modified_time, last_modified_by, is_deleted)"
             + " VALUES (?,?,?,?,?,?,?,?,?,?);";
 
     @Override
@@ -35,5 +40,33 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
         }
 
         return artist;
+    }
+
+    @Override
+    public List<Artist> list() {
+        Connection connection = JDBCUtils.getConnection();
+        List<Artist> artists = new ArrayList<Artist>();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ARTISTS);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                Artist artist = new Artist();
+                artist.setUuid(UUID.fromString(resultSet.getString("uuid")));
+                artist.setAvatar(resultSet.getString("avatar"));
+                artist.setBirthday(resultSet.getDate("birthday"));
+                artist.setCreateTime(resultSet.getTimestamp("create_time"));
+                artist.setDeleted(resultSet.getBoolean("is_deleted"));
+                artist.setExperience(resultSet.getString("experience"));
+                artist.setLastModifiedBy(resultSet.getString("last_modified_by"));
+                artist.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
+                artist.setName(resultSet.getString("name"));
+                artist.setRegion(resultSet.getString("region"));
+                artists.add(artist);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return artists;
     }
 }

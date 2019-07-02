@@ -2,6 +2,7 @@ package com.zhonghuasheng.musicstore.service.impl;
 
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 import com.zhonghuasheng.musicstore.dao.ArtistDAO;
@@ -22,6 +23,11 @@ public class ArtistServiceImpl implements ArtistService {
         artist.setLastModifiedTime(new Timestamp(new Date().getTime()));
 
         return artistDao.create(artist);
+    }
+
+    @Override
+    public List<Artist> artists() {
+        return artistDao.list();
     }
 
 }

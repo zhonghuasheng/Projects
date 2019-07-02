@@ -50,6 +50,10 @@ public class CreateAction extends HttpServlet {
 
         ArtistService artistService = new ArtistServiceImpl();
         Artist result = artistService.create(artist);
+
+        if (result.getUuid() != null) {
+            response.sendRedirect(request.getContextPath() + "/admin/artist/");
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
