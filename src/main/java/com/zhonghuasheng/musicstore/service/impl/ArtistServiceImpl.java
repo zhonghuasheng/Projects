@@ -30,4 +30,9 @@ public class ArtistServiceImpl implements ArtistService {
         return artistDao.list();
     }
 
+    @Override
+    public Artist get(String uuid) {
+        return artistDao.get(uuid);
+    }
+
 }

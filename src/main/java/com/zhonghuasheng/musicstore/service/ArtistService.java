@@ -8,4 +8,5 @@ public interface ArtistService {
 
     Artist create(Artist artist);
     List<Artist> artists();
+    Artist get(String uuid);
 }
