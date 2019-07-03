@@ -57,8 +57,8 @@
                       <td>${artist.region}</td>
                       <td>${artist.deleted}</td>
                       <td>
-                        <button class="btn btn-secondary btn-sm">修改</button>
-                        <button class="btn btn-danger btn-sm">删除</button>
+                        <a class="btn btn-sm btn-secondary" href="<%=basePath%>admin/artist/edit?uuid=${artist.uuid}">修改</a>
+                        <a class="btn btn-sm btn-danger" href="<%=basePath%>admin/artist/delete?uuid=${artist.uuid}">删除</a>
                       </td>
                     </tr>
                 </c:forEach>
