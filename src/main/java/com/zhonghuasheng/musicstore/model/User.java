@@ -11,7 +11,7 @@ public class User extends BaseModel {
     private Date birthday;
     private Gender gender;
     private String avatar;
-    private boolean isActive;
+    private boolean active;
 
     public String getUsername() {
         return username;
@@ -70,10 +70,10 @@ public class User extends BaseModel {
     }
 
     public boolean isActive() {
-        return isActive;
+        return active;
     }
 
-    public void setActive(boolean isActive) {
-        this.isActive = isActive;
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }

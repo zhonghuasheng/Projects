@@ -15,7 +15,7 @@ import com.zhonghuasheng.musicstore.model.User;
 public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
 
     private final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND is_active=TRUE AND is_deleted=FALSE";
-    private final String CREATE_USER = "INSERT user_(uuid, username, email, password, role, gender, is_active, is_deleted,"
+    private final String CREATE_USER = "INSERT user_(uuid, username, email, password, role, gender, active, deleted,"
             + " create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
 
     @Override
@@ -59,8 +59,8 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
                 user.setBirthday(resultSet.getDate("birthday"));
                 user.setGender(Gender.valueOf(resultSet.getString("gender")));
                 user.setAvatar(resultSet.getString("avatar"));
-                user.setActive(resultSet.getBoolean("is_active"));
-                user.setDeleted(resultSet.getBoolean("is_deleted"));
+                user.setActive(resultSet.getBoolean("active"));
+                user.setDeleted(resultSet.getBoolean("deleted"));
                 user.setCreateTime(resultSet.getTimestamp("create_time"));
                 user.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
                 user.setLastModifiedBy(resultSet.getString("last_modified_by"));
