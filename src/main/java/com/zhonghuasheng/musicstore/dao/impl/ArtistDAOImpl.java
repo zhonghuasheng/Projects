@@ -16,7 +16,7 @@ import com.zhonghuasheng.musicstore.model.Artist;
 public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements ArtistDAO {
 
     private static final String SELECT_ARTISTS = "SELECT * FROM artist;";
-    private static final String CREATE_ARTIST = "INSERT INTO artist(uuid, name, birthday, region, experience, avatar, create_time, last_modified_time, last_modified_by, is_deleted)"
+    private static final String CREATE_ARTIST = "INSERT INTO artist(uuid, name, birthday, region, experience, avatar, create_time, last_modified_time, last_modified_by, deleted)"
             + " VALUES (?,?,?,?,?,?,?,?,?,?);";
 
     @Override
@@ -55,7 +55,7 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
                 artist.setAvatar(resultSet.getString("avatar"));
                 artist.setBirthday(resultSet.getDate("birthday"));
                 artist.setCreateTime(resultSet.getTimestamp("create_time"));
-                artist.setDeleted(resultSet.getBoolean("is_deleted"));
+                artist.setDeleted(resultSet.getBoolean("deleted"));
                 artist.setExperience(resultSet.getString("experience"));
                 artist.setLastModifiedBy(resultSet.getString("last_modified_by"));
                 artist.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));

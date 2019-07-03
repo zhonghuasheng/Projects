@@ -9,7 +9,7 @@ public class BaseModel {
     private Timestamp createTime;
     private Timestamp lastModifiedTime;
     private String lastModifiedBy;
-    private boolean isDeleted;
+    private boolean deleted;
 
     public UUID getUuid() {
         return uuid;
@@ -44,10 +44,10 @@ public class BaseModel {
     }
 
     public boolean isDeleted() {
-        return isDeleted;
+        return deleted;
     }
 
-    public void setDeleted(boolean isDeleted) {
-        this.isDeleted = isDeleted;
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
     }
 }

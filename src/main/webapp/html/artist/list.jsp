@@ -42,11 +42,11 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>姓名</th>
-                  <th>出生地</th>
-                  <th>籍贯</th>
-                  <th>UUID</th>
-                  <th>操作</th>
+                  <th>Name</th>
+                  <th>Birthday</th>
+                  <th>Region</th>
+                  <th>Is Deleted?</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -55,17 +55,16 @@
                       <td>${artist.name}</td>
                       <td>${artist.birthday}</td>
                       <td>${artist.region}</td>
-                      <td>${artist.uuid}</td>
+                      <td>${artist.deleted}</td>
                       <td>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <button class="btn btn-secondary btn-sm">修改</button>
+                        <button class="btn btn-danger btn-sm">删除</button>
                       </td>
                     </tr>
                 </c:forEach>
               </tbody>
             </table>
           </div>
-
         </div>
       </div>
       <%@include file="/html/admin/footer.jsp" %>
