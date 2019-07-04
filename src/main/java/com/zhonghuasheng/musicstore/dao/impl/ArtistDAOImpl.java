@@ -19,6 +19,7 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
     private static final String CREATE_ARTIST = "INSERT INTO artist(uuid, name, birthday, region, experience, avatar, create_time, last_modified_time, last_modified_by, deleted)"
             + " VALUES (?,?,?,?,?,?,?,?,?,?);";
     private static final String GET_ARTIST = "SELECT * FROM artist WHERE uuid = ?;";
+    private static final String UPDATE_ARTIST = "UPDATE artist SET name=?, birthday=?, region=?, experience=?, avatar=?, last_modified_time=?, last_modified_by=? WHERE uuid=?;";
 
     @Override
     public Artist create(Artist artist) {
@@ -83,6 +84,29 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
             while (resultSet.next()) {
                 result = convertPOtoVO(resultSet);
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+
+    @Override
+    public boolean update(Artist artist) {
+        Connection connection = JDBCUtils.getConnection();
+        boolean result = false;
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_ARTIST);
+            preparedStatement.setString(1, artist.getName());
+            preparedStatement.setDate(2, new Date(artist.getBirthday().getTime()));
+            preparedStatement.setString(3, artist.getRegion());
+            preparedStatement.setString(4, artist.getExperience());
+            preparedStatement.setString(5, artist.getAvatar());
+            preparedStatement.setTimestamp(6, artist.getLastModifiedTime());
+            preparedStatement.setString(7, artist.getLastModifiedBy());
+            preparedStatement.setString(8, String.valueOf(artist.getUuid()));
+            result = preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
         }

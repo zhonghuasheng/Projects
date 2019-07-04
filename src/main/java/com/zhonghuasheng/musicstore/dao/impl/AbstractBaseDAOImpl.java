@@ -9,13 +9,13 @@ public abstract class AbstractBaseDAOImpl<T> implements BaseDAO<T> {
     }
 
     @Override
-    public void delete(String uuid) {
-        
+    public boolean delete(String uuid) {
+        return false;
     }
 
     @Override
-    public void update(T obj) {
-        
+    public boolean update(T obj) {
+        return false;
     }
 
     @Override

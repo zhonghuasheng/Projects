@@ -35,4 +35,12 @@ public class ArtistServiceImpl implements ArtistService {
         return artistDao.get(uuid);
     }
 
+    @Override
+    public boolean update(Artist artist) {
+        artist.setLastModifiedBy("-1");
+        artist.setLastModifiedTime(new Timestamp(new Date().getTime()));
+
+        return artistDao.update(artist);
+    }
+
 }

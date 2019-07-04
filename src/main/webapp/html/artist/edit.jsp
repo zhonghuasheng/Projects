@@ -9,14 +9,16 @@
     <%@ include file="/html/admin/header.jsp" %>
     <div class="content float-left">
       <div class="panel">
-        <form action="${pageContext.request.contextPath }/admin/artist/update" method="post" class="w-50 m-auto" enctype="multipart/form-data">
+        <form action="${pageContext.request.contextPath }/admin/artist/edit" method="post" class="w-50 m-auto" enctype="multipart/form-data">
           <div class="form-group row">
             <div class="col-md-3 mt-auto">
+              <input type="text" name="uuid" class="d-none" value="${artist.uuid}"/>
             </div>
             <div class="col-md-3">
               <img class="rounded-circle" alt="" src="${pageContext.request.contextPath }/document-upload/avatar/${artist.avatar}">
             </div>
             <div class="col-md-3">
+              <input type="text" name="originalAvatar" class="d-none" value="${artist.avatar}"/>
             </div>
           </div>
           <div class="form-group row">
