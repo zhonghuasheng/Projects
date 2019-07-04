@@ -26,7 +26,6 @@ public class CreateAction extends HttpServlet {
         String birthday = request.getParameter("birthday");
         String region = request.getParameter("region");
         String experience = request.getParameter("experience");
-        System.out.println(name +":" + birthday + ":" + region + ":" + experience);
 
         Artist artist = new Artist();
         artist.setExperience(experience);
