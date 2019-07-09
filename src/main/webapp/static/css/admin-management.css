@@ -146,7 +146,6 @@ body{
     bottom: 0;
     left: 13%;
     overflow: auto;
-    z-index: 9;
     background-color: #E5E5E5;
     padding: 20px;
 }

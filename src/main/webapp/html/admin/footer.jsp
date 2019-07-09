@@ -12,9 +12,9 @@
         <a href="https://github.com/zhonghuasheng">种花生的读书人</a>
       </span>
     </div>
-    <link rel="stylesheet" href="static/fontawesome/css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="static/css/admin-management.css">
+    <link rel="stylesheet" href="static/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/admin-management.css" />
     <script src="static/js/jquery-3.4.1.min.js"></script>
     <script src="static/js/admin-management.js"></script>
   </body>

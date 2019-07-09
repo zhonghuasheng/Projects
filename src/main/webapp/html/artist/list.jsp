@@ -58,7 +58,7 @@
                       <td>${artist.deleted}</td>
                       <td>
                         <a class="btn btn-sm btn-secondary" href="<%=basePath%>admin/artist/edit?uuid=${artist.uuid}">修改</a>
-                        <a class="btn btn-sm btn-danger" href="<%=basePath%>admin/artist/delete?uuid=${artist.uuid}">删除</a>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="deleteArtist('${artist.uuid}')">删除</button>
                       </td>
                     </tr>
                 </c:forEach>
@@ -66,8 +66,29 @@
             </table>
           </div>
         </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="deleteArtistModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">删除</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>是否要删除这条记录？</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">是</button>
+              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">否</button>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
       <%@include file="/html/admin/footer.jsp" %>
+      <script src="static/bootstrap/js/bootstrap.min.js"></script>
     </div>
   </body>
 </html>

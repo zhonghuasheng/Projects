@@ -20,6 +20,9 @@ import com.zhonghuasheng.musicstore.service.impl.ArtistServiceImpl;
 @WebServlet(urlPatterns = "/admin/artist/create")
 @MultipartConfig
 public class CreateAction extends HttpServlet {
+
+    private static final long serialVersionUID = 6051892050096591861L;
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Part avatarFile = request.getPart("avatar");
         String name = request.getParameter("name");

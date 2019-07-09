@@ -21,6 +21,8 @@ import com.zhonghuasheng.musicstore.service.impl.ArtistServiceImpl;
 @MultipartConfig
 public class EditAction extends HttpServlet {
 
+    private static final long serialVersionUID = -8183019723471321946L;
+
     private ArtistService artistService = new ArtistServiceImpl();
 
     @Override

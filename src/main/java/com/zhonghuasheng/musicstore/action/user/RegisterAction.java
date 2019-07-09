@@ -19,6 +19,8 @@ import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
 @WebServlet(urlPatterns = "/user/register")
 public class RegisterAction extends HttpServlet {
 
+    private static final long serialVersionUID = 6200549743978870400L;
+
     public RegisterAction() {
         super();
     }
