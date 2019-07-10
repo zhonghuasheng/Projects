@@ -15,6 +15,8 @@ import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
 @WebServlet(urlPatterns = "/user/login")
 public class LoginAction extends HttpServlet {
 
+    private static final long serialVersionUID = 109110977079706841L;
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");

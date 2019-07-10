@@ -10,6 +10,8 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/logout")
 public class LoginOutAction extends HttpServlet {
 
+    private static final long serialVersionUID = -7087965126224246403L;
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

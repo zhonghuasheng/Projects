@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Artist</title>
+    <link rel="shortcut icon" href="../static/image/favicon.ico">
   </head>
   <body>
     <%@ include file="/html/admin/header.jsp" %>
