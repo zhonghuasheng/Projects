@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Artist</title>
+    <link rel="shortcut icon" href="../static/image/favicon.ico">
   </head>
   <body>
     <%@ include file="/html/admin/header.jsp" %>
@@ -26,7 +28,7 @@
           </div>
           <div class="action col-sm-1">
             <div class="float-right">
-              <a class="btn btn-sm btn-success" href="<%=basePath%>admin/artist/create">创建</a>
+              <a class="btn btn-sm btn-success" href="<%=basePath%>/admin/artist/create">创建</a>
             </div>
           </div>
         </div>
@@ -57,8 +59,8 @@
                       <td>${artist.region}</td>
                       <td>${artist.deleted}</td>
                       <td>
-                        <a class="btn btn-sm btn-secondary" href="<%=basePath%>admin/artist/edit?uuid=${artist.uuid}">修改</a>
-                        <button type="button" class="btn btn-sm btn-danger" onclick="deleteArtist('${artist.uuid}')">删除</button>
+                        <a class="btn btn-sm btn-secondary" href="<%=basePath%>/admin/artist/edit?uuid=${artist.uuid}">修改</a>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteArtistModal('${artist.uuid}')">删除</button>
                       </td>
                     </tr>
                 </c:forEach>
@@ -80,7 +82,7 @@
               <p>是否要删除这条记录？</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">是</button>
+              <button type="button" class="btn btn-primary btn-sm btn-yes" data-uuid="" data-dismiss="modal" onclick="deleteArtist()">是</button>
               <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">否</button>
             </div>
           </div>
@@ -88,7 +90,7 @@
       </div>
       </div>
       <%@include file="/html/admin/footer.jsp" %>
-      <script src="static/bootstrap/js/bootstrap.min.js"></script>
+      <script src="<%=basePath%>/static/bootstrap/js/bootstrap.min.js"></script>
     </div>
   </body>
 </html>

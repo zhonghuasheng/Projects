@@ -2,15 +2,14 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+ "://" + request.getServerName()
-    + ":" + request.getServerPort() + path + "/";
+String basePath = request.getContextPath();
 %>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Admin Portal</title>
     <base href="<%=basePath%>">
+    <link rel="shortcut icon" href="<%=basePath%>/static/image/favicon.ico">
   </head>
     <body>
       <div class="pg-header">
@@ -46,7 +45,7 @@ String basePath = request.getScheme()+ "://" + request.getServerName()
             </a>
           </li>
           <li>
-            <a class="menu-item" href="<%=basePath%>admin/artist/">
+            <a class="menu-item" href="<%=basePath%>/admin/artist/">
               <i class="fa fa-glide-g"></i>
               <span>Artist</span>
             </a>

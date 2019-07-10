@@ -12,7 +12,7 @@ $(document).ready(function(){
     /* searches artists by keywords */
     $('.app-search_button').on('click', function() {
         $.ajax({
-            url: '/musicstore-jsp/admin/artist/',
+            url: '/musicstore/admin/artist/',
             data: {
                 'currentPage': 1,
                 'pageSize': 1,
@@ -28,6 +28,23 @@ $(document).ready(function(){
     })
 });
 
-var deleteArtist = function(uuid) {
+var showDeleteArtistModal = function(uuid) {
     $('#deleteArtistModal').modal();
+    $('#deleteArtistModal .btn-yes').data('uuid', uuid);
+}
+
+var deleteArtist = function() {
+    var uuid = $('#deleteArtistModal .btn-yes').data('uuid');
+    $.ajax({
+        url: '/musicstore/admin/artist/delete',
+        data: {
+            'uuid': uuid
+        },
+        type: 'post',
+        cache: false,
+        dataType: 'text',
+        success: function(data) {
+            console.log('here' + data);
+        }
+    });
 }
