@@ -8,8 +8,9 @@ String basePath = request.getContextPath();
   <head>
     <meta charset="UTF-8">
     <title>Admin Portal</title>
-    <base href="<%=basePath%>">
-    <link rel="shortcut icon" href="<%=basePath%>/static/image/favicon.ico">
+    <link rel="stylesheet" href="<%=basePath%>/static/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/css/admin-management.css" />
   </head>
     <body>
       <div class="pg-header">

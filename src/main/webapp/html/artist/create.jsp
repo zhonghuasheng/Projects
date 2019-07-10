@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%
+String basePathInCreate = request.getContextPath();
+%>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Artist</title>
-    <link rel="shortcut icon" href="../static/image/favicon.ico">
+    <link rel="shortcut icon" href="<%=basePathInCreate%>/static/image/favicon.ico">
   </head>
   <body>
     <%@ include file="/html/admin/header.jsp" %>
@@ -58,7 +61,7 @@
               <button type="submit" class="btn btn-primary">
                 <i class="fa fa-fw fa-lg fa-check-circle"></i>
                   保存</button>
-              <a class="btn btn-secondary" href="<%=basePath%>admin/artist/list">
+              <a class="btn btn-secondary" href="<%=basePathInCreate%>admin/artist/list">
                 <i class="fa fa-fw fa-lg fa-times-circle"></i>
                    取消</a>
             </div>
