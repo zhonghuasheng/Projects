@@ -1,12 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-
+<%
+String baseP = request.getContextPath();
+%>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Artist</title>
-    <link rel="shortcut icon" href="../static/image/favicon.ico">
+    <link rel="shortcut icon" href="<%=baseP%>/static/image/favicon.ico">
   </head>
   <body>
     <%@ include file="/html/admin/header.jsp" %>
