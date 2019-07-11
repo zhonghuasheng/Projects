@@ -43,4 +43,8 @@ public class ArtistServiceImpl implements ArtistService {
         return artistDao.update(artist);
     }
 
+    @Override
+    public boolean delete(String uuid) {
+        return artistDao.delete(uuid);
+    }
 }
