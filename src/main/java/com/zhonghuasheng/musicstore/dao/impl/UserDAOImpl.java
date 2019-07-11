@@ -33,14 +33,13 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
             preparedStatement.setTimestamp(7, user.getCreateTime());
             preparedStatement.setTimestamp(8, user.getLastModifiedTime());
             preparedStatement.setString(9, user.getLastModifiedBy());
-            boolean result = preparedStatement.execute();
+            preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return user;
     }
 
-    @Override
     public User getUserByEmailAndPassword(String email, String password) {
         Connection connection = JDBCUtils.getConnection();
         User user = new User();

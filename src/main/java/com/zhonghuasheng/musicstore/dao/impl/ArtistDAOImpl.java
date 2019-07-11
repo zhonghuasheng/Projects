@@ -20,6 +20,7 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
             + " VALUES (?,?,?,?,?,?,?,?,?,?);";
     private static final String GET_ARTIST = "SELECT * FROM artist WHERE uuid = ?;";
     private static final String UPDATE_ARTIST = "UPDATE artist SET name=?, birthday=?, region=?, experience=?, avatar=?, last_modified_time=?, last_modified_by=? WHERE uuid=?;";
+    private static final String DELETE_ARTIST = "UPDATE artist set deleted=true WHERE uuid=?;";
 
     @Override
     public Artist create(Artist artist) {
@@ -36,7 +37,7 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
             preparedStatement.setTimestamp(8, artist.getLastModifiedTime());
             preparedStatement.setString(9, artist.getLastModifiedBy());
             preparedStatement.setBoolean(10, artist.isDeleted());
-            boolean result = preparedStatement.execute();
+            preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -128,5 +129,20 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
         artist.setRegion(resultSet.getString("region"));
 
         return artist;
+    }
+
+    public boolean delete(String uuid) {
+        Connection connection = JDBCUtils.getConnection();
+        PreparedStatement preparedStatement;
+        boolean result = false;
+        try {
+            preparedStatement = connection.prepareStatement(DELETE_ARTIST);
+            preparedStatement.setString(1, uuid);
+            result = preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return result;
     }
 }
