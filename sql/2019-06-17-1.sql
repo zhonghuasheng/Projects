@@ -1,6 +1,6 @@
 CREATE DATABASE `musicstore-jsp` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-use musicstore-jsp;
+use `musicstore-jsp`;
 
 CREATE TABLE `user_` (
   `uuid` varchar(36) NOT NULL,
