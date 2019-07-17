@@ -10,7 +10,7 @@ String basePathInEdit = request.getContextPath();
     <link rel="shortcut icon" href="<%=basePathInEdit%>/static/image/favicon.ico">
   </head>
   <body>
-    <%@ include file="/html/admin/header.jsp" %>
+    <%@ include file="/WEB-INF/html/admin/header.jsp" %>
     <div class="content float-left">
       <div class="panel">
         <form action="${pageContext.request.contextPath }/admin/artist/edit" method="post" class="w-50 m-auto" enctype="multipart/form-data">
@@ -79,7 +79,7 @@ String basePathInEdit = request.getContextPath();
           </div>
         </form>
       </div>
-      <%@include file="/html/admin/footer.jsp" %>
+      <%@include file="/WEB-INF/html/admin/footer.jsp" %>
     </div>
   </body>
 </html>

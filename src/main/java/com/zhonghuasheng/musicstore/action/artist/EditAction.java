@@ -30,7 +30,7 @@ public class EditAction extends HttpServlet {
         String uuid = req.getParameter("uuid");
         Artist artist = artistService.get(uuid);
         req.setAttribute("artist", artist);
-        req.getRequestDispatcher("/html/artist/edit.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/html/artist/edit.jsp").forward(req, resp);
     }
 
     @Override

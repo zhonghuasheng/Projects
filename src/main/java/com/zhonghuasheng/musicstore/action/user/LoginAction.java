@@ -30,6 +30,6 @@ public class LoginAction extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/html/user/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/user/login.jsp").forward(request, response);
     }
 }

@@ -11,7 +11,7 @@ String baseP = request.getContextPath();
     <link rel="shortcut icon" href="<%=baseP%>/static/image/favicon.ico">
   </head>
   <body>
-    <%@ include file="/html/admin/header.jsp" %>
+    <%@ include file="/WEB-INF/html/admin/header.jsp" %>
     <div class="content float-left">
       <div class="panel">
         <div class="row ml-0 mr-0">
@@ -91,7 +91,7 @@ String baseP = request.getContextPath();
         </div>
       </div>
       </div>
-      <%@include file="/html/admin/footer.jsp" %>
+      <%@include file="/WEB-INF/html/admin/footer.jsp" %>
       <script src="<%=basePath%>/static/bootstrap/js/bootstrap.min.js"></script>
     </div>
   </body>

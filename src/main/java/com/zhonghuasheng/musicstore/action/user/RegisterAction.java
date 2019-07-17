@@ -26,7 +26,7 @@ public class RegisterAction extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/html/user/register.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/user/register.jsp").forward(request, response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

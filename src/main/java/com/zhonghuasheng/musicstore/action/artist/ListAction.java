@@ -26,7 +26,7 @@ public class ListAction extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Artist> artists = artistService.artists();
         request.setAttribute("artists", artists);
-        request.getRequestDispatcher("/html/artist/list.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/artist/list.jsp").forward(request, response);
     }
 
     @Override
