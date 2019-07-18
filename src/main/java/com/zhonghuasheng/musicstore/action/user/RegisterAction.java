@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.zhonghuasheng.musicstore.common.Constants;
+import com.zhonghuasheng.musicstore.common.Utils;
 import com.zhonghuasheng.musicstore.model.User;
 import com.zhonghuasheng.musicstore.service.UserService;
 import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
@@ -30,31 +31,86 @@ public class RegisterAction extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println(request.getParameter("birthday"));
         User user = new User();
 
-        user.setUsername(request.getParameter("username"));
-        user.setEmail(request.getParameter("email"));
-        user.setPassword(request.getParameter("password"));
-        String birthday = request.getParameter("birthday");
-        if (birthday != null && birthday != Constants.BLANK) {
-            try {
-                user.setBirthday(new SimpleDateFormat("yyyy-MM-dd").parse(request.getParameter("birthday")));
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-        } else {
-            user.setBirthday(new Date(2209017943000L));
+        if (!validateParameters(request, response, user)) {
+            request.setAttribute("user", user);
+            doGet(request, response);
+            // 不加return的话后面的代码还会继续执行
+            return;
         }
 
         UserService userService = new UserServiceImpl();
         User result = userService.create(user);
 
         if (result != null) {
-            // request.getContextPath()值为/musicstore-jsp, context配置在server的module中
             response.sendRedirect(request.getContextPath() + "/user/login");
         } else {
             doGet(request, response);
         }
+    }
+
+    private boolean validateParameters(HttpServletRequest request, HttpServletResponse response, User user) {
+        boolean isVerifyPassed = true;
+
+        String username = request.getParameter("username");
+        if (Utils.isNullOrEmpty(username)) {
+            isVerifyPassed = false;
+            request.setAttribute("msg-username", Constants.EMPTY_USERNAME);
+        } else {
+            user.setUsername(username);
+        }
+
+        String email = request.getParameter("email");
+        if (Utils.isNullOrEmpty(email)) {
+            isVerifyPassed = false;
+            request.setAttribute("msg-email", Constants.EMPTY_EMAIL);
+        } else {
+            if (!Utils.isEmailAddressFormat(email)) {
+                isVerifyPassed = false;
+                request.setAttribute("msg-email", Constants.INVALID_EMAIL_FORMAT);
+            } else {
+                user.setEmail(email);
+            }
+        }
+
+        String password = request.getParameter("password");
+        if (Utils.isNullOrEmpty(password)) {
+            request.setAttribute("msg-password", Constants.EMPTY_PASSWORD);
+            isVerifyPassed = false;
+        } else {
+            if (password.trim().length() < 6 || password.trim().length() > 12) {
+                isVerifyPassed = false;
+                request.setAttribute("msg-password", Constants.INVAILD_PASSWORD_LENGTH);
+            }
+        }
+
+        String confirmPassword = request.getParameter("confirmPassword");
+        if (Utils.isNullOrEmpty(confirmPassword)) {
+            isVerifyPassed = false;
+            request.setAttribute("msg-confirmPassword", Constants.EMPTY_CONFIRM_PASSWORD);
+        } else {
+            if (!Utils.assertEquals(password, confirmPassword)) {
+                isVerifyPassed = false;
+                request.setAttribute("msg-confirmPassword", Constants.CONFIRM_PASSWORD_NOT_EQUALS_PASSWORD);
+            } else {
+                user.setPassword(confirmPassword);
+            }
+        }
+
+        String birthday = request.getParameter("birthday");
+        if (birthday != null && birthday != Constants.BLANK) {
+            try {
+                user.setBirthday(new SimpleDateFormat("yyyy-MM-dd").parse(birthday));
+            } catch (ParseException e) {
+                e.printStackTrace();
+            } finally {
+                user.setBirthday(new Date(2209017943000L));
+            }
+        } else {
+            user.setBirthday(new Date(2209017943000L));
+        }
+
+        return isVerifyPassed;
     }
 }

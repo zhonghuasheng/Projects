@@ -93,6 +93,7 @@ String baseP = request.getContextPath();
       </div>
       <%@include file="/WEB-INF/html/admin/footer.jsp" %>
       <script src="<%=basePath%>/static/bootstrap/js/bootstrap.min.js"></script>
+      <script src="<%=basePath%>/static/js/admin/admin-management.js"></script>
     </div>
   </body>
 </html>

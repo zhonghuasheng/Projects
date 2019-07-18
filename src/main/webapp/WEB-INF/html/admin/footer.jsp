@@ -16,6 +16,5 @@ String basePaths = request.getContextPath();
       </span>
     </div>
     <script src="<%=basePaths%>/static/js/jquery-3.4.1.min.js"></script>
-    <script src="<%=basePaths%>/static/js/admin-management.js"></script>
   </body>
 </html>

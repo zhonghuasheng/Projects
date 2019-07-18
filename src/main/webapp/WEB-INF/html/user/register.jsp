@@ -15,26 +15,31 @@
         <div class="col-md-1"></div>
         <div class="col-md-10 container">
           <div class="register-form w-75 mt-5 transucent-fillet pt-4 pb-4">
-            <form action="${pageContext.request.contextPath }/user/register" method="post" class="w-75 m-auto">
+            <form id="register" action="${pageContext.request.contextPath }/user/register" method="post" class="w-75 m-auto">
               <div class="form-group">
-                <label>用户名</label>
-                <input type="text" name="username" class="form-control" placeholder="用户名" />
+                <label for="username">用户名（必填）</label>
+                <input id="username" type="text" name="username" class="form-control" placeholder="用户名" value="${user.username }" required/>
+                <span class="text-danger"><%=request.getAttribute("msg-username") == null ? "" : request.getAttribute("msg-username") %></span>
               </div>
               <div class="form-group">
-                <label>邮箱</label>
-                <input type="text" name="email" class="form-control" placeholder="邮箱"/>
+                <label for="email">邮箱（必填）</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="邮箱"/>
+                <span class="text-danger"><%=request.getAttribute("msg-email") == null ? "" : request.getAttribute("msg-email") %></span>
               </div>
               <div class="form-group">
-                <label>密码</label>
-                <input type="password" name="password" class="form-control" placeholder="密码"/>
+                <label for="password">密码（必填）</label>
+                <input id="password" type="password" name="password" class="form-control" placeholder="密码"/>
+                <span class="text-danger"><%=request.getAttribute("msg-password") == null ? "" : request.getAttribute("msg-password") %></span>
               </div>
               <div class="form-group">
-                <label>确认密码</label>
-                <input type="password" name="confirmPassword" class="form-control" placeholder="确认密码"/>
+                <label for="confirmPassword">确认密码（必填）</label>
+                <input id="confirmPassword" type="password" name="confirmPassword" class="form-control" placeholder="确认密码" required/>
+                <span class="text-danger"><%=request.getAttribute("msg-confirmPassword") == null ? "" : request.getAttribute("msg-confirmPassword") %></span>
               </div>
               <div class="form-group">
-                <label>出生日期</label>
-                <input type="date" name="birthday" class="form-control" placeholder="出生日期"/>
+                <label for="birthday">出生日期</label>
+                <input id="birthday" type="date" name="birthday" class="form-control" placeholder="出生日期"/>
+                <span class="text-danger"><%=request.getAttribute("msg-birthday") == null ? "" : request.getAttribute("msg-birthday") %></span>
               </div>
               <button type="submit" class="btn btn-primary w-100">注册</button>
             </form>
@@ -43,5 +48,8 @@
         <div class="col-md-1"></div>
       </div>
     </div>
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery-1.19.1.validate.min.js"></script>
+    <script type="text/javascript" src="../static/js/user/register.js"></script>
   </body>
 </html>
