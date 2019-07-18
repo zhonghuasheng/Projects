@@ -17,6 +17,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
     private final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND is_active=TRUE AND is_deleted=FALSE";
     private final String CREATE_USER = "INSERT user_(uuid, username, email, password, role, gender, active, deleted,"
             + " create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
+    private final String CHECK_EMAIL_EXISTED = "SELECT COUNT(1) FROM user_ WHERE email=?;";
 
     @Override
     public User create(User user) {
@@ -69,5 +70,21 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         }
 
         return user;
+    }
+
+    @Override
+    public boolean isEmailExisted(String email) {
+        Connection connection = JDBCUtils.getConnection();
+        boolean result = false;
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(CHECK_EMAIL_EXISTED);
+            preparedStatement.setString(1, email);
+            result = preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return result;
     }
 }
