@@ -18,23 +18,28 @@
             <form id="register" action="${pageContext.request.contextPath }/user/register" method="post" class="w-75 m-auto">
               <div class="form-group">
                 <label for="username">用户名（必填）</label>
-                <input id="username" type="text" name="username" class="form-control" placeholder="用户名" required/>
+                <input id="username" type="text" name="username" class="form-control" placeholder="用户名" value="${user.username }" required/>
+                <span class="text-danger"><%=request.getAttribute("msg-username") == null ? "" : request.getAttribute("msg-username") %></span>
               </div>
               <div class="form-group">
                 <label for="email">邮箱（必填）</label>
                 <input id="email" type="email" name="email" class="form-control" placeholder="邮箱"/>
+                <span class="text-danger"><%=request.getAttribute("msg-email") == null ? "" : request.getAttribute("msg-email") %></span>
               </div>
               <div class="form-group">
                 <label for="password">密码（必填）</label>
                 <input id="password" type="password" name="password" class="form-control" placeholder="密码"/>
+                <span class="text-danger"><%=request.getAttribute("msg-password") == null ? "" : request.getAttribute("msg-password") %></span>
               </div>
               <div class="form-group">
                 <label for="confirmPassword">确认密码（必填）</label>
                 <input id="confirmPassword" type="password" name="confirmPassword" class="form-control" placeholder="确认密码" required/>
+                <span class="text-danger"><%=request.getAttribute("msg-confirmPassword") == null ? "" : request.getAttribute("msg-confirmPassword") %></span>
               </div>
               <div class="form-group">
                 <label for="birthday">出生日期</label>
                 <input id="birthday" type="date" name="birthday" class="form-control" placeholder="出生日期"/>
+                <span class="text-danger"><%=request.getAttribute("msg-birthday") == null ? "" : request.getAttribute("msg-birthday") %></span>
               </div>
               <button type="submit" class="btn btn-primary w-100">注册</button>
             </form>
