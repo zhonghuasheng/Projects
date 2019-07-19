@@ -1,7 +1,9 @@
 package com.zhonghuasheng.musicstore.action.user;
 
-import java.io.IOException;
+import java.io.IOException;import java.text.DateFormat;
+import java.text.FieldPosition;
 import java.text.ParseException;
+import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -41,12 +43,19 @@ public class RegisterAction extends HttpServlet {
         }
 
         UserService userService = new UserServiceImpl();
-        User result = userService.create(user);
-
-        if (result != null) {
-            response.sendRedirect(request.getContextPath() + "/user/login");
-        } else {
+        if (userService.isEmailExisted(user.getEmail())) {
+            request.setAttribute("user", user);
+            request.setAttribute("msg-email", Constants.EMAIL_EXISTED);
             doGet(request, response);
+            return;
+        } else {
+            User result = userService.create(user);
+
+            if (result != null) {
+                response.sendRedirect(request.getContextPath() + "/user/login");
+            } else {
+                doGet(request, response);
+            }
         }
     }
 
@@ -102,6 +111,7 @@ public class RegisterAction extends HttpServlet {
         if (birthday != null && birthday != Constants.BLANK) {
             try {
                 user.setBirthday(new SimpleDateFormat("yyyy-MM-dd").parse(birthday));
+                request.setAttribute("birthday", birthday);
             } catch (ParseException e) {
                 e.printStackTrace();
             } finally {

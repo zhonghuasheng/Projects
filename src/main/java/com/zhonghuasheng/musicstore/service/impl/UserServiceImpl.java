@@ -33,4 +33,9 @@ public class UserServiceImpl implements UserService {
 
         return userDao.create(user);
     }
+
+    @Override
+    public boolean isEmailExisted(String email) {
+        return userDao.isEmailExisted(email);
+    }
 }
