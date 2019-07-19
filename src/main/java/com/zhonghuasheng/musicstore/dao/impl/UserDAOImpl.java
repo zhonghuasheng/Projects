@@ -80,7 +80,10 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(CHECK_EMAIL_EXISTED);
             preparedStatement.setString(1, email);
-            result = preparedStatement.execute();
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                result = rs.getInt(1) > 0;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
