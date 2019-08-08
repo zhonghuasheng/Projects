@@ -20,7 +20,7 @@ Music Store是微软的一个开源项目，旨在通过一步步的教程帮助
 * V4: Music Store(音乐商店) - SpringCloud + MySQL + APP版本
 
 ### 功能计划
-![](requirement/musicstore-jsp-2019-08-01.png)
+![](requirement/musicstore-jsp-2019-08-08.png)
 
 ## 项目实施
 ### 开发技术选型
