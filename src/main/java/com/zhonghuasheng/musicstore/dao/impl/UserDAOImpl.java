@@ -1,9 +1,8 @@
 package com.zhonghuasheng.musicstore.dao.impl;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import com.zhonghuasheng.musicstore.common.JDBCUtils;
@@ -14,10 +13,11 @@ import com.zhonghuasheng.musicstore.model.User;
 
 public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
 
-    private final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND is_active=TRUE AND is_deleted=FALSE";
+    private final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND active=TRUE AND deleted=FALSE LIMIT 1";
     private final String CREATE_USER = "INSERT user_(uuid, username, email, password, role, gender, active, deleted,"
             + " create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
     private final String CHECK_EMAIL_EXISTED = "SELECT COUNT(1) FROM user_ WHERE email=?;";
+    private final String GET_ALL_USERS = "SELECT * FROM user_";
 
     @Override
     public User create(User user) {
@@ -89,5 +89,37 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         }
 
         return result;
+    }
+
+    @Override
+    public List<User> list() {
+        Connection connection = JDBCUtils.getConnection();
+        List<User> users = new ArrayList<>();
+
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(GET_ALL_USERS);
+            while (resultSet.next()) {
+                User user = new User();
+                user.setUuid(UUID.fromString(resultSet.getString("uuid")));
+                user.setUsername(resultSet.getString("username"));
+                user.setEmail(resultSet.getString("email"));
+                user.setPassword(resultSet.getString("password"));
+                user.setRole(Role.valueOf(resultSet.getString("role")));
+                user.setBirthday(resultSet.getDate("birthday"));
+                user.setGender(Gender.valueOf(resultSet.getString("gender")));
+                user.setAvatar(resultSet.getString("avatar"));
+                user.setActive(resultSet.getBoolean("active"));
+                user.setDeleted(resultSet.getBoolean("deleted"));
+                user.setCreateTime(resultSet.getTimestamp("create_time"));
+                user.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
+                user.setLastModifiedBy(resultSet.getString("last_modified_by"));
+                users.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return users;
     }
 }
