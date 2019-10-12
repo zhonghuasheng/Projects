@@ -7,8 +7,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-import com.zhonghuasheng.musicstore.model.User;
-
 public class JDBCUtils {
 
     public static Connection getConnection() {

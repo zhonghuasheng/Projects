@@ -2,6 +2,7 @@ package com.zhonghuasheng.musicstore.service.impl;
 
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 import com.zhonghuasheng.musicstore.common.Constants;
@@ -37,5 +38,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean isEmailExisted(String email) {
         return userDao.isEmailExisted(email);
+    }
+
+    @Override
+    public List<User> users() {
+        return userDao.list();
     }
 }
