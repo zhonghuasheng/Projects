@@ -19,7 +19,7 @@ String basePathInEdit = request.getContextPath();
               <input type="text" name="uuid" class="d-none" value="${artist.uuid}"/>
             </div>
             <div class="col-md-3">
-              <img class="rounded-circle" alt="" src="${pageContext.request.contextPath }/document-upload/avatar/${artist.avatar}">
+              <img class="rounded-circle avatar-size" alt="" src="${pageContext.request.contextPath }/document-upload/avatar/${artist.avatar}">
             </div>
             <div class="col-md-3">
               <input type="text" name="originalAvatar" class="d-none" value="${artist.avatar}"/>
