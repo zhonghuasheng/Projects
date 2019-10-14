@@ -14,8 +14,7 @@ import com.zhonghuasheng.musicstore.model.User;
 public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
 
     private final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND active=TRUE AND deleted=FALSE LIMIT 1";
-    private final String CREATE_USER = "INSERT user_(uuid, username, email, password, role, gender, active, deleted,"
-            + " create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
+    private final String CREATE_USER = "INSERT INTO user_(uuid, username, email, password, role, gender, active, deleted, create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
     private final String CHECK_EMAIL_EXISTED = "SELECT COUNT(1) FROM user_ WHERE email=?;";
     private final String GET_ALL_USERS = "SELECT * FROM user_";
 

@@ -16,7 +16,7 @@ String baseP = request.getContextPath();
       <div class="panel">
         <div class="row ml-0 mr-0">
           <div class="float-left col-sm-3">
-            <h4>艺术家</h4>
+            <h4>用户</h4>
           </div>
           <div class="col-sm-8">
             <div class="float-right">
@@ -47,8 +47,10 @@ String baseP = request.getContextPath();
               <thead>
                 <tr>
                   <th>Name</th>
-                  <th>Birthday</th>
-                  <th>Region</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Gender</th>
+                  <th>Is Active?</th>
                   <th>Is Deleted?</th>
                   <th>Action</th>
                 </tr>
@@ -58,10 +60,13 @@ String baseP = request.getContextPath();
                     <tr>
                       <td>${user.username}</td>
                       <td>${user.email}</td>
+                      <td>${user.role}</td>
+                      <td>${user.gender}</td>
+                      <td>${user.active}</td>
                       <td>${user.deleted}</td>
                       <td>
-                        <a class="btn btn-sm btn-secondary" href="<%=basePath%>/admin/artist/edit?uuid=${artist.uuid}">修改</a>
-                        <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteArtistModal('${artist.uuid}')">删除</button>
+                        <a class="btn btn-sm btn-secondary" href="<%=basePath%>/admin/user/edit?uuid=${user.uuid}">修改</a>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('${user.uuid}')">删除</button>
                       </td>
                     </tr>
                 </c:forEach>
@@ -71,7 +76,7 @@ String baseP = request.getContextPath();
         </div>
 
       <!-- Modal -->
-      <div class="modal fade" id="deleteArtistModal" role="dialog">
+      <div class="modal fade" id="deleteModal" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">
@@ -83,7 +88,7 @@ String baseP = request.getContextPath();
               <p>是否要删除这条记录？</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary btn-sm btn-yes" data-uuid="" data-dismiss="modal" onclick="deleteArtist()">是</button>
+              <button type="button" class="btn btn-primary btn-sm btn-yes" data-uuid="" data-dismiss="modal" onclick="deleteUser()">是</button>
               <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">否</button>
             </div>
           </div>

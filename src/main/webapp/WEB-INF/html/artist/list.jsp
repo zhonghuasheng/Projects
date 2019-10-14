@@ -62,7 +62,7 @@ String baseP = request.getContextPath();
                       <td>${artist.deleted}</td>
                       <td>
                         <a class="btn btn-sm btn-secondary" href="<%=basePath%>/admin/artist/edit?uuid=${artist.uuid}">修改</a>
-                        <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteArtistModal('${artist.uuid}')">删除</button>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('${artist.uuid}')">删除</button>
                       </td>
                     </tr>
                 </c:forEach>
@@ -72,7 +72,7 @@ String baseP = request.getContextPath();
         </div>
 
       <!-- Modal -->
-      <div class="modal fade" id="deleteArtistModal" role="dialog">
+      <div class="modal fade" id="deleteModal" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">

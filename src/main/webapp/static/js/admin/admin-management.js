@@ -28,9 +28,9 @@ $(document).ready(function(){
     })
 });
 
-var showDeleteArtistModal = function(uuid) {
-    $('#deleteArtistModal').modal();
-    $('#deleteArtistModal .btn-yes').data('uuid', uuid);
+var showDeleteModal = function(uuid) {
+    $('#deleteModal').modal();
+    $('#deleteModal .btn-yes').data('uuid', uuid);
 }
 
 var deleteArtist = function() {

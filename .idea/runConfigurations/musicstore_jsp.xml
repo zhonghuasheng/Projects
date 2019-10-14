@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="musicstore-jsp" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+  <configuration default="false" name="musicstore-jsp" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" editBeforeRun="true">
     <option name="DOC_BASE" value="E:\code\musicstore-jsp\src\main\webapp" />
     <option name="CONTEXT_PATH" value="/musicstore-jsp" />
     <option name="TOMCAT_PORT" value="8080" />
@@ -9,6 +9,7 @@
     <option name="PASS_PARENT_ENV_OPTIONS" value="true" />
     <method v="2">
       <option name="Make" enabled="true" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean package install  -Dmaven.test.skip=true" />
     </method>
   </configuration>
 </component>

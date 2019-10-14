@@ -46,7 +46,7 @@ String basePath = request.getContextPath();
             </a>
           </li>
           <li>
-            <a class="menu-item" href="<%=basePath%>/admin/artist/">
+            <a class="menu-item" href="<%=basePath%>/admin/artist">
               <i class="fa fa-glide-g"></i>
               <span>Artist</span>
             </a>
@@ -58,7 +58,7 @@ String basePath = request.getContextPath();
             </a>
           </li>
           <li>
-            <a class="menu-item" href="#2">
+            <a class="menu-item" href="<%=basePath%>/admin/user">
               <i class="fa fa-users"></i>
               <span>Users</span>
             </a>
