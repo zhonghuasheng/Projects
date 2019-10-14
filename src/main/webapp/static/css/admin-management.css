@@ -198,3 +198,8 @@ body{
 .avatar {
     height: 100%;
 }
+
+.avatar-size {
+    height: 130px;
+    width: 130px;
+}
