@@ -36,6 +36,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User signUp(User user) {
+        user.setUuid(UUID.randomUUID());
+        user.setAvatar(Constants.BLANK);
+        user.setRole(Role.USER);
+        user.setGender(Gender.UNKNOW);
+        user.setCreateTime(new Timestamp(new Date().getTime()));
+        user.setLastModifiedTime(new Timestamp(new Date().getTime()));
+        user.setLastModifiedBy(user.getUuid().toString());
+
+        return userDao.create(user);
+    }
+
+    @Override
     public boolean isEmailExisted(String email) {
         return userDao.isEmailExisted(email);
     }
