@@ -15,7 +15,7 @@ import com.zhonghuasheng.musicstore.model.Artist;
 import com.zhonghuasheng.musicstore.service.ArtistService;
 import com.zhonghuasheng.musicstore.service.impl.ArtistServiceImpl;
 
-@WebServlet(urlPatterns = {"/admin/artist/list", "/admin/artist/"})
+@WebServlet(urlPatterns = {"/admin/artist/list", "/admin/artist"})
 public class ListAction extends HttpServlet {
 
     private static final long serialVersionUID = -1653166844906414121L;
