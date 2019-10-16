@@ -30,7 +30,7 @@ String baseP = request.getContextPath();
           </div>
           <div class="action col-sm-1">
             <div class="float-right">
-              <a class="btn btn-sm btn-success" href="<%=basePath%>/admin/artist/create">创建</a>
+              <a class="btn btn-sm btn-success" href="<%=basePath%>/admin/user/create">创建</a>
             </div>
           </div>
         </div>
