@@ -47,7 +47,7 @@ public class RegisterAction extends HttpServlet {
             doGet(request, response);
             return;
         } else {
-            User result = userService.create(user);
+            User result = userService.signUp(user);
 
             if (result != null) {
                 response.sendRedirect(request.getContextPath() + "/user/login");
@@ -57,7 +57,7 @@ public class RegisterAction extends HttpServlet {
         }
     }
 
-    private boolean validateParameters(HttpServletRequest request, HttpServletResponse response, User user) {
+    public static boolean validateParameters(HttpServletRequest request, HttpServletResponse response, User user) {
         boolean isVerifyPassed = true;
 
         String username = request.getParameter("username");
