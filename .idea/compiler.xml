@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="musicstore-jsp" />
+        <module name="musicstore" />
       </profile>
     </annotationProcessing>
   </component>
