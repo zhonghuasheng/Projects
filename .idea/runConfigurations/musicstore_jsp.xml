@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="musicstore-jsp" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" editBeforeRun="true">
+  <configuration default="false" name="musicstore-jsp" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
     <option name="DOC_BASE" value="E:\code\musicstore-jsp\src\main\webapp" />
     <option name="CONTEXT_PATH" value="/musicstore-jsp" />
-    <option name="TOMCAT_PORT" value="8080" />
+    <option name="TOMCAT_PORT" value="8018" />
     <option name="AJP_PORT" value="8009" />
     <option name="ADMIN_PORT" value="8005" />
     <option name="VM_OPTIONS" value="" />

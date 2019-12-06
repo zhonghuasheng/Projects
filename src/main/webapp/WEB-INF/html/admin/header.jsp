@@ -40,38 +40,38 @@ String basePath = request.getContextPath();
       <div class="menu f-left">
         <ul>
           <li>
-            <a class="menu-item menu-item-active" href="#1">
-              <i class="fa fa-dashboard"></i>
+            <a class="menu-item menu-item-active menu-dashboard" href="#1">
+              <i class="fa"></i>
               <span>Dashboard</span>
             </a>
           </li>
           <li>
-            <a class="menu-item" href="<%=basePath%>/admin/artist">
-              <i class="fa fa-glide-g"></i>
+            <a class="menu-item menu-artist" href="<%=basePath%>/admin/artist">
+              <i class="fa"></i>
               <span>Artist</span>
             </a>
           </li>
           <li>
-            <a class="menu-item" href="#2">
-              <i class="fa fa-music"></i>
+            <a class="menu-item menu-music" href="#2">
+              <i class="fa"></i>
               <span>Music</span>
             </a>
           </li>
           <li>
-            <a class="menu-item" href="<%=basePath%>/admin/user">
-              <i class="fa fa-users"></i>
-              <span>Users</span>
+            <a class="menu-item menu-user" href="<%=basePath%>/admin/user">
+              <i class="fa"></i>
+              <span>User</span>
             </a>
           </li>
           <li>
-            <a class="menu-item" href="#2">
-              <i class="fa fa-tasks"></i>
-              <span>Orders</span>
+            <a class="menu-item menu-order" href="#2">
+              <i class="fa"></i>
+              <span>Order</span>
             </a>
           </li>
           <li>
-            <a class="menu-item" href="#2">
-              <i class="fa fa-commenting"></i>
+            <a class="menu-item menu-message" href="#2">
+              <i class="fa"></i>
               <span>Message</span>
             </a>
           </li>

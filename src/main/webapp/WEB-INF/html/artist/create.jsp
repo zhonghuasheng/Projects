@@ -61,7 +61,7 @@ String basePathInCreate = request.getContextPath();
               <button type="submit" class="btn btn-primary">
                 <i class="fa fa-fw fa-lg fa-check-circle"></i>
                   保存</button>
-              <a class="btn btn-secondary" href="<%=basePathInCreate%>admin/artist/list">
+              <a class="btn btn-secondary" href="<%=basePathInCreate%>/admin/artist/list">
                 <i class="fa fa-fw fa-lg fa-times-circle"></i>
                    取消</a>
             </div>
@@ -71,4 +71,10 @@ String basePathInCreate = request.getContextPath();
       <%@include file="/WEB-INF/html/admin/footer.jsp" %>
     </div>
   </body>
+  <script>
+      $(document).ready(function() {
+          $('.menu li').find('.menu-item-active').removeClass('menu-item-active');
+          $('.menu li').find('.menu-artist').addClass('menu-item-active');
+      });
+  </script>
 </html>

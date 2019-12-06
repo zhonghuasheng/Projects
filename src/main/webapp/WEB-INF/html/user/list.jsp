@@ -100,4 +100,10 @@ String baseP = request.getContextPath();
       <script src="<%=basePath%>/static/js/admin/admin-management.js"></script>
     </div>
   </body>
+  <script>
+      $(document).ready(function() {
+          $('.menu li').find('.menu-item-active').removeClass('menu-item-active');
+          $('.menu li').find('.menu-user').addClass('menu-item-active');
+      });
+  </script>
 </html>
