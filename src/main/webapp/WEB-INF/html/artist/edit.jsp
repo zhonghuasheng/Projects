@@ -82,4 +82,10 @@ String basePathInEdit = request.getContextPath();
       <%@include file="/WEB-INF/html/admin/footer.jsp" %>
     </div>
   </body>
+  <script>
+      $(document).ready(function() {
+          $('.menu li').find('.menu-item-active').removeClass('menu-item-active');
+          $('.menu li').find('.menu-artist').addClass('menu-item-active');
+      });
+  </script>
 </html>
