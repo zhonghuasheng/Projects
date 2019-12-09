@@ -44,7 +44,10 @@ var deleteArtist = function() {
         cache: false,
         dataType: 'text',
         success: function(data) {
-            console.log('here' + data);
+            window.location.reload();
+        },
+        error: function() {
+            alert('删除失败，请重试');
         }
     });
 }
