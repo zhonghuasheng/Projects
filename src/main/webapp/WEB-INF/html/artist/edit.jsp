@@ -72,7 +72,7 @@ String basePathInEdit = request.getContextPath();
               <button type="submit" class="btn btn-primary">
                 <i class="fa fa-fw fa-lg fa-check-circle"></i>
                   更新</button>
-              <a class="btn btn-secondary" href="<%=basePathInEdit%>admin/artist/list">
+              <a class="btn btn-secondary" href="<%=basePathInEdit%>/admin/artist/list">
                 <i class="fa fa-fw fa-lg fa-times-circle"></i>
                    取消</a>
             </div>
