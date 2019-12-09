@@ -34,7 +34,7 @@ var showDeleteModal = function(uuid) {
 }
 
 var deleteArtist = function() {
-    var uuid = $('#deleteArtistModal .btn-yes').data('uuid');
+    var uuid = $('#deleteModal .btn-yes').data('uuid');
     $.ajax({
         url: '/musicstore/admin/artist/delete',
         data: {
