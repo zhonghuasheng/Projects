@@ -44,7 +44,7 @@ public class CreateAction extends HttpServlet {
             User result = userService.signUp(user);
 
             if (result != null) {
-                response.sendRedirect(request.getContextPath() + "/user/list");
+                response.sendRedirect(request.getContextPath() + "/admin/user/list");
             } else {
                 doGet(request, response);
             }

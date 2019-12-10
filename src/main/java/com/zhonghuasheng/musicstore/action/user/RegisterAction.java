@@ -111,12 +111,11 @@ public class RegisterAction extends HttpServlet {
                 user.setBirthday(new SimpleDateFormat("yyyy-MM-dd").parse(birthday));
                 request.setAttribute("birthday", birthday);
             } catch (ParseException e) {
-                e.printStackTrace();
-            } finally {
-                user.setBirthday(new Date(2209017943000L));
+                request.setAttribute("msg-birthday", Constants.INVAILD_BIRTHDAY_FORMAT);
             }
         } else {
-            user.setBirthday(new Date(2209017943000L));
+            isVerifyPassed = false;
+            request.setAttribute("msg-birthday", Constants.EMPTY_BIRTHDAY);
         }
 
         return isVerifyPassed;

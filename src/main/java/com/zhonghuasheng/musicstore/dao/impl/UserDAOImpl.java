@@ -14,10 +14,11 @@ import com.zhonghuasheng.musicstore.model.User;
 public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
 
     private static final String DELETE_USER = "UPDATE user_ SET deleted=true, active=false WHERE uuid=?";
-    private final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND active=TRUE AND deleted=FALSE LIMIT 1";
-    private final String CREATE_USER = "INSERT INTO user_(uuid, username, email, password, role, gender, active, deleted, create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
-    private final String CHECK_EMAIL_EXISTED = "SELECT COUNT(1) FROM user_ WHERE email=?;";
-    private final String GET_ALL_USERS = "SELECT * FROM user_";
+    private static final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND active=TRUE AND deleted=FALSE LIMIT 1";
+    private static final String CREATE_USER = "INSERT INTO user_(uuid, username, email, password, role, gender, active, deleted, create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
+    private static final String CHECK_EMAIL_EXISTED = "SELECT COUNT(1) FROM user_ WHERE email=?;";
+    private static final String GET_ALL_USERS = "SELECT * FROM user_";
+    private static final String GET_USER_BY_UUID = "SELECT * FROM user_ WHERE uuid=?";
 
     @Override
     public User create(User user) {
@@ -51,19 +52,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                user.setUuid(UUID.fromString(resultSet.getString("uuid")));
-                user.setUsername(resultSet.getString("username"));
-                user.setEmail(resultSet.getString("email"));
-                user.setPassword(resultSet.getString("password"));
-                user.setRole(Role.valueOf(resultSet.getString("role")));
-                user.setBirthday(resultSet.getDate("birthday"));
-                user.setGender(Gender.valueOf(resultSet.getString("gender")));
-                user.setAvatar(resultSet.getString("avatar"));
-                user.setActive(resultSet.getBoolean("active"));
-                user.setDeleted(resultSet.getBoolean("deleted"));
-                user.setCreateTime(resultSet.getTimestamp("create_time"));
-                user.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
-                user.setLastModifiedBy(resultSet.getString("last_modified_by"));
+                convertPOtoVO(resultSet, user);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -137,5 +126,40 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         }
 
         return false;
+    }
+
+    @Override
+    public User get(String uuid) {
+        Connection connection = JDBCUtils.getConnection();
+        User user = new User();
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = connection.prepareStatement(GET_USER_BY_UUID);
+            preparedStatement.setString(1, uuid);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()) {
+                convertPOtoVO(resultSet, user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return user;
+    }
+
+    private void convertPOtoVO(ResultSet resultSet, User user) throws SQLException {
+        user.setUuid(UUID.fromString(resultSet.getString("uuid")));
+        user.setUsername(resultSet.getString("username"));
+        user.setEmail(resultSet.getString("email"));
+        user.setPassword(resultSet.getString("password"));
+        user.setRole(Role.valueOf(resultSet.getString("role")));
+        user.setBirthday(resultSet.getDate("birthday"));
+        user.setGender(Gender.valueOf(resultSet.getString("gender")));
+        user.setAvatar(resultSet.getString("avatar"));
+        user.setActive(resultSet.getBoolean("active"));
+        user.setDeleted(resultSet.getBoolean("deleted"));
+        user.setCreateTime(resultSet.getTimestamp("create_time"));
+        user.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
+        user.setLastModifiedBy(resultSet.getString("last_modified_by"));
     }
 }

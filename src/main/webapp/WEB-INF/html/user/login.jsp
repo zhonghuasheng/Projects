@@ -3,7 +3,7 @@
 <html>
   <head>
   <meta charset="UTF-8">
-  <title>登录</title>
+  <title>Login</title>
   <link rel="shortcut icon" href="../static/image/favicon.ico">
   <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="../static/css/login.css"/>
@@ -18,8 +18,8 @@
           <div class="register-form w-75 transucent-fillet pt-4 pb-4">
             <form action="${pageContext.request.contextPath }/user/login" method="post" class="w-75 m-auto">
               <div class="form-group">
-                <label>邮箱</label>
-                <input type="text" name="email" class="form-control" placeholder="邮箱"/>
+                <label>账号</label>
+                <input type="text" name="email" class="form-control" placeholder="账号"/>
               </div>
               <div class="form-group">
                 <label>密码</label>

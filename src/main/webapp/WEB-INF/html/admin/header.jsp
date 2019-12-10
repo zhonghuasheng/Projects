@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
 String basePath = request.getContextPath();
@@ -20,7 +19,6 @@ String basePath = request.getContextPath();
 
         <div class="user f-right">
           <a class="a fa fa-user fa-fw" href="#"></a>
-          <!--鼠标放在头像上的下拉框-->
           <div class="b">
             <a href="#">我的资料</a>
             <a href="#">注销</a>
@@ -29,8 +27,7 @@ String basePath = request.getContextPath();
 
         <div class="icons f-right">
           <i class="fa fa-commenting-o" aria-hidden="true"></i>
-          <!--从图标官网找图标引用语句复制下来 -->
-          <span class="info">5 </span>  <!--比如5条消息-->
+          <span class="info">5 </span>
         </div>
         <div class="icons f-right">
           <i class="fa fa-bell-o" aria-hidden="true"></i>

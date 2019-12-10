@@ -12,4 +12,5 @@ public interface UserService {
     boolean isEmailExisted(String email);
     List<User> users();
     boolean delete(String uuid);
+    User get(String uuid);
 }
