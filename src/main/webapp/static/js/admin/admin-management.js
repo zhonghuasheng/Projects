@@ -51,3 +51,23 @@ var deleteArtist = function() {
         }
     });
 }
+
+var deleteUser = function() {
+    var uuid = $('#deleteModal .btn-yes').data('uuid');
+    $.ajax({
+         url: '/musicstore/admin/user/delete',
+         data: {
+             'uuid': uuid
+         },
+         type: 'post',
+         cache: false,
+         dataType: 'text',
+         success: function(data) {
+            console.log(data);
+             window.location.reload();
+         },
+         error: function() {
+             alert('删除失败，请重试');
+         }
+    });
+}

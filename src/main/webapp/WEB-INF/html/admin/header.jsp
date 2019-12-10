@@ -42,37 +42,37 @@ String basePath = request.getContextPath();
           <li>
             <a class="menu-item menu-item-active menu-dashboard" href="#1">
               <i class="fa"></i>
-              <span>Dashboard</span>
+              <span>首页</span>
             </a>
           </li>
           <li>
             <a class="menu-item menu-artist" href="<%=basePath%>/admin/artist">
               <i class="fa"></i>
-              <span>Artist</span>
+              <span>艺术家</span>
             </a>
           </li>
           <li>
             <a class="menu-item menu-music" href="#2">
               <i class="fa"></i>
-              <span>Music</span>
+              <span>音乐</span>
             </a>
           </li>
           <li>
             <a class="menu-item menu-user" href="<%=basePath%>/admin/user">
               <i class="fa"></i>
-              <span>User</span>
+              <span>用户</span>
             </a>
           </li>
           <li>
             <a class="menu-item menu-order" href="#2">
               <i class="fa"></i>
-              <span>Order</span>
+              <span>订单</span>
             </a>
           </li>
           <li>
             <a class="menu-item menu-message" href="#2">
               <i class="fa"></i>
-              <span>Message</span>
+              <span>消息</span>
             </a>
           </li>
         </ul>
