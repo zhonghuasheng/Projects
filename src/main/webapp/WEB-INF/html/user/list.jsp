@@ -7,7 +7,7 @@ String baseP = request.getContextPath();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Artist</title>
+    <title>User</title>
     <link rel="shortcut icon" href="<%=baseP%>/static/image/favicon.ico">
   </head>
   <body>
@@ -65,7 +65,7 @@ String baseP = request.getContextPath();
                       <td>${user.active}</td>
                       <td>${user.deleted}</td>
                       <td>
-                        <a class="btn btn-sm btn-secondary" href="<%=basePath%>/admin/user/edit?uuid=${user.uuid}">修改</a>
+                        <a class="btn btn-sm btn-primary" href="<%=basePath%>/admin/user/edit?uuid=${user.uuid}">查看</a>
                         <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('${user.uuid}')">删除</button>
                       </td>
                     </tr>

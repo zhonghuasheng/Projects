@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
 String basePaths = request.getContextPath();
@@ -10,7 +9,7 @@ String basePaths = request.getContextPath();
   </head>
   <body>
     <div class="pg-footer">
-      <span>Music Store © 2019 Copyright</span>
+      <span>Music Store©2019 Copyright</span>
       <span class="float-right">Powered by 
         <a href="https://github.com/zhonghuasheng">种花生的读书人</a>
       </span>
