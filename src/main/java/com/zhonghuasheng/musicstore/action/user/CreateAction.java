@@ -19,6 +19,8 @@ import static com.zhonghuasheng.musicstore.action.user.RegisterAction.validatePa
 @MultipartConfig
 public class CreateAction extends HttpServlet {
 
+    private UserService userService = new UserServiceImpl();
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/WEB-INF/html/user/create.jsp").forward(request, response);
     }
@@ -33,7 +35,6 @@ public class CreateAction extends HttpServlet {
             return;
         }
 
-        UserService userService = new UserServiceImpl();
         if (userService.isEmailExisted(user.getEmail())) {
             request.setAttribute("user", user);
             request.setAttribute("msg-email", Constants.EMAIL_EXISTED);
