@@ -109,7 +109,6 @@ public class RegisterAction extends HttpServlet {
         if (birthday != null && birthday != Constants.BLANK) {
             try {
                 user.setBirthday(new SimpleDateFormat("yyyy-MM-dd").parse(birthday));
-                request.setAttribute("birthday", birthday);
             } catch (ParseException e) {
                 request.setAttribute("msg-birthday", Constants.INVAILD_BIRTHDAY_FORMAT);
             }
