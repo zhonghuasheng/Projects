@@ -33,7 +33,7 @@ public class RegisterAction extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = new User();
 
-        if (!validateParameters(request, response, user)) {
+        if (!validateParameters(request, user)) {
             request.setAttribute("user", user);
             doGet(request, response);
             // 不加return的话后面的代码还会继续执行
@@ -57,7 +57,7 @@ public class RegisterAction extends HttpServlet {
         }
     }
 
-    public static boolean validateParameters(HttpServletRequest request, HttpServletResponse response, User user) {
+    public static boolean validateParameters(HttpServletRequest request, User user) {
         boolean isVerifyPassed = true;
 
         String username = request.getParameter("username");

@@ -13,42 +13,44 @@ String basePathInCreate = request.getContextPath();
     <%@ include file="/WEB-INF/html/admin/header.jsp" %>
     <div class="content float-left">
       <div class="panel">
-        <form action="${pageContext.request.contextPath }/admin/artist/create" method="post" class="w-50 m-auto" enctype="multipart/form-data">
+        <form id="artist-create" action="${pageContext.request.contextPath }/admin/artist/create" method="post" class="w-50 m-auto" enctype="multipart/form-data">
           <div class="form-group row">
-            <div class="col-md-2 mt-auto">
-              <label class="control-label">照片</label>
+            <div class="col-md-2 ">
+              <label>照片</label>
             </div>
             <div class="col-md-8">
-              <input type="file" name="avatar" class="form-control avatar" placeholder="照片"/>
+              <input id="avatar" type="file" name="avatar" class="form-control avatar" placeholder="照片"/>
+              <span class="text-danger"><%=request.getAttribute("msg-avatar") ==  null ? "" : request.getAttribute("msg-avatar")%></span>
             </div>
           </div>
           <div class="form-group row">
-            <div class="col-md-2 mt-auto">
-              <label class="control-label">姓名</label>
+            <div class="col-md-2">
+              <label>姓名</label>
             </div>
             <div class="col-md-8">
-              <input type="text" name="name" class="form-control" placeholder="姓名"/>
+              <input id="name" type="text" name="name" class="form-control" placeholder="姓名" value="${artist.name}"/>
+              <span class="text-danger"><%=request.getAttribute("msg-name") == null ? "" : request.getAttribute("msg-name")%></span>
             </div>
           </div>
           <div class="form-group row">
-            <div class="col-md-2 mt-auto">
-              <label class="control-label">出生年月</label>
+            <div class="col-md-2">
+              <label>出生年月</label>
             </div>
             <div class="col-md-8">
-              <input type="date" name="birthday" class="form-control" placeholder="出生日期"/>
+              <input id="birthday" type="date" name="birthday" class="form-control" placeholder="出生日期"/>
             </div>
           </div>
           <div class="form-group row">
-            <div class="col-md-2 mt-auto">
-              <label class="control-label">籍贯</label>
+            <div class="col-md-2">
+              <label>籍贯</label>
             </div>
             <div class="col-md-8">
               <input type="text" name="region" class="form-control" placeholder="省市">
             </div>
           </div>
           <div class="form-group row">
-            <div class="col-md-2 mt-auto">
-              <label class="control-label">个人经历</label>
+            <div class="col-md-2">
+              <label>个人经历</label>
             </div>
             <div class="col-md-8">
               <textarea name="experience" rows="4" class="form-control" placeholder="个人经历"></textarea>
@@ -77,4 +79,6 @@ String basePathInCreate = request.getContextPath();
           $('.menu li').find('.menu-artist').addClass('menu-item-active');
       });
   </script>
+  <script type="text/javascript" src="<%=basePathInCreate%>/static/js/jquery-1.19.1.validate.min.js"></script>
+  <script type="text/javascript" src="<%=basePathInCreate%>/static/js/artist/create.js"></script>
 </html>
