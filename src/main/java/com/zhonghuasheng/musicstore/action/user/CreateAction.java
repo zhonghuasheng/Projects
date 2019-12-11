@@ -28,7 +28,7 @@ public class CreateAction extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = new User();
 
-        if (!validateParameters(request, response, user)) {
+        if (!validateParameters(request, user)) {
             request.setAttribute("user", user);
             doGet(request, response);
             // 不加return的话后面的代码还会继续执行

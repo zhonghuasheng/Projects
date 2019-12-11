@@ -33,7 +33,7 @@ public class RegisterAction extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = new User();
 
-        if (!validateParameters(request, response, user)) {
+        if (!validateParameters(request, user)) {
             request.setAttribute("user", user);
             doGet(request, response);
             // 不加return的话后面的代码还会继续执行
@@ -57,7 +57,7 @@ public class RegisterAction extends HttpServlet {
         }
     }
 
-    public static boolean validateParameters(HttpServletRequest request, HttpServletResponse response, User user) {
+    public static boolean validateParameters(HttpServletRequest request, User user) {
         boolean isVerifyPassed = true;
 
         String username = request.getParameter("username");
@@ -109,7 +109,6 @@ public class RegisterAction extends HttpServlet {
         if (birthday != null && birthday != Constants.BLANK) {
             try {
                 user.setBirthday(new SimpleDateFormat("yyyy-MM-dd").parse(birthday));
-                request.setAttribute("birthday", birthday);
             } catch (ParseException e) {
                 request.setAttribute("msg-birthday", Constants.INVAILD_BIRTHDAY_FORMAT);
             }

@@ -39,7 +39,7 @@
               </div>
               <div class="form-group">
                 <label for="birthday">出生日期</label>
-                <input id="birthday" type="date" name="birthday" class="form-control" placeholder="出生日期" value="${birthday }"/>
+                <input id="birthday" type="date" name="birthday" class="form-control" placeholder="出生日期" value="${user.birthday }"/>
                 <span class="text-danger"><%=request.getAttribute("msg-birthday") == null ? "" : request.getAttribute("msg-birthday") %></span>
               </div>
               <button type="submit" class="btn btn-primary w-100">注册</button>

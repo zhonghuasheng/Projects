@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
+import com.zhonghuasheng.musicstore.common.Constants;
 import com.zhonghuasheng.musicstore.model.Artist;
 import com.zhonghuasheng.musicstore.service.ArtistService;
 import com.zhonghuasheng.musicstore.service.impl.ArtistServiceImpl;
@@ -22,18 +23,40 @@ import com.zhonghuasheng.musicstore.service.impl.ArtistServiceImpl;
 public class CreateAction extends HttpServlet {
 
     private static final long serialVersionUID = 6051892050096591861L;
+    private ArtistService artistService = new ArtistServiceImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Artist artist = new Artist();
+
+        if (!validateParameters(request, artist)) {
+            request.setAttribute("artist", artist);
+            doGet(request, response);
+        }
+
+        Artist result = artistService.create(artist);
+
+        if (result.getUuid() != null) {
+            response.sendRedirect(request.getContextPath() + "/admin/artist");
+        }
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("/WEB-INF/html/artist/create.jsp").forward(request, response);
+    }
+
+    private boolean validateParameters(HttpServletRequest request, Artist artist) throws IOException, ServletException {
+        boolean isVerifiePassed = true;
+
         Part avatarFile = request.getPart("avatar");
         String name = request.getParameter("name");
         String birthday = request.getParameter("birthday");
         String region = request.getParameter("region");
         String experience = request.getParameter("experience");
 
-        Artist artist = new Artist();
         artist.setExperience(experience);
         artist.setName(name);
         artist.setRegion(region);
+
         try {
             artist.setBirthday(new SimpleDateFormat("yyyy-MM-dd").parse(birthday));
         } catch (ParseException e) {
@@ -49,16 +72,16 @@ public class CreateAction extends HttpServlet {
         String newFileName = UUID.randomUUID().toString() + suffix;
         avatarFile.write(root + newFileName);
         artist.setAvatar(newFileName);
-
-        ArtistService artistService = new ArtistServiceImpl();
-        Artist result = artistService.create(artist);
-
-        if (result.getUuid() != null) {
-            response.sendRedirect(request.getContextPath() + "/admin/artist/");
+        if (avatarFile == null) {
+            request.setAttribute("msg-avatar", Constants.EMPTY_AVATAR);
+            isVerifiePassed = false;
         }
-    }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/html/artist/create.jsp").forward(request, response);
+        if (name == null || name.length() == 0) {
+            request.setAttribute("msg-name", Constants.EMPTY_NAME);
+            isVerifiePassed = false;
+        }
+
+        return isVerifiePassed;
     }
 }
