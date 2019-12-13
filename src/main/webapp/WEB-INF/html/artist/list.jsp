@@ -21,16 +21,20 @@ String baseP = request.getContextPath();
           <div class="col-sm-8">
             <div class="float-right">
               <div class="app-search">
-                <input class="app-search_input" type="search" placeholder="搜索">
-                <button class="app-search_button">
-                  <i class="fa fa-search"></i>
-                </button>
+                <div class="input-group mb-3 cursor-pointer">
+                  <input type="text" class="form-control" placeholder="搜索" id="mail" name="email">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-search"></i>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="action col-sm-1">
             <div class="float-right">
-              <a class="btn btn-sm btn-success" href="<%=basePath%>/admin/artist/create">创建</a>
+              <a class="btn btn-success" href="<%=basePath%>/admin/artist/create">创建</a>
             </div>
           </div>
         </div>
@@ -68,6 +72,9 @@ String baseP = request.getContextPath();
                 </c:forEach>
               </tbody>
             </table>
+          </div>
+          <div id="page-footer" class="col-lg-12">
+            <ul class="pagination float-right"></ul>
           </div>
         </div>
 

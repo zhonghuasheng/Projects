@@ -207,3 +207,7 @@ body{
 .table-bordered thead th {
     border-bottom-width: 1px;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
