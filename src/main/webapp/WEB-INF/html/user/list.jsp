@@ -73,6 +73,8 @@ String baseP = request.getContextPath();
               </tbody>
             </table>
           </div>
+
+          <ul id="pagination"></ul>
         </div>
 
       <!-- Modal -->
@@ -97,7 +99,9 @@ String baseP = request.getContextPath();
       </div>
       <%@include file="/WEB-INF/html/admin/footer.jsp" %>
       <script src="<%=basePath%>/static/bootstrap/js/bootstrap.min.js"></script>
+      <script src="<%=basePath%>/static/bootstrap/js/bootstrap-paginator.js"></script>
       <script src="<%=basePath%>/static/js/admin/admin-management.js"></script>
+      <script src="<%=basePath%>/static/js/user/list.js"></script>
     </div>
   </body>
   <script>

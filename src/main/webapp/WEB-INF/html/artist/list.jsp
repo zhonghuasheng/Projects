@@ -42,7 +42,7 @@ String baseP = request.getContextPath();
         </div>
 
         <div class="row ml-0 mr-0">
-          <div class="col-lg-12">
+          <div id="page-content" class="col-lg-12">
             <table class="table table-bordered">
               <thead>
                 <tr>
@@ -94,6 +94,7 @@ String baseP = request.getContextPath();
       <%@include file="/WEB-INF/html/admin/footer.jsp" %>
       <script src="<%=basePath%>/static/bootstrap/js/bootstrap.min.js"></script>
       <script src="<%=basePath%>/static/js/admin/admin-management.js"></script>
+      <script src="<%=basePath%>/static/js/artist/list.js"></script>
     </div>
   </body>
   <script>

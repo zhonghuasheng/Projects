@@ -9,11 +9,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.zhonghuasheng.musicstore.model.Pagination;
 import org.json.JSONArray;
 
 import com.zhonghuasheng.musicstore.model.Artist;
 import com.zhonghuasheng.musicstore.service.ArtistService;
 import com.zhonghuasheng.musicstore.service.impl.ArtistServiceImpl;
+import org.json.JSONObject;
 
 @WebServlet(urlPatterns = {"/admin/artist/list", "/admin/artist", "/admin/artist/"})
 public class ListAction extends HttpServlet {
@@ -24,15 +26,28 @@ public class ListAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+/*        Pagination pagination = new Pagination();
+        pagination.setCurrentPage(1);
+        pagination.setTotalPage(10);
+        pagination.setKey("test");
+
         List<Artist> artists = artistService.artists();
-        request.setAttribute("artists", artists);
+        pagination.setData(artists);
+        JSONObject result = new JSONObject(pagination);
+        response.getWriter().write(result.toString());*/
         request.getRequestDispatcher("/WEB-INF/html/artist/list.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Pagination pagination = new Pagination();
+        pagination.setCurrentPage(1);
+        pagination.setTotalPage(10);
+        pagination.setKey("test");
+
         List<Artist> artists = artistService.artists();
-        JSONArray result = new JSONArray(artists);
+        pagination.setData(artists);
+        JSONObject result = new JSONObject(pagination);
         response.getWriter().write(result.toString());
     }
 }

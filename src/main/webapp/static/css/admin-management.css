@@ -203,3 +203,7 @@ body{
     height: 130px;
     width: 130px;
 }
+
+.table-bordered thead th {
+    border-bottom-width: 1px;
+}
