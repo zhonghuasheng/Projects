@@ -12,14 +12,33 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(urlPatterns = {"/admin/user/list", "/admin/user"})
+@WebServlet(urlPatterns = {"/admin/user/list", "/admin/user", "/admin/user/search"})
 public class ListAction extends HttpServlet {
 
     private UserService userService = new UserServiceImpl();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<User> users = userService.users();
-        request.setAttribute("users", users);
-        request.getRequestDispatcher("/WEB-INF/html/user/list.jsp").forward(request, response);
+        Object search = request.getAttribute("search");
+        Object pageNum = request.getAttribute("pageNum");
+
+        if (search == null && pageNum == null) {
+            List<User> users = userService.users();
+            request.setAttribute("users", users);
+            request.setAttribute("totalPages", 20);
+            request.getRequestDispatcher("/WEB-INF/html/user/list.jsp").forward(request, response);
+        } else {
+            String keyWorld = "%%";
+            int currentPage = 1;
+
+            if (search != null) {
+                keyWorld = "%" + search.toString() + "%";
+            }
+
+            if (pageNum != null) {
+                currentPage = Integer.valueOf(pageNum.toString());
+            }
+
+
+        }
     }
 }
