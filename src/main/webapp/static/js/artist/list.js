@@ -36,7 +36,24 @@ function renderPageContent(data) {
 }
 
 function renderPagination(result) {
-
+    // 只有一页
+    if (result.totalPage < 2) {
+        return;
+    } else {
+        var p = '<li class="page-item"><a class="page-link" href="#">首页</a></li><li class="page-item"><a class="page-link" href="#">&laquo;</a></li>';
+        var e = '<li class="page-item"><a class="page-link" href="#">&raquo;</a></li><li class="page-item"><a class="page-link" href="#">尾页</a></li>';
+        var m = '';
+        for (i = 1; i <= result.totalPage; i++) {
+            if (i == result.currentPage) {
+                m += '<li class="page-item active"><a class="page-link" href="#">' + i + '</a></li>';
+            } else {
+                m += '<li class="page-item"><a class="page-link" href="#">' + i + '</a></li>';
+            }
+        }
+        var pageFooter = $('#page-footer ul');
+        pageFooter.empty();
+        pageFooter.append(p).append(m).append(e);
+    }
 }
 
 $('.app-search_button').on('click', function() {
