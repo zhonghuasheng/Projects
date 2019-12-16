@@ -8,6 +8,7 @@ import java.util.UUID;
 import com.zhonghuasheng.musicstore.dao.ArtistDAO;
 import com.zhonghuasheng.musicstore.dao.impl.ArtistDAOImpl;
 import com.zhonghuasheng.musicstore.model.Artist;
+import com.zhonghuasheng.musicstore.model.Pagination;
 import com.zhonghuasheng.musicstore.service.ArtistService;
 
 public class ArtistServiceImpl implements ArtistService {
@@ -26,8 +27,9 @@ public class ArtistServiceImpl implements ArtistService {
     }
 
     @Override
-    public List<Artist> artists() {
-        return artistDao.list();
+    public List<Artist> artists(Pagination pagination) {
+        pagination.setKey("%" + pagination.getKey() + "%");
+        return artistDao.list(pagination);
     }
 
     @Override
@@ -46,5 +48,10 @@ public class ArtistServiceImpl implements ArtistService {
     @Override
     public boolean delete(String uuid) {
         return artistDao.delete(uuid);
+    }
+
+    @Override
+    public int count() {
+        return artistDao.count();
     }
 }

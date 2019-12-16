@@ -21,8 +21,8 @@ String baseP = request.getContextPath();
           <div class="col-sm-8">
             <div class="float-right">
               <div class="app-search">
-                <div class="input-group mb-3 cursor-pointer">
-                  <input type="text" class="form-control" placeholder="搜索" id="mail" name="email">
+                <div id="search" class="input-group mb-3 cursor-pointer">
+                  <input type="text" class="form-control" placeholder="搜索" id="key" name="key">
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i class="fa fa-search"></i>
@@ -50,11 +50,11 @@ String baseP = request.getContextPath();
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Birthday</th>
-                  <th>Region</th>
-                  <th>Is Deleted?</th>
-                  <th>Action</th>
+                  <th>姓名</th>
+                  <th>出生日期</th>
+                  <th>籍贯地</th>
+                  <th>是否被删除</th>
+                  <th>操作</th>
                 </tr>
               </thead>
               <tbody>
@@ -65,7 +65,7 @@ String baseP = request.getContextPath();
                       <td>${artist.region}</td>
                       <td>${artist.deleted}</td>
                       <td>
-                        <a class="btn btn-sm btn-secondary" href="<%=basePath%>/admin/artist/edit?uuid=${artist.uuid}">修改</a>
+                        <a class="btn btn-sm btn-secondary mr-1" href="<%=basePath%>/admin/artist/edit?uuid=${artist.uuid}">修改</a>
                         <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('${artist.uuid}')">删除</button>
                       </td>
                     </tr>
@@ -74,6 +74,13 @@ String baseP = request.getContextPath();
             </table>
           </div>
           <div id="page-footer" class="col-lg-12">
+            <div class="float-left">
+              <select id="pageSize" class="form-control">
+                <option>5</option>
+                <option>10</option>
+                <option>20</option>
+              </select>
+            </div>
             <ul class="pagination float-right"></ul>
           </div>
         </div>
@@ -98,7 +105,7 @@ String baseP = request.getContextPath();
         </div>
       </div>
       </div>
-      <%@include file="/WEB-INF/html/admin/footer.jsp" %>
+      <%@include file="/WEB-INF/html/admin/footer.jsp"%>
       <script src="<%=basePath%>/static/bootstrap/js/bootstrap.min.js"></script>
       <script src="<%=basePath%>/static/js/admin/admin-management.js"></script>
       <script src="<%=basePath%>/static/js/artist/list.js"></script>
