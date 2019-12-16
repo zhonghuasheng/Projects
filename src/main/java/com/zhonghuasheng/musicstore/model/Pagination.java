@@ -6,6 +6,7 @@ public class Pagination {
 
     private int currentPage;
     private int totalPage;
+    private int pageSize;
     private String key;
     private List<? extends BaseModel> data;
 
@@ -39,5 +40,13 @@ public class Pagination {
 
     public void setData(List<? extends BaseModel> data) {
         this.data = data;
+    }
+
+    public int getPageSize() {
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize) {
+        this.pageSize = pageSize;
     }
 }

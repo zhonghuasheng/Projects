@@ -2,15 +2,31 @@ $(document).ready(function(){
     pagination();
 });
 
-function pagination() {
+function pagination(currentPage, pageSize, key) {
+    var cPage = 1;
+    var pSize = 10;
+    var k = '';
+
+    if (typeof currentPage !== "undefined") {
+        cPage = currentPage;
+    }
+
+    if (typeof pageSize !== "undefined") {
+        pSize = pageSize;
+    }
+
+    if (typeof key !== "undefined") {
+        k = key;
+    }
+
     $.ajax({
         type: 'post',
         async: true, // 异步请求。（同步请求会锁住浏览器，用户的其他操作必须等待请求完成才能执行）
         url: '/musicstore/admin/artist/list',
         data: {
-            'currentPage': '',
-            'pageSize': '',
-            'key': '',
+            'currentPage': cPage,
+            'pageSize': pSize,
+            'key': k,
         },
         dataType: "json",
         success: function(result) {
@@ -43,22 +59,67 @@ function renderPagination(result) {
         var p = '<li class="page-item"><a class="page-link" href="#">首页</a></li><li class="page-item"><a class="page-link" href="#">&laquo;</a></li>';
         var e = '<li class="page-item"><a class="page-link" href="#">&raquo;</a></li><li class="page-item"><a class="page-link" href="#">尾页</a></li>';
         var m = '';
-        for (i = 1; i <= result.totalPage; i++) {
-            if (i == result.currentPage) {
-                m += '<li class="page-item active"><a class="page-link" href="#">' + i + '</a></li>';
-            } else {
-                m += '<li class="page-item"><a class="page-link" href="#">' + i + '</a></li>';
+
+        if (1 <= result.totalPage && result.totalPage <= 9) {
+            for (i = 1; i <= result.totalPage; i++) {
+                if (i == result.currentPage) {
+                    m += '<li class="page-item active"><a class="page-link" href="#">' + i + '</a></li>';
+                } else {
+                    m += '<li class="page-item"><a class="page-link" href="#">' + i + '</a></li>';
+                }
             }
         }
+
+        if (9 < result.totalPage) {
+            if (result.currentPage <= 5) {
+                for (i = 1; i <= result.totalPage; i++) {
+                    if (i == result.currentPage) {
+                        m += '<li class="page-item active"><a class="page-link" href="#">' + i + '</a></li>';
+                    } else {
+                        m += '<li class="page-item"><a class="page-link" href="#">' + i + '</a></li>';
+                    }
+                }
+            } else {
+                for (i = result.currentPage - 4; i < result.currentPage; i++) {
+                    m += '<li class="page-item"><a class="page-link" href="#">' + i + '</a></li>';
+                }
+
+                for (j = result.currentPage; j < result.currentPage + 5; j++) {
+                    if (j == result.currentPage) {
+                        m += '<li class="page-item active"><a class="page-link" href="#">' + j + '</a></li>';
+                    } else {
+                        m += '<li class="page-item"><a class="page-link" href="#">' + j + '</a></li>';
+                    }
+                }
+            }
+        }
+
         var pageFooter = $('#page-footer ul');
         pageFooter.empty();
         pageFooter.append(p).append(m).append(e);
+
+         $('#page-footer ul li').on('click', function() {
+            $('#page-footer ul li').filter('.active').removeClass('active');
+            $(this).addClass('active');
+            paging();
+        });
     }
 }
 
-$('.app-search_button').on('click', function() {
-    pagination();
+$('#search').on('click', function() {
+    paging();
 });
+
+$('#pageSize').on('change', function() {
+    paging();
+});
+
+function paging() {
+    var pageSize = $('#pageSize').val();
+    var currentPage = $('#page-footer ul li').filter('.active').find('.page-link').text();
+    var key = $('#key').val();
+    pagination(currentPage, pageSize, key);
+}
 
 var deleteArtist = function() {
     var uuid = $('#deleteModal .btn-yes').data('uuid');

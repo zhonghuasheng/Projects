@@ -1,10 +1,6 @@
 package com.zhonghuasheng.musicstore.dao.impl;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -12,15 +8,17 @@ import java.util.UUID;
 import com.zhonghuasheng.musicstore.common.JDBCUtils;
 import com.zhonghuasheng.musicstore.dao.ArtistDAO;
 import com.zhonghuasheng.musicstore.model.Artist;
+import com.zhonghuasheng.musicstore.model.Pagination;
 
 public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements ArtistDAO {
 
-    private static final String SELECT_ARTISTS = "SELECT * FROM artist;";
+    private static final String SELECT_ARTISTS = "SELECT * FROM artist WHERE name LIKE ? LIMIT ? OFFSET ?;";
     private static final String CREATE_ARTIST = "INSERT INTO artist(uuid, name, birthday, region, experience, avatar, create_time, last_modified_time, last_modified_by, deleted)"
             + " VALUES (?,?,?,?,?,?,?,?,?,?);";
     private static final String GET_ARTIST = "SELECT * FROM artist WHERE uuid = ?;";
     private static final String UPDATE_ARTIST = "UPDATE artist SET name=?, birthday=?, region=?, experience=?, avatar=?, last_modified_time=?, last_modified_by=? WHERE uuid=?;";
     private static final String DELETE_ARTIST = "UPDATE artist set deleted=true WHERE uuid=?;";
+    private static final String SELECT_COUNT = "SELECT COUNT(1) FROM artist";
 
     @Override
     public Artist create(Artist artist) {
@@ -46,11 +44,14 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
     }
 
     @Override
-    public List<Artist> list() {
+    public List<Artist> list(Pagination pagination) {
         Connection connection = JDBCUtils.getConnection();
         List<Artist> artists = new ArrayList<Artist>();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ARTISTS);
+            preparedStatement.setString(1, pagination.getKey());
+            preparedStatement.setInt(2, pagination.getPageSize());
+            preparedStatement.setInt(3, (pagination.getCurrentPage() - 1) * pagination.getPageSize());
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 Artist artist = new Artist();
@@ -71,6 +72,21 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
         }
 
         return artists;
+    }
+
+    public int count() {
+        Connection connection = JDBCUtils.getConnection();
+        int result = 0;
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery(SELECT_COUNT);
+            rs.next();
+            result = rs.getInt(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return result;
     }
 
     @Override

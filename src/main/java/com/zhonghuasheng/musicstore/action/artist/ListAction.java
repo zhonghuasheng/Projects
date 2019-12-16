@@ -26,27 +26,32 @@ public class ListAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-/*        Pagination pagination = new Pagination();
-        pagination.setCurrentPage(1);
-        pagination.setTotalPage(10);
-        pagination.setKey("test");
-
-        List<Artist> artists = artistService.artists();
-        pagination.setData(artists);
-        JSONObject result = new JSONObject(pagination);
-        response.getWriter().write(result.toString());*/
         request.getRequestDispatcher("/WEB-INF/html/artist/list.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Pagination pagination = new Pagination();
-        pagination.setCurrentPage(1);
-        pagination.setTotalPage(10);
-        pagination.setKey("test");
+        int currentPage = 1;
+        int pageSize = 10;
 
-        List<Artist> artists = artistService.artists();
+        try {
+            currentPage = Integer.parseInt(request.getParameter("currentPage"));
+        } catch (NumberFormatException nfe) {
+        }
+
+        try {
+            pageSize = Integer.parseInt(request.getParameter("pageSize"));
+        } catch (NumberFormatException nfe) {
+        }
+
+        pagination.setCurrentPage(currentPage);
+        pagination.setPageSize(pageSize);
+        pagination.setKey(request.getParameter("key"));
+
+        List<Artist> artists = artistService.artists(pagination);
         pagination.setData(artists);
+        pagination.setTotalPage(artistService.count());
         JSONObject result = new JSONObject(pagination);
         response.getWriter().write(result.toString());
     }
