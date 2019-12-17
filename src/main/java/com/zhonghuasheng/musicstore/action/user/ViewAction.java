@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import javax.servlet.ServletException;
 
-@WebServlet(urlPatterns = "/admin/user/edit")
+@WebServlet(urlPatterns = "/admin/user/view")
 public class ViewAction extends HttpServlet {
 
     private UserService userService = new UserServiceImpl();

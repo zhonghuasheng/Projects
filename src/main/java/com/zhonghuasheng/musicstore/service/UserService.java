@@ -1,5 +1,6 @@
 package com.zhonghuasheng.musicstore.service;
 
+import com.zhonghuasheng.musicstore.model.Pagination;
 import com.zhonghuasheng.musicstore.model.User;
 
 import java.util.List;
@@ -10,7 +11,8 @@ public interface UserService {
     User create(User user);
     User signUp(User user);
     boolean isEmailExisted(String email);
-    List<User> users();
+    List<User> users(Pagination pagination);
     boolean delete(String uuid);
     User get(String uuid);
+    int count();
 }

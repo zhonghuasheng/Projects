@@ -21,10 +21,14 @@ String baseP = request.getContextPath();
           <div class="col-sm-8">
             <div class="float-right">
               <div class="app-search">
-                <input class="app-search_input" type="search" placeholder="搜索">
-                <button class="app-search_button">
-                  <i class="fa fa-search"></i>
-                </button>
+                <div class="input-group mb-3 cursor-pointer">
+                  <input type="text" class="form-control" placeholder="搜索" id="key" name="key">
+                  <div id="search" class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-search"></i>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -42,39 +46,33 @@ String baseP = request.getContextPath();
         </div>
 
         <div class="row ml-0 mr-0">
-          <div class="col-lg-12">
+          <div id="page-content" class="col-lg-12">
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Role</th>
-                  <th>Gender</th>
-                  <th>Is Active?</th>
-                  <th>Is Deleted?</th>
-                  <th>Action</th>
+                  <th>姓名</th>
+                  <th>邮箱</th>
+                  <th>角色</th>
+                  <th>性别</th>
+                  <th>是否活跃</th>
+                  <th>是否被删除</th>
+                  <th>操作</th>
                 </tr>
               </thead>
               <tbody>
-                <c:forEach items="${users}" var="user">
-                    <tr>
-                      <td>${user.username}</td>
-                      <td>${user.email}</td>
-                      <td>${user.role}</td>
-                      <td>${user.gender}</td>
-                      <td>${user.active}</td>
-                      <td>${user.deleted}</td>
-                      <td>
-                        <a class="btn btn-sm btn-primary" href="<%=basePath%>/admin/user/edit?uuid=${user.uuid}">查看</a>
-                        <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('${user.uuid}')">删除</button>
-                      </td>
-                    </tr>
-                </c:forEach>
               </tbody>
             </table>
           </div>
-
-          <ul id="pagination"></ul>
+          <div id="page-footer" class="col-lg-12">
+            <div class="float-left">
+              <select id="pageSize" class="form-control">
+                <option>5</option>
+                <option>10</option>
+                <option>20</option>
+              </select>
+            </div>
+            <ul class="pagination float-right"></ul>
+          </div>
         </div>
 
       <!-- Modal -->

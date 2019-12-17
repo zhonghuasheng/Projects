@@ -21,9 +21,9 @@ String baseP = request.getContextPath();
           <div class="col-sm-8">
             <div class="float-right">
               <div class="app-search">
-                <div id="search" class="input-group mb-3 cursor-pointer">
+                <div class="input-group mb-3 cursor-pointer">
                   <input type="text" class="form-control" placeholder="搜索" id="key" name="key">
-                  <div class="input-group-append">
+                  <div id="search" class="input-group-append">
                     <span class="input-group-text">
                       <i class="fa fa-search"></i>
                     </span>
@@ -58,18 +58,6 @@ String baseP = request.getContextPath();
                 </tr>
               </thead>
               <tbody>
-                <c:forEach items="${artists}" var="artist">
-                    <tr>
-                      <td>${artist.name}</td>
-                      <td>${artist.birthday}</td>
-                      <td>${artist.region}</td>
-                      <td>${artist.deleted}</td>
-                      <td>
-                        <a class="btn btn-sm btn-secondary mr-1" href="<%=basePath%>/admin/artist/edit?uuid=${artist.uuid}">修改</a>
-                        <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('${artist.uuid}')">删除</button>
-                      </td>
-                    </tr>
-                </c:forEach>
               </tbody>
             </table>
           </div>

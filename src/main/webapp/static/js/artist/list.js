@@ -42,8 +42,11 @@ function pagination(currentPage, pageSize, key) {
 function renderPageContent(data) {
     var content;
     for (var row in data) {
-        content += '<tr><td>' + data[row].name + '</td><td>' + data[row].birthday + '</td><td>' + data[row].region
-        + '</td><td>' + data[row].deleted + '</td><td><a class="btn btn-sm btn-secondary" href="/musicstore/admin/artist/edit?uuid=' + data[row].uuid
+        content += '<tr><td>' + data[row].name
+        + '</td><td>' + data[row].birthday
+        + '</td><td>' + data[row].region
+        + '</td><td>' + data[row].deleted
+        + '</td><td><a class="btn btn-sm btn-primary mr-1" href="/musicstore/admin/artist/edit?uuid=' + data[row].uuid
         + '">修改</a><button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('+ "'" +data[row].uuid + "'" +')">删除</button></td></tr>';
     }
     var pageContent = $('#page-content tbody');
@@ -56,8 +59,8 @@ function renderPagination(result) {
     if (result.totalPage < 2) {
         return;
     } else {
-        var p = '<li class="page-item"><a class="page-link" href="#">首页</a></li><li class="page-item"><a class="page-link" href="#">&laquo;</a></li>';
-        var e = '<li class="page-item"><a class="page-link" href="#">&raquo;</a></li><li class="page-item"><a class="page-link" href="#">尾页</a></li>';
+        var p = '<li class="first-page"><a class="page-link" href="#">首页</a></li><li class="page-item"><a class="page-link" href="#">&laquo;</a></li>';
+        var e = '<li class="page-item"><a class="page-link" href="#">&raquo;</a></li><li class="last-page"><a class="page-link" href="#">尾页</a></li>';
         var m = '';
 
         if (1 <= result.totalPage && result.totalPage <= 9) {
@@ -101,22 +104,21 @@ function renderPagination(result) {
          $('#page-footer ul li').on('click', function() {
             $('#page-footer ul li').filter('.active').removeClass('active');
             $(this).addClass('active');
-            paging();
+            paging($('#page-footer ul li').filter('.active').find('.page-link').text());
         });
     }
 }
 
 $('#search').on('click', function() {
-    paging();
+    paging(1);
 });
 
 $('#pageSize').on('change', function() {
-    paging();
+    paging(1);
 });
 
-function paging() {
+function paging(currentPage) {
     var pageSize = $('#pageSize').val();
-    var currentPage = $('#page-footer ul li').filter('.active').find('.page-link').text();
     var key = $('#key').val();
     pagination(currentPage, pageSize, key);
 }
