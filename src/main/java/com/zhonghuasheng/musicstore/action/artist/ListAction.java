@@ -51,7 +51,8 @@ public class ListAction extends HttpServlet {
 
         List<Artist> artists = artistService.artists(pagination);
         pagination.setData(artists);
-        pagination.setTotalPage(artistService.count());
+        pagination.setTotalPage((artistService.count() + pagination.getPageSize() - 1) / pagination.getPageSize());
+
         JSONObject result = new JSONObject(pagination);
         response.getWriter().write(result.toString());
     }

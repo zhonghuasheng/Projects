@@ -47,7 +47,7 @@ public class ListAction extends HttpServlet {
 
         List<User> users = userService.users(pagination);
         pagination.setData(users);
-        pagination.setTotalPage(userService.count());
+        pagination.setTotalPage((userService.count()  + pagination.getPageSize() - 1) / pagination.getPageSize());
         JSONObject result = new JSONObject(pagination);
         response.getWriter().write(result.toString());
     }

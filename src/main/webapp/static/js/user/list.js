@@ -58,7 +58,7 @@ function renderPageContent(data) {
 
 function renderPagination(result) {
     // 只有一页
-    if (result.totalPage < 2) {
+    if ( result.totalPage < 2) {
         return;
     } else {
         var p = '<li class="first-page"><a class="page-link" href="#">首页</a></li><li class="pre-page"><a class="page-link" href="#">&laquo;</a></li>';
