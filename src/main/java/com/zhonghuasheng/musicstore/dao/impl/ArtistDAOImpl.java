@@ -75,18 +75,7 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
     }
 
     public int count() {
-        Connection connection = JDBCUtils.getConnection();
-        int result = 0;
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery(SELECT_COUNT);
-            rs.next();
-            result = rs.getInt(1);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return result;
+        return count(SELECT_COUNT);
     }
 
     @Override

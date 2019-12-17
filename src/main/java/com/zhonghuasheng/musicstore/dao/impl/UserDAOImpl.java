@@ -8,6 +8,7 @@ import java.util.UUID;
 import com.zhonghuasheng.musicstore.common.JDBCUtils;
 import com.zhonghuasheng.musicstore.dao.UserDAO;
 import com.zhonghuasheng.musicstore.model.Gender;
+import com.zhonghuasheng.musicstore.model.Pagination;
 import com.zhonghuasheng.musicstore.model.Role;
 import com.zhonghuasheng.musicstore.model.User;
 
@@ -17,8 +18,9 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
     private static final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND active=TRUE AND deleted=FALSE LIMIT 1";
     private static final String CREATE_USER = "INSERT INTO user_(uuid, username, email, password, role, gender, active, deleted, create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
     private static final String CHECK_EMAIL_EXISTED = "SELECT COUNT(1) FROM user_ WHERE email=?;";
-    private static final String GET_ALL_USERS = "SELECT * FROM user_";
+    private static final String GET_USERS = "SELECT * FROM user_ WHERE username LIKE ? LIMIT ? OFFSET ?";
     private static final String GET_USER_BY_UUID = "SELECT * FROM user_ WHERE uuid=?";
+    private static final String SELECT_COUNT = "SELECT COUNT(1) FROM user_";
 
     @Override
     public User create(User user) {
@@ -81,13 +83,16 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
     }
 
     @Override
-    public List<User> list() {
+    public List<User> list(Pagination pagination) {
         Connection connection = JDBCUtils.getConnection();
         List<User> users = new ArrayList<>();
 
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(GET_ALL_USERS);
+            PreparedStatement preparedStatement = connection.prepareStatement(GET_USERS);
+            preparedStatement.setString(1, pagination.getKey());
+            preparedStatement.setInt(2, pagination.getPageSize());
+            preparedStatement.setInt(3, (pagination.getCurrentPage() - 1) * pagination.getPageSize());
+            ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 User user = new User();
                 user.setUuid(UUID.fromString(resultSet.getString("uuid")));
@@ -110,6 +115,10 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         }
 
         return users;
+    }
+
+    public int count() {
+        return count(SELECT_COUNT);
     }
 
     @Override

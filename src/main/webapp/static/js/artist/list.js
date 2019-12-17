@@ -42,8 +42,11 @@ function pagination(currentPage, pageSize, key) {
 function renderPageContent(data) {
     var content;
     for (var row in data) {
-        content += '<tr><td>' + data[row].name + '</td><td>' + data[row].birthday + '</td><td>' + data[row].region
-        + '</td><td>' + data[row].deleted + '</td><td><a class="btn btn-sm btn-secondary" href="/musicstore/admin/artist/edit?uuid=' + data[row].uuid
+        content += '<tr><td>' + data[row].name
+        + '</td><td>' + data[row].birthday
+        + '</td><td>' + data[row].region
+        + '</td><td>' + data[row].deleted
+        + '</td><td><a class="btn btn-sm btn-primary mr-1" href="/musicstore/admin/artist/edit?uuid=' + data[row].uuid
         + '">修改</a><button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('+ "'" +data[row].uuid + "'" +')">删除</button></td></tr>';
     }
     var pageContent = $('#page-content tbody');

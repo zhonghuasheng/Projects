@@ -9,6 +9,7 @@ import com.zhonghuasheng.musicstore.common.Constants;
 import com.zhonghuasheng.musicstore.dao.UserDAO;
 import com.zhonghuasheng.musicstore.dao.impl.UserDAOImpl;
 import com.zhonghuasheng.musicstore.model.Gender;
+import com.zhonghuasheng.musicstore.model.Pagination;
 import com.zhonghuasheng.musicstore.model.Role;
 import com.zhonghuasheng.musicstore.model.User;
 import com.zhonghuasheng.musicstore.service.UserService;
@@ -64,9 +65,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> users() {
-        return userDao.list();
+    public List<User> users(Pagination pagination) {
+        pagination.setKey("%" + pagination.getKey() + "%");
+        return userDao.list(pagination);
     }
 
-
+    @Override
+    public int count() {
+        return userDao.count();
+    }
 }
