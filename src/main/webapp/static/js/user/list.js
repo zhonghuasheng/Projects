@@ -61,8 +61,8 @@ function renderPagination(result) {
     if (result.totalPage < 2) {
         return;
     } else {
-        var p = '<li class="page-item"><a class="page-link" href="#">首页</a></li><li class="page-item"><a class="page-link" href="#">&laquo;</a></li>';
-        var e = '<li class="page-item"><a class="page-link" href="#">&raquo;</a></li><li class="page-item"><a class="page-link" href="#">尾页</a></li>';
+        var p = '<li class="first-page"><a class="page-link" href="#">首页</a></li><li class="pre-page"><a class="page-link" href="#">&laquo;</a></li>';
+        var e = '<li class="next-page"><a class="page-link" href="#">&raquo;</a></li><li class="last-page"><a class="page-link" href="#">尾页</a></li>';
         var m = '';
 
         if (1 <= result.totalPage && result.totalPage <= 9) {
@@ -103,25 +103,50 @@ function renderPagination(result) {
         pageFooter.empty();
         pageFooter.append(p).append(m).append(e);
 
-         $('#page-footer ul li').on('click', function() {
+         $('#page-footer ul li.page-item').on('click', function() {
             $('#page-footer ul li').filter('.active').removeClass('active');
             $(this).addClass('active');
-            paging();
+            paging(Number($('#page-footer ul li').filter('.active').find('.page-link').text()));
+        });
+
+        $('#page-footer .first-page').on('click', function() {
+            paging(1);
+        });
+
+        $('#page-footer .last-page').on('click', function() {
+            paging(result.totalPage);
+        });
+
+        $('#page-footer .pre-page').on('click', function() {
+            var cPage = Number($('#page-footer ul li').filter('.active').find('.page-link').text());
+            if (cPage <= 1) {
+                paging(1);
+            } else {
+                paging(cPage - 1);
+            }
+        });
+
+        $('#page-footer .next-page').on('click', function() {
+            var cPage = Number($('#page-footer ul li').filter('.active').find('.page-link').text());
+            if (cPage < 1) {
+                paging(1);
+            } else {
+                paging(cPage + 1);
+            }
         });
     }
 }
 
 $('#search').on('click', function() {
-    paging();
+    paging(1);
 });
 
 $('#pageSize').on('change', function() {
-    paging();
+    paging(1);
 });
 
-function paging() {
+function paging(currentPage) {
     var pageSize = $('#pageSize').val();
-    var currentPage = $('#page-footer ul li').filter('.active').find('.page-link').text();
     var key = $('#key').val();
     pagination(currentPage, pageSize, key);
 }
