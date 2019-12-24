@@ -6,7 +6,7 @@ String basePathInCreate = request.getContextPath();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Artist</title>
+    <title>Music</title>
     <link rel="shortcut icon" href="<%=basePathInCreate%>/static/image/favicon.ico">
   </head>
   <body>
@@ -28,7 +28,7 @@ String basePathInCreate = request.getContextPath();
               <label>艺人</label>
             </div>
             <div class="col-md-8">
-              <select name="artistUuid">
+              <select name="artistUuid" class="form-control">
                 <c:forEach var="artist" items="${artists}">
                   <option value="${artist.uuid}">${artist.name}</option>
                 </c:forEach>

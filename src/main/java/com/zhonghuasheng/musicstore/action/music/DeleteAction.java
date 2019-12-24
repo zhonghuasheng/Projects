@@ -11,14 +11,10 @@ import javax.servlet.ServletException;
 public class DeleteAction extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        System.out.println("test");
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
-    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 }

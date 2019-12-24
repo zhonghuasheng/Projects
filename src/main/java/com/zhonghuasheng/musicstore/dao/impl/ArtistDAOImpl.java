@@ -19,6 +19,7 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
     private static final String UPDATE_ARTIST = "UPDATE artist SET name=?, birthday=?, region=?, experience=?, avatar=?, last_modified_time=?, last_modified_by=? WHERE uuid=?;";
     private static final String DELETE_ARTIST = "UPDATE artist set deleted=true WHERE uuid=?;";
     private static final String SELECT_COUNT = "SELECT COUNT(1) FROM artist";
+    private static final String SELECT_ALL_ARTIST = "SELECT * FROM artist";
 
     @Override
     public Artist create(Artist artist) {
@@ -149,5 +150,23 @@ public class ArtistDAOImpl extends AbstractBaseDAOImpl<Artist> implements Artist
         }
 
         return result;
+    }
+
+    @Override
+    public List<Artist> list() {
+        Connection connection = JDBCUtils.getConnection();
+        PreparedStatement preparedStatement;
+        List<Artist> artists = new ArrayList<>();
+        try {
+            preparedStatement = connection.prepareStatement(SELECT_ALL_ARTIST);
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                artists.add(convertPOtoVO(rs));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return artists;
     }
 }

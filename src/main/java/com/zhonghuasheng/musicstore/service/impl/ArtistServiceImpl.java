@@ -54,4 +54,9 @@ public class ArtistServiceImpl implements ArtistService {
     public int count() {
         return artistDao.count();
     }
+
+    @Override
+    public List<Artist> list() {
+        return artistDao.list();
+    }
 }

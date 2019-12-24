@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <%
 String basePath = request.getContextPath();
@@ -49,7 +50,7 @@ String basePath = request.getContextPath();
             </a>
           </li>
           <li>
-            <a class="menu-item menu-music" href="#2">
+            <a class="menu-item menu-music" href="<%=basePath%>/admin/music">
               <i class="fa"></i>
               <span>音乐</span>
             </a>

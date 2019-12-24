@@ -4,7 +4,7 @@ $().ready(function() {
             title: "required"
         },
         messages: {
-            username: "请输入音乐名"
+            title: "请输入音乐名"
         }
     });
 });
