@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public abstract class AbstractBaseDAOImpl<T> implements BaseDAO<T> {
+
     @Override
     public T create(T obj) {
         return null;

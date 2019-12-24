@@ -12,7 +12,7 @@ import com.zhonghuasheng.musicstore.model.User;
 import com.zhonghuasheng.musicstore.service.UserService;
 import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
 
-@WebServlet(urlPatterns = "/user/login")
+@WebServlet(urlPatterns = "/login")
 public class LoginAction extends HttpServlet {
 
     private static final long serialVersionUID = 109110977079706841L;
