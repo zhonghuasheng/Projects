@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import javax.servlet.ServletException;
 
-@WebServlet(urlPatterns = "")
-public class DeleteActive extends HttpServlet {
+@WebServlet(urlPatterns = "/admin/music/delete")
+public class DeleteAction extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

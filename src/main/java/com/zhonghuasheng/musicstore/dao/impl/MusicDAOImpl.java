@@ -5,4 +5,8 @@ import com.zhonghuasheng.musicstore.model.Music;
 
 public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO {
 
+    @Override
+    public Music create(Music music) {
+        return music;
+    }
 }

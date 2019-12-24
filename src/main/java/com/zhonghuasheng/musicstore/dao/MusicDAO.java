@@ -1,4 +1,6 @@
 package com.zhonghuasheng.musicstore.dao;
 
-public interface MusicDAO {
+import com.zhonghuasheng.musicstore.model.Music;
+
+public interface MusicDAO extends BaseDAO<Music> {
 }

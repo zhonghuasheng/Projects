@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import javax.servlet.ServletException;
 
-@WebServlet(urlPatterns = "")
+@WebServlet(urlPatterns = "/admin/music/edit")
 public class EditAction extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
