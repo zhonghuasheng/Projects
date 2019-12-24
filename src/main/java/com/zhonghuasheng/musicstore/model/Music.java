@@ -1,12 +1,13 @@
 package com.zhonghuasheng.musicstore.model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Music extends BaseModel {
 
     private String title;
     private String artistUuid;
-    private Date publishDate;
+    private Timestamp publishDate;
     private String publishCompany;
 
     public String getTitle() {
@@ -25,11 +26,11 @@ public class Music extends BaseModel {
         this.artistUuid = artistUuid;
     }
 
-    public Date getPublishDate() {
+    public Timestamp getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(Date publishDate) {
+    public void setPublishDate(Timestamp publishDate) {
         this.publishDate = publishDate;
     }
 

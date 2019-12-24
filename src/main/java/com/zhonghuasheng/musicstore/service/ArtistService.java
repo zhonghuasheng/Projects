@@ -13,4 +13,5 @@ public interface ArtistService {
     boolean update(Artist artist);
     boolean delete(String uuid);
     int count();
+    List<Artist> list();
 }
