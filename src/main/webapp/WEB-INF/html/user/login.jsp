@@ -1,12 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%
+String basePath = request.getContextPath();
+%>
 <html>
   <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="shortcut icon" href="../static/image/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css"/>
-  <link rel="stylesheet" type="text/css" href="../static/css/login.css"/>
+  <link rel="shortcut icon" href="<%=basePath%>/static/image/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/css/login.css"/>
   </head>
   <body>
     <div class="row register">
