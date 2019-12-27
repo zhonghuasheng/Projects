@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/DeleteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/DeleteAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/AbstractBaseDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/AbstractBaseDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/MusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/MusicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/music/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/music/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,23 +57,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/ArtistDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
-              <folding>
-                <element signature="e#3959#3960#0" expanded="true" />
-                <element signature="e#4001#4002#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/music/list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="140" column="35" selection-start-line="140" selection-start-column="35" selection-end-line="140" selection-end-column="35" />
+            <state relative-caret-position="232">
+              <caret line="140" column="29" lean-forward="true" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -139,6 +118,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="267">
+                <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -171,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/artist/DeleteAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/user/DeleteAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/user/EditAction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/user/edit.jsp" />
@@ -222,6 +212,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/DeleteAction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/music/list.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -616,7 +607,7 @@
     <frame x="1432" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.23997134" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.1661891" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.24659607" />
       <window_info id="Project Explorer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -629,12 +620,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49856734" weight="0.24833998" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49856734" visible="true" weight="0.312085" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49856734" weight="0.312085" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.38653556" weight="0.3492696" />
       <window_info anchor="bottom" id="Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.80345285" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.40106243" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50143266" side_tool="true" weight="0.47808766" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.6069057" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32934928" />
@@ -1153,8 +1144,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/music/list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="140" column="35" selection-start-line="140" selection-start-column="35" selection-end-line="140" selection-end-column="35" />
+        <state relative-caret-position="232">
+          <caret line="140" column="29" lean-forward="true" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="267">
+            <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
