@@ -47,8 +47,7 @@ function renderPageContent(data) {
         + '</td><td>' + data[row].publishCompany
         + '</td><td>' + data[row].publishDate
         + '</td><td>' + data[row].deleted
-        + '</td><td><a class="btn btn-sm btn-primary mr-1" href="/musicstore/admin/music/edit?uuid=' + data[row].uuid
-        + '">修改</a><button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('+ "'" +data[row].uuid + "'" +')">删除</button></td></tr>';
+        + '</td><td><button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('+ "'" +data[row].uuid + "'" +')">删除</button></td></tr>';
     }
     var pageContent = $('#page-content tbody');
     pageContent.empty();

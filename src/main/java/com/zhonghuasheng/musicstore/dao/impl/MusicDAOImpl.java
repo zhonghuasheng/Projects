@@ -20,6 +20,7 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
             "FROM music m INNER JOIN artist a ON m.artist_uuid = a.uuid WHERE m.title LIKE ? LIMIT ? OFFSET ?;";
     private static final String SELECT_COUNT = "SELECT COUNT(1) FROM music";
     private static final String DELETE_MUSIC = "UPDATE music SET deleted = FALSE WHERE uuid=%s;";
+    private static final String GET_MUSIC = "SELECT * FROM music WHERE uuid=?";
 
     @Override
     public Music create(Music music) {
@@ -60,17 +61,7 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
             preparedStatement.setInt(3, (pagination.getCurrentPage() - 1) * pagination.getPageSize());
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                Music music = new Music();
-                music.setUuid(UUID.fromString(resultSet.getString("uuid")));
-                music.setTitle(resultSet.getString("title"));
-                music.setArtistUuid(resultSet.getString("artist_uuid"));
-                music.setCreateTime(resultSet.getTimestamp("create_time"));
-                music.setDeleted(resultSet.getBoolean("deleted"));
-                music.setLastModifiedBy(resultSet.getString("last_modified_by"));
-                music.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
-                music.setPublishCompany(resultSet.getString("publish_company"));
-                music.setPublishDate(resultSet.getTimestamp("publish_date"));
-                musics.add(music);
+                musics.add(convertPOtoVO(resultSet));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -82,5 +73,37 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
     @Override
     public boolean delete(String uuid) {
         return super.delete(String.format(DELETE_MUSIC, uuid));
+    }
+
+    @Override
+    public Music get(String uuid) {
+        Connection connection = JDBCUtils.getConnection();
+        Music music = null;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(GET_MUSIC);
+            preparedStatement.setString(1, uuid);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            resultSet.next();
+            music = convertPOtoVO(resultSet);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return music;
+    }
+
+    private Music convertPOtoVO(ResultSet resultSet) throws SQLException {
+        Music music = new Music();
+        music.setUuid(UUID.fromString(resultSet.getString("uuid")));
+        music.setTitle(resultSet.getString("title"));
+        music.setArtistUuid(resultSet.getString("artist_uuid"));
+        music.setCreateTime(resultSet.getTimestamp("create_time"));
+        music.setDeleted(resultSet.getBoolean("deleted"));
+        music.setLastModifiedBy(resultSet.getString("last_modified_by"));
+        music.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
+        music.setPublishCompany(resultSet.getString("publish_company"));
+        music.setPublishDate(resultSet.getTimestamp("publish_date"));
+
+        return music;
     }
 }

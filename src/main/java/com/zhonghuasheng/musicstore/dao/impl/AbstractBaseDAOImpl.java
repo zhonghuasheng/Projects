@@ -33,7 +33,7 @@ public abstract class AbstractBaseDAOImpl<T> implements BaseDAO<T> {
     }
 
     @Override
-    public T get(String uuid) {
+    public T get(String sql) {
         return null;
     }
 

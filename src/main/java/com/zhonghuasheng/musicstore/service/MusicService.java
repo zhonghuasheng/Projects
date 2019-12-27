@@ -10,4 +10,5 @@ public interface MusicService {
     List<Music> find(Pagination pagination);
     int count();
     boolean delete(String uuid);
+    Music get(String uuid);
 }
