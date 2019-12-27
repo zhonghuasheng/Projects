@@ -3,10 +3,7 @@ package com.zhonghuasheng.musicstore.dao.impl;
 import com.zhonghuasheng.musicstore.common.JDBCUtils;
 import com.zhonghuasheng.musicstore.dao.BaseDAO;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public abstract class AbstractBaseDAOImpl<T> implements BaseDAO<T> {
 
@@ -16,8 +13,18 @@ public abstract class AbstractBaseDAOImpl<T> implements BaseDAO<T> {
     }
 
     @Override
-    public boolean delete(String uuid) {
-        return false;
+    public boolean delete(String sql) {
+        Connection connection = JDBCUtils.getConnection();
+        boolean result = false;
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            result = preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return result;
     }
 
     @Override

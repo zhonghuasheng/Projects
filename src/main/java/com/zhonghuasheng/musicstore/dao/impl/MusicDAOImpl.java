@@ -9,7 +9,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -17,8 +16,10 @@ import java.util.UUID;
 public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO {
 
     private static final String CREATE_MUSIC = "INSERT INTO music (uuid, title, artist_uuid, publish_date, publish_company, create_time, last_modified_time, last_modified_by, deleted) VALUES(?, ?, ?, ?, ?, ?, ?, ?, 0)";
-    private static final String FIND_MUSICS = "SELECT * FROM music WHERE title LIKE ? LIMIT ? OFFSET ?;";
+    private static final String FIND_MUSICS = "SELECT m.uuid, m.title, a.name AS artist_uuid, m.publish_date, m.publish_company, m.create_time, m.deleted, m.last_modified_by, m.last_modified_time " +
+            "FROM music m INNER JOIN artist a ON m.artist_uuid = a.uuid WHERE m.title LIKE ? LIMIT ? OFFSET ?;";
     private static final String SELECT_COUNT = "SELECT COUNT(1) FROM music";
+    private static final String DELETE_MUSIC = "UPDATE music SET deleted = FALSE WHERE uuid=%s;";
 
     @Override
     public Music create(Music music) {
@@ -62,6 +63,7 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
                 Music music = new Music();
                 music.setUuid(UUID.fromString(resultSet.getString("uuid")));
                 music.setTitle(resultSet.getString("title"));
+                music.setArtistUuid(resultSet.getString("artist_uuid"));
                 music.setCreateTime(resultSet.getTimestamp("create_time"));
                 music.setDeleted(resultSet.getBoolean("deleted"));
                 music.setLastModifiedBy(resultSet.getString("last_modified_by"));
@@ -75,5 +77,10 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
         }
 
         return musics;
+    }
+
+    @Override
+    public boolean delete(String uuid) {
+        return super.delete(String.format(DELETE_MUSIC, uuid));
     }
 }

@@ -124,7 +124,7 @@ function paging(currentPage) {
     pagination(currentPage, pageSize, key);
 }
 
-var deleteArtist = function() {
+var deleteMusic  = function() {
     var uuid = $('#deleteModal .btn-yes').data('uuid');
     $.ajax({
         url: '/musicstore/admin/music/delete',
@@ -133,12 +133,12 @@ var deleteArtist = function() {
         },
         type: 'post',
         cache: false,
-        dataType: 'text',
+        dataType: 'json',
         success: function(data) {
             window.location.reload();
         },
-        error: function() {
-            alert('删除失败，请重试');
+        error: function(data) {
+            alert(data.responseText);
         }
     });
 }
