@@ -47,8 +47,7 @@ function renderPageContent(data) {
         + '</td><td>' + data[row].publishCompany
         + '</td><td>' + data[row].publishDate
         + '</td><td>' + data[row].deleted
-        + '</td><td><a class="btn btn-sm btn-primary mr-1" href="/musicstore/admin/music/edit?uuid=' + data[row].uuid
-        + '">修改</a><button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('+ "'" +data[row].uuid + "'" +')">删除</button></td></tr>';
+        + '</td><td><button type="button" class="btn btn-sm btn-danger" onclick="showDeleteModal('+ "'" +data[row].uuid + "'" +')">删除</button></td></tr>';
     }
     var pageContent = $('#page-content tbody');
     pageContent.empty();
@@ -124,7 +123,7 @@ function paging(currentPage) {
     pagination(currentPage, pageSize, key);
 }
 
-var deleteArtist = function() {
+var deleteMusic  = function() {
     var uuid = $('#deleteModal .btn-yes').data('uuid');
     $.ajax({
         url: '/musicstore/admin/music/delete',
@@ -133,12 +132,12 @@ var deleteArtist = function() {
         },
         type: 'post',
         cache: false,
-        dataType: 'text',
+        dataType: 'json',
         success: function(data) {
             window.location.reload();
         },
-        error: function() {
-            alert('删除失败，请重试');
+        error: function(data) {
+            alert(data.responseText);
         }
     });
 }

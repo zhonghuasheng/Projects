@@ -1,13 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
+<%
+String basePath = request.getContextPath();
+%>
 <html>
   <head>
   <meta charset="UTF-8">
   <title>注册</title>
-  <link rel="shortcut icon" href="../static/image/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css"/>
-  <link rel="stylesheet" type="text/css" href="../static/css/register.css"/>
+  <link rel="shortcut icon" href="<%=basePath%>/static/image/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/css/register.css"/>
   </head>
   <body>
     <div class="row register">
@@ -49,8 +51,8 @@
         <div class="col-md-1"></div>
       </div>
     </div>
-    <script src="../static/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="../static/js/jquery-1.19.1.validate.min.js"></script>
-    <script type="text/javascript" src="../static/js/user/register.js"></script>
+    <script src="<%=basePath%>/static/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>/static/js/jquery-1.19.1.validate.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>/static/js/user/register.js"></script>
   </body>
 </html>

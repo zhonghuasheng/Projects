@@ -35,4 +35,14 @@ public class MusicServiceImpl implements MusicService {
     public int count() {
         return musicDAO.count();
     }
+
+    @Override
+    public boolean delete(String uuid) {
+        return musicDAO.delete(uuid);
+    }
+
+    @Override
+    public Music get(String uuid) {
+        return musicDAO.get(uuid);
+    }
 }
