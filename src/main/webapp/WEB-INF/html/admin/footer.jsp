@@ -10,7 +10,7 @@ String basePaths = request.getContextPath();
   <body>
     <div class="pg-footer">
       <span>Music Store©2019 Copyright</span>
-      <span class="float-right">Powered by 
+      <span class="float-right">个人学习项目 Powered by
         <a href="https://github.com/zhonghuasheng">种花生的读书人</a>
       </span>
     </div>

@@ -1,0 +1,86 @@
+.body {
+    background-color: #f5f5f5;
+}
+
+.head {
+    width: 100%;
+    height: 70px;
+    background: #242424;
+    border-bottom: 1px solid #000;
+}
+
+.subnav-middle {
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    height: 5px;
+    border-bottom: none;
+}
+
+.subnav-small {
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    height: 2px;
+    border-bottom: none;
+}
+
+.contents {
+    width: 80%;
+    height: 600px;
+    background: #d9cec5;
+    margin: auto;
+}
+
+.content-lefts {
+    width: 20%;
+    background: yellow;
+    height: 500px;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.content-rights {
+    width: 65%;
+    background: blue;
+    height: 500px;
+    float: left;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: turquoise;
+}
+
+.wd-8 {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+.float-right {
+    float: right;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 70%;
+}
+
+.recommend-item {
+    width: 20%;
+    float: left;
+    height: 50px;
+    background: yellow;
+    border: solid 1px green;
+    overflow: auto;
+}
+
+.recommend title {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.recommend-li {
+    margin-top: 10px;
+}
