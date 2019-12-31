@@ -14,6 +14,9 @@ String basePath = request.getContextPath();
     <script src="<%=basePath%>/static/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/css/home.css" />
     <link rel="stylesheet" href="<%=basePath%>/static/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="<%=basePath%>/static/swiper/swiper.css">
+    <script src="<%=basePath%>/static/swiper/swiper.js"> </script>
+    <script src="<%=basePath%>/static/js/home.js"> </script>
   </head>
   <body>
     <div class="body">
@@ -44,38 +47,30 @@ String basePath = request.getContextPath();
       </div>
       <div class="subnav-middle"></div>
       <div class="content">
-        <div id="carousel-part" class="carousel slide" data-ride="carousel">
-          <!-- 指示符 -->
-          <ul class="carousel-indicators">
-            <li data-target="#carousel-part" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-part" data-slide-to="1"></li>
-            <li data-target="#carousel-part" data-slide-to="2"></li>
-          </ul>
-
-          <!-- 轮播图片 -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg">
-            </div>
-            <div class="carousel-item">
-              <img src="http://static.runoob.com/images/mix/img_nature_wide.jpg">
-            </div>
-            <div class="carousel-item">
-              <img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
-            </div>
-          </div>
-
-          <!-- 左右切换按钮 -->
-          <a class="carousel-control-prev" href="#carousel-part" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-part" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+      <div class="swiper-container">
+        <div id="sw" class="swiper-wrapper">
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_nature_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_nature_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_nature_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg"></div>
+          <div class="swiper-slide"><img src="http://static.runoob.com/images/mix/img_nature_wide.jpg"></div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
+    </div>
 
       <div class="recommend wd-8">
+        <div class=""></div>
+        <div></div>
         <div class="recommend-hot">
           <div class="title">热门推荐</div>
           <div class="subnav-small"></div>
