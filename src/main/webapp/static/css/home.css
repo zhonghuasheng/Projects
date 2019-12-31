@@ -9,6 +9,19 @@
     border-bottom: 1px solid #000;
 }
 
+.wrap {
+    width: 80%;
+    margin: auto;
+}
+
+.wrap img {
+    height: 35px;
+}
+
+.wrap a {
+    color: white !important;
+}
+
 .subnav-middle {
     box-sizing: border-box;
     background-color: #C20C0C;
@@ -21,6 +34,7 @@
     background-color: #C20C0C;
     height: 2px;
     border-bottom: none;
+    width: 94%;
 }
 
 .contents {
@@ -49,7 +63,13 @@
 .footer {
     margin-top: 20px;
     margin-bottom: 20px;
-    background: turquoise;
+    position: relative;
+    height: 172px;
+    overflow: hidden;
+    border-top: 1px solid #d3d3d3;
+    background: #f2f2f2;
+    padding-top: 35px;
+    color: #666;
 }
 
 .wd-8 {
@@ -69,11 +89,14 @@
 
 .recommend-item {
     width: 20%;
+    height: 204px;
     float: left;
-    height: 50px;
-    background: yellow;
-    border: solid 1px green;
     overflow: auto;
+    padding: 3px;
+}
+
+.recommend-item img {
+  width: 70%;
 }
 
 .recommend title {
@@ -81,6 +104,16 @@
     font-weight: normal;
 }
 
+.recommend-item-title {
+    font-size: 14px;
+    width: 70%
+}
+
 .recommend-li {
     margin-top: 10px;
+}
+
+#carousel-part {
+    width: 60%;
+    margin-left: 20%;
 }
