@@ -93,11 +93,13 @@
     width: 94%;
 }
 
-.contents {
-    width: 80%;
-    height: 600px;
-    background: #d9cec5;
-    margin: auto;
+.content {
+    background-image: linear-gradient(to right, #ab7b7b , #a9a997);
+}
+
+#carousel-part {
+    width: 60%;
+    margin-left: 20%;
 }
 
 .content-lefts {
@@ -169,9 +171,4 @@
 
 .recommend-li {
     margin-top: 10px;
-}
-
-#carousel-part {
-    width: 60%;
-    margin-left: 20%;
 }
