@@ -24,7 +24,6 @@ String basePath = request.getContextPath();
           </h2>
         </div>
       </div>
-      <div class="head"></div>
       <div class="subnav-middle"></div>
       <div class="content">
         <div id="carousel-part" class="carousel slide" data-ride="carousel">

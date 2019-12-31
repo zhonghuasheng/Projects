@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-31.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,20 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="332">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            <state relative-caret-position="462">
+              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -121,8 +118,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/user/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/home.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
       </list>
     </option>
   </component>
@@ -484,8 +481,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1432" y="-8" width="1456" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.26002866" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" weight="0.26002866" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.24659607" />
       <window_info id="Project Explorer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -498,12 +496,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49856734" weight="0.24833998" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49856734" visible="true" weight="0.21912351" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49856734" weight="0.21912351" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.38653556" weight="0.3492696" />
       <window_info anchor="bottom" id="Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.24169987" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.24169987" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50143266" side_tool="true" weight="0.47808766" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.6069057" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32934928" />
@@ -1007,17 +1005,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="462">
+          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/home.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        <state relative-caret-position="332">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
