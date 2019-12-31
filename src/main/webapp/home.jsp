@@ -13,15 +13,33 @@ String basePath = request.getContextPath();
     <script src="<%=basePath%>/static/js/jquery-3.4.1.min.js"></script>
     <script src="<%=basePath%>/static/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/css/home.css" />
+    <link rel="stylesheet" href="<%=basePath%>/static/fontawesome/css/font-awesome.min.css" />
   </head>
   <body>
     <div class="body">
       <div class="head">
-        <div class="wrap">
+        <div class="logo wd-2">
           <h2>
             <img src="<%=basePath%>/static/image/music.png">
-            <a>Music Store</a>
+            <a>音乐商店</a>
           </h2>
+        </div>
+        <div class="wd-1">
+          <div>发现音乐</div>
+        </div>
+        <div class="wd-1">
+          <div>音乐人</div>
+        </div>
+        <div class="wd-1">
+          <div>我的音乐</div>
+        </div>
+        <div class="wd-25">
+          <div class="search-box">
+            <input type="text" name="srch" id="srch" class="search-box" placeholder="音乐/艺人" value="" style="opacity: 1;">
+          </div>
+        </div>
+        <div class="wd-25 flex-right">
+          <a href="<%=basePath%>/login">登陆</a>
         </div>
       </div>
       <div class="subnav-middle"></div>
@@ -58,8 +76,8 @@ String basePath = request.getContextPath();
       </div>
 
       <div class="recommend wd-8">
-        <div class="recommend-music">
-          <div class="title">每日热歌</div>
+        <div class="recommend-hot">
+          <div class="title">热门推荐</div>
           <div class="subnav-small"></div>
           <div class="recommend-li">
             <div class="recommend-item">
@@ -160,7 +178,7 @@ String basePath = request.getContextPath();
             </div>
           </div>
         </div>
-        <div class="recommend">
+        <div class="recommend-music">
           <div class="title">猜你喜欢</div>
           <div class="subnav-small"></div>
           <div class="recommend-li">
@@ -198,12 +216,16 @@ String basePath = request.getContextPath();
         </div>
       </div>
       <div class="footer">
-        <div class="wd-8">
-          <p>Music Store(音乐商店) - JSP + Servlet + JDBC + MySQL版本。音乐商店，不只是音乐，更多的是技术的融合；音乐商店是一个很简单的业务的缩影，包含了常用技术的体现。让我们慢慢雕琢，像雕琢自己一样。</p>
-          <span>Music Store©2019 Copyright</span>
-          <span class="float-right">个人学习项目 Powered by
-            <a href="https://github.com/zhonghuasheng">种花生的读书人</a>
-          </span>
+        <div class="wd-8 announce">
+          <div class="wd-5">Music Store(音乐商店) - JSP + Servlet + JDBC + MySQL版本。音乐商店，不只是音乐，更多的是技术的融合；
+            音乐商店是一个很简单的业务的缩影，包含了常用技术的体现。让我们慢慢雕琢，像雕琢自己一样。
+          </div>
+          <div class="wd-25"></div>
+          <div class="wd-25">
+            <p>个人学习项目 Powered by</p>
+            <a class="fa fa-github" href="https://github.com/zhonghuasheng"> 种花生的读书人</a>
+            <p>Music Store©2019 Copyright</p>
+          </div>
       </div>
     </div>
   </body>
