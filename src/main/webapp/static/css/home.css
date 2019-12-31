@@ -152,8 +152,20 @@
 }
 
 .recommend {
-    margin: auto;
-    overflow: auto;
+    display: flex;
+    padding-left: 10%;
+    margin-top: 40px;
+}
+
+.recommend-left {
+    width: 20%;
+    margin-right: 3%;
+    height: 600px;
+}
+
+.recommend-right {
+    width: 70%;
+
 }
 
 .recommend-item {
@@ -180,4 +192,24 @@
 
 .recommend-li {
     margin-top: 10px;
+}
+
+.vistor {
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    align-items: end;
+}
+
+.vistor-info p {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.vistor img {
+    border-radius: 50%;
+}
+
+.apply {
+    margin-top: 20px;
 }
