@@ -46,6 +46,7 @@ Music Store是微软的一个开源项目，旨在通过一步步的教程帮助
  | order | 订单表 |
  | order_status | 订单状态表 |
  | message | 消息表 |
+
 ![](sql/musicstore_jsp_database_diagram.png)
 
 ## `进度安排`
@@ -70,5 +71,7 @@ Music Store是微软的一个开源项目，旨在通过一步步的教程帮助
 ![](requirement/project_progress_management_dashboard.PNG)
 
 # 参看文档
-* [Tomcat 配置上传文件到项目外的路径](https://www.cnblogs.com/yjq520/p/7884656.html)
+
+* [首页-轮播图](https://www.swiper.com.cn/usage/index.html)
 * [Ajax-Servlet前后端交互，如何进入suceess/error回调函数](https://blog.csdn.net/chenbetter1996/article/details/82773025)
+* [Tomcat 配置上传文件到项目外的路径](https://www.cnblogs.com/yjq520/p/7884656.html)

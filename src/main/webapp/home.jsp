@@ -8,7 +8,6 @@ String basePath = request.getContextPath();
   <head>
     <meta charset="UTF-8">
     <title>首页</title>
-    <link rel="icon" href="<%=basePath%>/static/image/music.png">
     <link rel="stylesheet" type="text/css" href="<%=basePath%>/static/bootstrap/css/bootstrap.css" />
     <script src="<%=basePath%>/static/js/jquery-3.4.1.min.js"></script>
     <script src="<%=basePath%>/static/bootstrap/js/bootstrap.js"></script>
