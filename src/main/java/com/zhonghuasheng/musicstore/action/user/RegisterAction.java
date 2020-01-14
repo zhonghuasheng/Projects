@@ -3,7 +3,6 @@ package com.zhonghuasheng.musicstore.action.user;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -26,10 +25,12 @@ public class RegisterAction extends HttpServlet {
         super();
     }
 
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/WEB-INF/html/user/register.jsp").forward(request, response);
     }
 
+    @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = new User();
 
@@ -50,7 +51,7 @@ public class RegisterAction extends HttpServlet {
             User result = userService.signUp(user);
 
             if (result != null) {
-                response.sendRedirect(request.getContextPath() + "/user/login");
+                response.sendRedirect(request.getContextPath() + "/login");
             } else {
                 doGet(request, response);
             }
@@ -113,8 +114,7 @@ public class RegisterAction extends HttpServlet {
                 request.setAttribute("msg-birthday", Constants.INVAILD_BIRTHDAY_FORMAT);
             }
         } else {
-            isVerifyPassed = false;
-            request.setAttribute("msg-birthday", Constants.EMPTY_BIRTHDAY);
+            user.setBirthday(null);
         }
 
         return isVerifyPassed;
