@@ -1,7 +1,6 @@
 package com.zhonghuasheng.musicstore.model;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 public class Music extends BaseModel {
 
@@ -41,4 +40,5 @@ public class Music extends BaseModel {
     public void setPublishCompany(String publishCompany) {
         this.publishCompany = publishCompany;
     }
+
 }
