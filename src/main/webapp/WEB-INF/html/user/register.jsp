@@ -18,7 +18,7 @@ String basePath = request.getContextPath();
         <div class="col-md-1"></div>
         <div class="col-md-10 container">
           <div class="register-form w-75 mt-5 transucent-fillet pt-4 pb-4">
-            <form id="register" action="${pageContext.request.contextPath }/user/register" method="post" class="w-75 m-auto">
+            <form id="register" action="${pageContext.request.contextPath }/register" method="post" class="w-75 m-auto">
               <div class="form-group">
                 <label for="username">用户名（必填）</label>
                 <input id="username" type="text" name="username" class="form-control" placeholder="用户名" value="${user.username}" required/>
@@ -41,7 +41,7 @@ String basePath = request.getContextPath();
               </div>
               <div class="form-group">
                 <label for="birthday">出生日期</label>
-                <input id="birthday" type="date" name="birthday" class="form-control" placeholder="出生日期" value="${user.birthday }"/>
+                <input id="birthday" type="date" name="birthday" class="form-control" placeholder="出生日期" value="${user.birthday }" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
                 <span class="text-danger"><%=request.getAttribute("msg-birthday") == null ? "" : request.getAttribute("msg-birthday") %></span>
               </div>
               <button type="submit" class="btn btn-primary w-100">注册</button>

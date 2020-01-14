@@ -1,6 +1,10 @@
 package com.zhonghuasheng.musicstore.dao.impl;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -16,8 +20,8 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
 
     private static final String DELETE_USER = "UPDATE user_ SET deleted=true, active=false WHERE uuid=?";
     private static final String GET_USER_BY_EMAIL_AND_PASSWORD = "SELECT * FROM user_ WHERE email=? and password=? AND active=TRUE AND deleted=FALSE LIMIT 1";
-    private static final String CREATE_USER = "INSERT INTO user_(uuid, username, email, password, role, gender, active, deleted, create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
-    private static final String CHECK_EMAIL_EXISTED = "SELECT COUNT(1) FROM user_ WHERE email=?;";
+    private static final String CREATE_USER = "INSERT INTO user_(uuid, username, email, password, role, birthday, gender, active, deleted, create_time, last_modified_time, last_modified_by) VALUES(?, ?, ?, ?, ?, ?, ?, true, false, ?, ?, ?)";
+    private static final String CHECK_EMAIL_EXISTED = "SELECT COUNT(1) FROM user_ WHERE email=?";
     private static final String GET_USERS = "SELECT * FROM user_ WHERE username LIKE ? LIMIT ? OFFSET ?";
     private static final String GET_USER_BY_UUID = "SELECT * FROM user_ WHERE uuid=?";
     private static final String SELECT_COUNT = "SELECT COUNT(1) FROM user_";
@@ -33,10 +37,17 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
             preparedStatement.setString(3, user.getEmail());
             preparedStatement.setString(4, user.getPassword());
             preparedStatement.setString(5, user.getRole().toString());
-            preparedStatement.setString(6, user.getGender().toString());
-            preparedStatement.setTimestamp(7, user.getCreateTime());
-            preparedStatement.setTimestamp(8, user.getLastModifiedTime());
-            preparedStatement.setString(9, user.getLastModifiedBy());
+
+            if (user.getBirthday() != null) {
+                preparedStatement.setDate(6, new Date(user.getBirthday().getTime()));
+            } else {
+                preparedStatement.setDate(6, null);
+            }
+
+            preparedStatement.setString(7, user.getGender().toString());
+            preparedStatement.setTimestamp(8, user.getCreateTime());
+            preparedStatement.setTimestamp(9, user.getLastModifiedTime());
+            preparedStatement.setString(10, user.getLastModifiedBy());
             preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -44,6 +55,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         return user;
     }
 
+    @Override
     public User getUserByEmailAndPassword(String email, String password) {
         Connection connection = JDBCUtils.getConnection();
         User user = new User();
@@ -117,6 +129,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         return users;
     }
 
+    @Override
     public int count() {
         return count(SELECT_COUNT);
     }

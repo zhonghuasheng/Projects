@@ -4,15 +4,14 @@
   <head>
     <meta charset="UTF-8">
     <title>首页</title>
-    <base href="<%=basePath%>">
   </head>
   <body>
-    <%@ include file="/html/admin/header.jsp" %>
+    <%@ include file="/WEB-INF/html/admin/header.jsp" %>
     <div class="content f-left">
       <div>
 
       </div>
     </div>
-    <%@include file="/html/admin/footer.jsp" %>
+    <%@include file="/WEB-INF/html/admin/footer.jsp" %>
   </body>
 </html>
