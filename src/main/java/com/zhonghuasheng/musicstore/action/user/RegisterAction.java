@@ -116,10 +116,6 @@ public class RegisterAction extends HttpServlet {
         } else {
             user.setBirthday(null);
         }
-//        else {
-//            isVerifyPassed = false;
-//            request.setAttribute("msg-birthday", Constants.EMPTY_BIRTHDAY);
-//        }
 
         return isVerifyPassed;
     }

@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/home")
 public class HomeAction extends HttpServlet {
 
-    /**
-     * I add it. 2020.1.5
-     */
     private static final long serialVersionUID = 1L;
 
     public HomeAction() {

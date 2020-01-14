@@ -14,7 +14,6 @@ public class Constants {
     public static final String CONFIRM_PASSWORD_NOT_EQUALS_PASSWORD = "两次密码输入不一致";
     public static final String EMAIL_EXISTED = "邮箱已经被注册";
     public static final String INVAILD_BIRTHDAY_FORMAT = "出生日期格式不正确";
-//    public static final String EMPTY_BIRTHDAY = "出生日期为空";
 
     // Artist create
     public static final String EMPTY_NAME = "请输入姓名";
