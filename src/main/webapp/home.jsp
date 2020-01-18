@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
 String basePath = request.getContextPath();
@@ -41,6 +40,8 @@ String basePath = request.getContextPath();
           </div>
         </div>
         <div class="wd-25 flex-right">
+          <a href="<%=basePath%>/register">注册</a>
+          <a>/</a>
           <a href="<%=basePath%>/login">登陆</a>
         </div>
       </div>
@@ -155,7 +156,7 @@ String basePath = request.getContextPath();
                 <div class="recommend-item">
                   <img src="http://p2.music.126.net/Q90yZS6jznXxPsH9Vxipng==/109951163953207517.jpg?param=140y140">
                   <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">Cover&原唱『超好听的合集』</a>
+                    <a href="/playlist?id=924680166">Cover&amp;原唱『超好听的合集』</a>
                   </div>
                 </div>
                 <div class="recommend-item">
@@ -263,6 +264,7 @@ String basePath = request.getContextPath();
             <a class="fa fa-github" href="https://github.com/zhonghuasheng"> 种花生的读书人</a>
             <p>Music Store©2019 Copyright</p>
           </div>
+        </div>
       </div>
     </div>
   </body>
