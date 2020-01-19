@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/cart/CreateAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/cart/DeleteAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/cart/ListAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/ViewAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/common/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/music/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/musicstore_jsp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2019-12-31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirement/musicstore-jsp-2020-01-18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/common/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/common/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/user/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,18 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/ViewAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/MusicService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="-185">
+              <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -123,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/ArtistDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="502">
-              <caret line="158" column="15" lean-forward="true" selection-start-line="158" selection-start-column="15" selection-end-line="158" selection-end-column="15" />
+              <caret line="158" column="15" selection-start-line="158" selection-start-column="15" selection-end-line="158" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -141,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -160,6 +103,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="502">
               <caret line="478" column="12" selection-start-line="478" selection-start-column="12" selection-end-line="478" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -198,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/admin-management.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/model/Pagination.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/user/ViewAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/UserDAO.java" />
@@ -249,6 +200,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/cart/DeleteAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/cart/ListAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -336,16 +288,6 @@
               <item name="musicstore" type="462c0819:PsiDirectoryNode" />
               <item name="action" type="462c0819:PsiDirectoryNode" />
               <item name="artist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="musicstore-jsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="musicstore-jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="musicstore" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="musicstore-jsp" type="b2602c69:ProjectViewProjectNode" />
@@ -1101,7 +1043,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1152,14 +1094,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/ArtistDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
-          <caret line="158" column="15" lean-forward="true" selection-start-line="158" selection-start-column="15" selection-end-line="158" selection-end-column="15" />
+          <caret line="158" column="15" selection-start-line="158" selection-start-column="15" selection-end-line="158" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="-185">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
         </state>
       </provider>
     </entry>

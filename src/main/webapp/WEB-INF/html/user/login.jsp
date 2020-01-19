@@ -17,7 +17,7 @@ String basePath = request.getContextPath();
       <div class="col-md-5">
         <div class="col-md-1"></div>
         <div class="col-md-10 container">
-          <div class="register-form w-75 transucent-fillet pt-4 pb-4">
+          <div class="login-form w-75 transucent-fillet pt-4 pb-4">
             <form id="login" action="${pageContext.request.contextPath }/login" method="post" class="w-75 m-auto">
               <div class="form-group">
                 <label for="email">账号</label>
