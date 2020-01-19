@@ -25,7 +25,6 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
     @Override
     public Music create(Music music) {
         Connection connection = JDBCUtils.getConnection();
-        boolean result = false;
 
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_MUSIC);
@@ -37,12 +36,12 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
             preparedStatement.setTimestamp(6, music.getCreateTime());
             preparedStatement.setTimestamp(7, music.getLastModifiedTime());
             preparedStatement.setString(8, music.getLastModifiedBy());
-            result = preparedStatement.execute();
+            preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        return result == true ? music : null;
+        return music;
     }
 
     @Override

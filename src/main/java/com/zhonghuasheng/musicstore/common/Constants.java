@@ -15,6 +15,10 @@ public class Constants {
     public static final String EMAIL_EXISTED = "邮箱已经被注册";
     public static final String INVAILD_BIRTHDAY_FORMAT = "出生日期格式不正确";
 
+    // User register/login page
+    public static final String REGISTER_PAGE = "/WEB-INF/html/user/register.jsp";
+    public static final String LOGIN_PAGE = "/WEB-INF/html/user/login.jsp";
+
     // Artist create
     public static final String EMPTY_NAME = "请输入姓名";
     public static final Object EMPTY_AVATAR = "请上传图像";
