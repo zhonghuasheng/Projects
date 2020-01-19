@@ -57,16 +57,27 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
 
     @Override
     public User getUserByEmailAndPassword(String email, String password) {
+        if (email == null || email.equals("")) {
+            return null;
+        }
+        if (password == null || password.equals("")) {
+            return null;
+        }
+
         Connection connection = JDBCUtils.getConnection();
-        User user = new User();
+        User user = null;
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(GET_USER_BY_EMAIL_AND_PASSWORD);
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            while (resultSet.next()) {
-                convertPOtoVO(resultSet, user);
+            if (resultSet.next()) {
+                user = new User();
+                user.setUuid(UUID.fromString(resultSet.getString("uuid")));
+                user.setUsername(resultSet.getString("username"));
+                user.setEmail(resultSet.getString("email"));
+                user.setPassword(resultSet.getString("password"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -83,9 +94,9 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(CHECK_EMAIL_EXISTED);
             preparedStatement.setString(1, email);
-            ResultSet rs = preparedStatement.executeQuery();
-            while (rs.next()) {
-                result = rs.getInt(1) > 0;
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                result = resultSet.getInt(1) > 0;
             }
         } catch (SQLException e) {
             e.printStackTrace();
