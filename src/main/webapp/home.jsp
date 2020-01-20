@@ -11,7 +11,7 @@ String basePath = request.getContextPath();
   </head>
   <body>
     <div class="body">
-      <%@include file="/WEB-INF/html/common/header.jsp"%>
+      <%@include file="/WEB-INF/html/common/header.jsp" %>
       <div class="content">
       <div class="swiper-container">
         <div id="sw" class="swiper-wrapper">

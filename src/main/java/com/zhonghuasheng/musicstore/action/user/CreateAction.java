@@ -26,7 +26,7 @@ public class CreateAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/html/user/create.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/admin/create.jsp").forward(request, response);
     }
 
     @Override
