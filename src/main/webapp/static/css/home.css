@@ -18,8 +18,28 @@
     width: 50%;
 }
 
+.wd-6 {
+    width: 60%;
+}
+
+.wd-75 {
+    width: 75%;
+}
+
 .wd-8 {
     width: 80%;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.c-999 {
+    color: #999;
 }
 
 .float-right {
