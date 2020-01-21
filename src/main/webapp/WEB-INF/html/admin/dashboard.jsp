@@ -6,7 +6,7 @@
     <title>首页</title>
   </head>
   <body>
-    <%@ include file="/WEB-INF/html/admin/header.jsp" %>
+    <%@include file="/WEB-INF/html/admin/header.jsp" %>
     <div class="content f-left">
       <div>
 

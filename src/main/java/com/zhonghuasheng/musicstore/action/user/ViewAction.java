@@ -12,7 +12,7 @@ import com.zhonghuasheng.musicstore.model.User;
 import com.zhonghuasheng.musicstore.service.UserService;
 import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
 
-@WebServlet(urlPatterns = "/admin/user/view")
+@WebServlet(urlPatterns = "/admin/view")
 public class ViewAction extends HttpServlet {
 
     private static final long serialVersionUID = 3820662977869358090L;
@@ -24,6 +24,6 @@ public class ViewAction extends HttpServlet {
         String uuid = request.getParameter("uuid");
         User user = userService.get(uuid);
         request.setAttribute("user", user);
-        request.getRequestDispatcher("/WEB-INF/html/user/view.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/admin/view.jsp").forward(request, response);
     }
 }
