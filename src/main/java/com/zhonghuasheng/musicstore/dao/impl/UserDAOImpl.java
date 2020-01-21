@@ -72,12 +72,9 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            if (resultSet.next()) {
+            while(resultSet.next()) {
                 user = new User();
-                user.setUuid(UUID.fromString(resultSet.getString("uuid")));
-                user.setUsername(resultSet.getString("username"));
-                user.setEmail(resultSet.getString("email"));
-                user.setPassword(resultSet.getString("password"));
+                convertPOtoVO(resultSet, user);
             }
         } catch (SQLException e) {
             e.printStackTrace();
