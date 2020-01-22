@@ -6,17 +6,15 @@ $(document).ready(function() {
         loop: true,
         coverflowEffect: {
           rotate: 30,
-          stretch: 10,
-          depth: 60,
-          modifier: 2,
+          stretch: 20,
+          depth: 20,
+          modifier: 3,
           slideShadows : true
         },
         autoplay: {
           delay: 2000
         },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
       })
 });

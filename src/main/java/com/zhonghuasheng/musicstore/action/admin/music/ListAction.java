@@ -1,34 +1,28 @@
-package com.zhonghuasheng.musicstore.action.user;
+package com.zhonghuasheng.musicstore.action.admin.music;
 
-import java.io.IOException;
-import java.util.List;
+import com.zhonghuasheng.musicstore.model.Music;
+import com.zhonghuasheng.musicstore.model.Pagination;
+import com.zhonghuasheng.musicstore.service.MusicService;
+import com.zhonghuasheng.musicstore.service.impl.MusicServiceImpl;
+import org.json.JSONObject;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
 
-import org.json.JSONObject;
-
-import com.zhonghuasheng.musicstore.model.Pagination;
-import com.zhonghuasheng.musicstore.model.User;
-import com.zhonghuasheng.musicstore.service.UserService;
-import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
-
-@WebServlet(urlPatterns = {"/admin/user/list", "/admin/user", "/admin/user/search"})
+@WebServlet(urlPatterns = {"/admin/music/", "/admin/music/list", "/admin/music"})
 public class ListAction extends HttpServlet {
 
-    private static final long serialVersionUID = 3929601950993577107L;
+    private MusicService musicService = new MusicServiceImpl();
 
-    private UserService userService = new UserServiceImpl();
-
-    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/html/admin/list.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/admin/music/list.jsp").forward(request, response);
     }
 
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Pagination pagination = new Pagination();
         int currentPage = 1;
@@ -48,9 +42,10 @@ public class ListAction extends HttpServlet {
         pagination.setPageSize(pageSize);
         pagination.setKey(request.getParameter("key"));
 
-        List<User> users = userService.users(pagination);
-        pagination.setData(users);
-        pagination.setTotalPage((userService.count()  + pagination.getPageSize() - 1) / pagination.getPageSize());
+        List<Music> musics = musicService.find(pagination);
+        pagination.setData(musics);
+        pagination.setTotalPage((musicService.count() + pagination.getPageSize() - 1) / pagination.getPageSize());
+
         JSONObject result = new JSONObject(pagination);
         response.getWriter().write(result.toString());
     }

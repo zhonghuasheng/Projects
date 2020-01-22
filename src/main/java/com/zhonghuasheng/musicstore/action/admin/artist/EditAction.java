@@ -1,4 +1,4 @@
-package com.zhonghuasheng.musicstore.action.artist;
+package com.zhonghuasheng.musicstore.action.admin.artist;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -30,7 +30,7 @@ public class EditAction extends HttpServlet {
         String uuid = req.getParameter("uuid");
         Artist artist = artistService.get(uuid);
         req.setAttribute("artist", artist);
-        req.getRequestDispatcher("/WEB-INF/html/artist/edit.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/html/admin/artist/edit.jsp").forward(req, resp);
     }
 
     @Override

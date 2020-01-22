@@ -1,4 +1,4 @@
-package com.zhonghuasheng.musicstore.action.music;
+package com.zhonghuasheng.musicstore.action.admin.music;
 
 import com.zhonghuasheng.musicstore.model.Music;
 import com.zhonghuasheng.musicstore.service.MusicService;
@@ -20,11 +20,11 @@ public class EditAction extends HttpServlet {
         String uuid = request.getParameter("uuid");
 
         if (uuid == null) {
-            request.getRequestDispatcher("/WEB-INF/html/music/list.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/html/admin/music/list.jsp").forward(request, response);
         } else {
             Music music = musicService.get(uuid);
             request.setAttribute("music", music);
-            request.getRequestDispatcher("/WEB-INF/html/music/edit.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/html/admin/music/edit.jsp").forward(request, response);
         }
     }
 
