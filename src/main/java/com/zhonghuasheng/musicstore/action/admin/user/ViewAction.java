@@ -12,7 +12,7 @@ import com.zhonghuasheng.musicstore.model.User;
 import com.zhonghuasheng.musicstore.service.UserService;
 import com.zhonghuasheng.musicstore.service.impl.UserServiceImpl;
 
-@WebServlet(urlPatterns = "/admin/view")
+@WebServlet(urlPatterns = "/admin/user/view")
 public class ViewAction extends HttpServlet {
 
     private static final long serialVersionUID = 3820662977869358090L;

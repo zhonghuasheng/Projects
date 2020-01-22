@@ -2,48 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/artist/ViewAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/CartDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/CartDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/music/view.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/artist/CreateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/artist/CreateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/artist/DeleteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/artist/DeleteAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/artist/EditAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/artist/EditAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/artist/ListAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/artist/ListAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/cart/CreateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/cart/CreateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/CreateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/music/CreateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/DeleteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/music/DeleteAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/EditAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/music/EditAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/music/ListAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/music/ListAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/user/CreateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/CreateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/user/DeleteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/DeleteAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/user/ListAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ListAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/user/ViewAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/user/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/user/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/user/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/artist/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/artist/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/artist/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/artist/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/artist/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/artist/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/music/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/music/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/music/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/music/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/music/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/music/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,15 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/artist/ListAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/music/CreateAction.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/music/ListAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="31" column="69" lean-forward="true" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+              <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -118,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/DeleteAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="100">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -133,20 +84,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
+            <state relative-caret-position="220">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/common/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="388">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/user/view.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -234,8 +194,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/music/DeleteAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/CreateAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ListAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/common/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java" />
       </list>
     </option>
   </component>
@@ -329,17 +289,6 @@
               <item name="musicstore" type="462c0819:PsiDirectoryNode" />
               <item name="action" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="musicstore-jsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="musicstore-jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="musicstore" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="artist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="musicstore-jsp" type="b2602c69:ProjectViewProjectNode" />
@@ -648,6 +597,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.22063038" />
       <window_info id="Structure" order="1" sideWeight="0.5016129" side_tool="true" weight="0.24659607" />
@@ -662,12 +612,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49856734" weight="0.38379815" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49856734" weight="0.4435591" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49856734" visible="true" weight="0.2616202" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.38653556" weight="0.3492696" />
       <window_info anchor="bottom" id="Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.52589643" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.52589643" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50143266" side_tool="true" weight="0.47808766" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.6069057" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32934928" />
@@ -787,6 +737,12 @@
           <line>38</line>
           <properties />
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1091,13 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/user/view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/cart/DeleteAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1198,21 +1147,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/music/ListAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="31" column="69" lean-forward="true" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/CreateAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/common/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="51" column="73" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
+        <state relative-caret-position="388">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/DeleteAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/user/view.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="311">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1223,17 +1172,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/DeleteAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
+        <state relative-caret-position="100">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/common/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/CreateAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="740">
+          <caret line="51" column="73" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
