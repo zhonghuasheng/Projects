@@ -34,8 +34,7 @@ public class EditAction extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-    {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Part avatarFile = request.getPart("avatar");
         String name = request.getParameter("name");
         String birthday = request.getParameter("birthday");
