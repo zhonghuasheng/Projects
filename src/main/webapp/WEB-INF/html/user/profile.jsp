@@ -14,7 +14,7 @@ String basePath = request.getContextPath();
   <script src="<%=basePath%>/static/js/jquery-3.4.1.min.js"></script>
   <script>
     $(document).ready(function(){
-	    var gender="${sessionScope.user.gender }";
+	    var gender="${user.gender }";
 	    if(gender=="MALE"){
 	    	$("input[name='gender'][value='MALE']").attr("checked",true);
 	    }else if(gender=="FEMALE"){
@@ -35,15 +35,16 @@ String basePath = request.getContextPath();
         <div class="form-group">
           <h3><span>个人信息</span></h3>
         </div>
-        <form action="${pageContext.request.contextPath }/profile">
+        <form id="profile-update" action="${pageContext.request.contextPath }/profile" method="post">
+          <input type="hidden" id="uuid" name="uuid" value="${user.uuid }">
           <div class="form-group row">
             <c:choose>
-              <c:when test="${sessionScope.user.avatar==null }">
+              <c:when test="${user.avatar==null }">
                 <img src="<%=basePath%>/static/image/avatar.png" id="avatar" style="width: 80px;height:80px;">
                 <a href="javascript:;" id="upload">上传头像</a>
               </c:when>
               <c:otherwise>
-                <img src="${sessionScope.user.avatar }" id="avatar" class="img-thumbnail" style="width: 80px;height:80px;">
+                <img src="${user.avatar }" id="avatar" class="img-thumbnail" style="width: 80px;height:80px;">
                 <a href="javascript:;" id="upload">更换头像</a>
               </c:otherwise>
             </c:choose>
@@ -51,13 +52,13 @@ String basePath = request.getContextPath();
           <div class="form-group row">
             <label for="username" class="col-sm-2 col-form-label">用户名</label>
             <div class="col-sm-10">
-              <input class="form-control" type="text" id="username" name="username" value="${sessionScope.user.username }">
+              <input class="form-control" type="text" id="username" name="username" value="${user.username }">
             </div>
           </div>
           <div class="form-group row">
             <label for="email" class="col-sm-2 col-form-label">邮箱</label>
             <div class="col-sm-10">
-              <input readonly class="form-control-plaintext" type="text" id="email" name="email" value="${sessionScope.user.email }">
+              <input readonly class="form-control-plaintext" type="text" id="email" name="email" value="${user.email }">
             </div>
           </div>
           <div class="form-group row">
@@ -80,7 +81,7 @@ String basePath = request.getContextPath();
           <div class="form-group row">
             <label for="birthday" class="col-sm-2 col-form-label">生日</label>
             <div class="col-sm-10">
-              <input type="date" id="birthday" name="birthday" class="form-control" placeholder="出生日期" value="${sessionScope.user.birthday }" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+              <input type="date" id="birthday" name="birthday" class="form-control" placeholder="出生日期" value="${user.birthday }" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
             </div>
           </div>
           <button type="submit" class="btn btn-primary w-100">保存</button>

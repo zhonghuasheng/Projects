@@ -15,4 +15,5 @@ public interface UserService {
     boolean delete(String uuid);
     User get(String uuid);
     int count();
+    boolean update(User user);
 }

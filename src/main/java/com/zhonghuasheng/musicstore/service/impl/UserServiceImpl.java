@@ -74,4 +74,11 @@ public class UserServiceImpl implements UserService {
     public int count() {
         return userDao.count();
     }
+
+    @Override
+    public boolean update(User user) {
+        user.setLastModifiedBy(user.getUuid().toString());
+        user.setLastModifiedTime(new Timestamp(new Date().getTime()));
+        return userDao.update(user);
+    }
 }

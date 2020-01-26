@@ -54,7 +54,7 @@ String basePaths = request.getContextPath();
                   ${sessionScope.user.username}
                 </button>
                 <div class="dropdown-menu mt-0" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="<%=basePaths%>/profile">个人信息</a>
+                  <a class="dropdown-item" href="<%=basePaths%>/profile?uuid=${sessionScope.user.uuid }">个人信息</a>
                   <a class="dropdown-item" href="<%=basePaths%>/logout">退出登陆</a>
                 </div>
               </div>
