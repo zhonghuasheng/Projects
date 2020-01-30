@@ -1,4 +1,4 @@
-package com.zhonghuasheng.musicstore.action.user;
+package com.zhonghuasheng.musicstore.action.admin.user;
 
 import java.io.IOException;
 
@@ -24,6 +24,6 @@ public class ViewAction extends HttpServlet {
         String uuid = request.getParameter("uuid");
         User user = userService.get(uuid);
         request.setAttribute("user", user);
-        request.getRequestDispatcher("/WEB-INF/html/user/view.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/admin/user/view.jsp").forward(request, response);
     }
 }

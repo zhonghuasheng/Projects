@@ -1,4 +1,4 @@
-package com.zhonghuasheng.musicstore.action.music;
+package com.zhonghuasheng.musicstore.action.admin.music;
 
 import com.zhonghuasheng.musicstore.common.Constants;
 import com.zhonghuasheng.musicstore.model.Artist;
@@ -30,7 +30,7 @@ public class CreateAction extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Artist> artists = artistService.list();
         request.setAttribute("artists", artists);
-        request.getRequestDispatcher("/WEB-INF/html/music/create.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/admin/music/create.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -4,6 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>音乐详情</title>
+    <script src="${pageContext.request.contextPath}/static/js/music/view.js"></script>
   </head>
   <body>
     <%@include file="/WEB-INF/html/common/header.jsp"%>
@@ -21,7 +22,7 @@
             <p/>
             <div class="row">
               <div class="float-left">
-                <button class="btn btn-outline-secondary btn-sm addToCart">加入购物车</button>
+                <button class="btn btn-outline-secondary btn-sm" onclick="addToCart('${music.uuid}')">加入购物车</button>
               </div>
               <div class="float-left ml-10">
                 <button class="btn btn-outline-secondary btn-sm order">下单</button>

@@ -1,4 +1,4 @@
-package com.zhonghuasheng.musicstore.action.artist;
+package com.zhonghuasheng.musicstore.action.admin.artist;
 
 import java.io.IOException;
 import java.util.List;
@@ -26,7 +26,7 @@ public class ListAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/html/artist/list.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/admin/artist/list.jsp").forward(request, response);
     }
 
     @Override

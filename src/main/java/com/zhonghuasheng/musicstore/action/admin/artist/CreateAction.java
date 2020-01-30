@@ -1,4 +1,4 @@
-package com.zhonghuasheng.musicstore.action.artist;
+package com.zhonghuasheng.musicstore.action.admin.artist;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -41,7 +41,7 @@ public class CreateAction extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/html/artist/create.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/admin/artist/create.jsp").forward(request, response);
     }
 
     private boolean validateParameters(HttpServletRequest request, Artist artist) throws IOException, ServletException {

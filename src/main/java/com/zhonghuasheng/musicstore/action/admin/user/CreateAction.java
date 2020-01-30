@@ -1,4 +1,4 @@
-package com.zhonghuasheng.musicstore.action.user;
+package com.zhonghuasheng.musicstore.action.admin.user;
 
 import static com.zhonghuasheng.musicstore.action.user.RegisterAction.validateParameters;
 
@@ -26,7 +26,7 @@ public class CreateAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/html/user/create.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/html/admin/user/create.jsp").forward(request, response);
     }
 
     @Override

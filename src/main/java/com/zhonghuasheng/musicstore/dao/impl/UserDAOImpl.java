@@ -25,6 +25,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
     private static final String GET_USERS = "SELECT * FROM user_ WHERE username LIKE ? LIMIT ? OFFSET ?";
     private static final String GET_USER_BY_UUID = "SELECT * FROM user_ WHERE uuid=?";
     private static final String SELECT_COUNT = "SELECT COUNT(1) FROM user_";
+    private static final String UPDATE_USER = "UPDATE user_ SET username=?, gender=?, birthday=?, last_modified_time=?, last_modified_by=? WHERE uuid=?";
 
     @Override
     public User create(User user) {
@@ -72,12 +73,9 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            if (resultSet.next()) {
+            while(resultSet.next()) {
                 user = new User();
-                user.setUuid(UUID.fromString(resultSet.getString("uuid")));
-                user.setUsername(resultSet.getString("username"));
-                user.setEmail(resultSet.getString("email"));
-                user.setPassword(resultSet.getString("password"));
+                convertPOtoVO(resultSet, user);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -178,6 +176,34 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         }
 
         return user;
+    }
+
+    @Override
+    public boolean update(User user) {
+        Connection connection = JDBCUtils.getConnection();
+        boolean result = false;
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USER);
+
+            preparedStatement.setString(1, user.getUsername());
+            preparedStatement.setString(2, user.getGender().toString());
+
+            if (user.getBirthday() != null) {
+                preparedStatement.setDate(3, new Date(user.getBirthday().getTime()));
+            } else {
+                preparedStatement.setDate(3, null);
+            }
+
+            preparedStatement.setTimestamp(4, user.getLastModifiedTime());
+            preparedStatement.setString(5, user.getLastModifiedBy());
+            preparedStatement.setString(6, String.valueOf(user.getUuid()));
+            result = preparedStatement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return result;
     }
 
     private void convertPOtoVO(ResultSet resultSet, User user) throws SQLException {
