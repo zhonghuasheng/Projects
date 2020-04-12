@@ -1,4 +1,4 @@
-package com.zhonghuasheng.musicstore.action;
+package com.zhonghuasheng.musicstore.action.home;
 
 import java.io.IOException;
 
