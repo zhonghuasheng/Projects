@@ -7,14 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/musicstore_jsp_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/musicstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/musicstore-jsp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/musicstore-jsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/ArtistRecommendationAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/PreferAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/HomeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/HomeAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JSPTemplate" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="ServletTemplate" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -339,7 +335,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558517283369</updated>
       <workItem from="1580479729703" duration="2250000" />
-      <workItem from="1586659575140" duration="1885000" />
+      <workItem from="1586659575140" duration="2416000" />
     </task>
     <task id="LOCAL-00001" summary="feat(music): add basic structure of music component and music create function">
       <created>1577155492925</created>
@@ -411,6 +407,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586660012942" />
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1586693260135">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586693260135" />
     <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1586659902304">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
