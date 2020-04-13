@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/recommendation")
+@WebServlet("/music/recommendation")
 public class MusicRecommendationAction extends HttpServlet {
 
     private MusicService musicService = new MusicServiceImpl();

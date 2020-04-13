@@ -59,4 +59,9 @@ public class ArtistServiceImpl implements ArtistService {
     public List<Artist> list() {
         return artistDao.list();
     }
+
+    @Override
+    public List<Artist> getRecommendArtist() {
+        return artistDao.getRecommendArtist();
+    }
 }

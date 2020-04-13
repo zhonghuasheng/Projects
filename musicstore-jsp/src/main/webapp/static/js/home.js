@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     // 推荐音乐
     $.ajax({
-        url: "/musicstore/recommendation",
+        url: "/musicstore/music/recommendation",
         type: "get",
         async: true,
         dataType: "json",
@@ -33,16 +33,47 @@ $(document).ready(function() {
                     html += '<div class="recommend-item"><img src="'
                          + item.uuid
                          + '.png">'
-                         + '<div class="recommend-item-title"><a href="/playlist?id=924680166">'
+                         + '<div class="recommend-item-title"><a href="/musicstore/music/view?uuid='
+                         + item.uuid
+                         + '">'
                          + item.title
                          + '</a></div></div>';
 
                 });
-                $(".recommend-hot").append(html);
+                $(".recommend-hot .recommend-li").append(html);
             }
         },
         error: function() {
             $(".recommend-hot").hide();
         }
     });
+
+    // 推荐艺人
+    $.ajax({
+        url: "/musicstore/artist/recommendation",
+        type: "get",
+        async: true,
+        dataType: "json",
+        success: function(data) {
+            console.log(data);
+            var artists = data.data;
+            if (artists.length > 0) {
+                var html = "";
+                artists.forEach(function (item) {
+                    html += '<div class="recommend-item"><img src="/musicstore/document-upload/avatar/'
+                         + item.avatar
+                         + '"><div class="recommend-item-title"><a href="/playlist?id=924680166">'
+                         + item.name
+                         + '</a></div></div>';
+                });
+                $(".recommend-artist .recommend-li").append(html);
+            }
+        },
+        error: function() {
+            $(".recommend-artist").hide();
+        }
+    })
 });
+
+
+
