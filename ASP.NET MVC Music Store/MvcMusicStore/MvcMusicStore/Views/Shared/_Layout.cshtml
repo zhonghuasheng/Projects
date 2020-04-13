@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1><a href="/">ASP.NET MVC 音乐商店</a></h1>    
+        <ul id="navlist">
+            <li class="first"><a href="@Url.Content("~")" id="current">首页</a></li>
+            <li><a href="@Url.Content("~/Store/")">商店</a></li>
+            <li>@{Html.RenderAction("CartSummary", "ShoppingCart");}</li>
+            <li><a href="@Url.Content("~/Account/LogOn/")">登录</a></li>
+            @*<li><a href="@Url.Content("~/StoreManager/")">Admin</a></li>*@
+        </ul>
+    </div>
+    @*此处添加左侧的年代分类导航*@
+    @{Html.RenderAction("GenreMenu", "Store");}
+    <div id="main">
+        @RenderBody()
+    </div>
+    <div id="footer">
+        ASP.NET MVC 音乐商店 欢迎您的光临
+    </div>
+</body>
+</html>

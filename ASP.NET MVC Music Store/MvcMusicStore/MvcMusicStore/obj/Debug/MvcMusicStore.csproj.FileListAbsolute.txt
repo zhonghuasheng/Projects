@@ -1,0 +1,26 @@
+E:\C#\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.dll
+E:\C#\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.pdb
+E:\C#\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.dll
+E:\C#\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
+E:\C#\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
+C:\Users\陈勇\Desktop\aa\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.dll
+C:\Users\陈勇\Desktop\aa\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.pdb
+C:\Users\陈勇\Desktop\aa\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
+C:\Users\陈勇\Desktop\aa\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.dll
+C:\Users\陈勇\Desktop\aa\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
+C:\Users\陈勇\Desktop\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.dll
+C:\Users\陈勇\Desktop\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.pdb
+C:\Users\陈勇\Desktop\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
+C:\Users\陈勇\Desktop\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.dll
+C:\Users\陈勇\Desktop\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
+C:\Users\陈勇\Desktop\ASP.NET学习\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.dll
+C:\Users\陈勇\Desktop\ASP.NET学习\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.pdb
+C:\Users\陈勇\Desktop\ASP.NET学习\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.dll
+C:\Users\陈勇\Desktop\ASP.NET学习\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
+E:\MyProject\小勇-ASP.NET MVC Music Store-注释过\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.dll.config
+E:\MyProject\小勇-ASP.NET MVC Music Store-注释过\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.dll
+E:\MyProject\小勇-ASP.NET MVC Music Store-注释过\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.pdb
+E:\MyProject\小勇-ASP.NET MVC Music Store-注释过\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\bin\System.Web.Mvc.dll
+E:\MyProject\小勇-ASP.NET MVC Music Store-注释过\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.dll
+E:\MyProject\小勇-ASP.NET MVC Music Store-注释过\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
+E:\MyProject\小勇-ASP.NET MVC Music Store-注释过\小勇-ASP.NET MVC Music Store\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache

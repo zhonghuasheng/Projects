@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GradeMis">
+</Property><Property Name="解决方案文件" Value="D:\我的文档\网站\学生成绩管理系统\GradeMis.sln">
+</Property><Property Name="Date" Value="2013年12月8日">
+</Property><Property Name="Time" Value="22:07">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="GradeMis.sln" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\GradeMis.sln">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="GradeMis.csproj" Description="项目文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\GradeMis.csproj">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="GradeMis.csproj.user" Description="项目用户文件成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\GradeMis.csproj.user">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminCourse.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminCourse.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminCourseAdd.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminCourseAdd.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGrade.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGrade.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGradeAdd.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGradeAdd.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGradeAddNext.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGradeAddNext.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGroup.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGroup.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGroupAdd.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGroupAdd.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminStu.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStu.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminStuAdd.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuAdd.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminStuSearch.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuSearch.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminStuStat.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuStat.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminTeacher.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminTeacher.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminTeacherAdd.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminTeacherAdd.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminUrl.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrl.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminUrlAdd.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrlAdd.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminUrlDel.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrlDel.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AssemblyInfo.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="Default.aspx.cs" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Default.aspx.cs">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="Global.asax.cs" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Global.asax.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="Login.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Login.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="Main.aspx.cs" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Main.aspx.cs">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminCourse.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminCourse.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminCourseAdd.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminCourseAdd.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGrade.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGrade.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGradeAdd.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGradeAdd.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGradeAddNext.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGradeAddNext.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGroup.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGroup.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminGroupAdd.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGroupAdd.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminStu.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStu.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminStuAdd.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuAdd.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminStuSearch.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuSearch.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminStuStat.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuStat.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminTeacher.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminTeacher.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminTeacherAdd.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminTeacherAdd.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminUrl.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrl.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminUrlAdd.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrlAdd.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="AdminUrlDel.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrlDel.aspx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="Default.aspx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Default.aspx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="Global.asax" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Global.asax">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="Login.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Login.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="Main.aspx" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Main.aspx">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="Web.config" Description="文件已成功备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Web.config">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminCourseAdd.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminCourseAdd.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminGrade.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGrade.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminGradeAdd.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGradeAdd.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminGradeAddNext.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGradeAddNext.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminGroup.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGroup.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminGroupAdd.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminGroupAdd.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminStu.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStu.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminStuAdd.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuAdd.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminStuSearch.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuSearch.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminStuStat.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminStuStat.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminTeacher.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminTeacher.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminTeacherAdd.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminTeacherAdd.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminUrl.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrl.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminUrlAdd.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrlAdd.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="AdminUrlDel.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\AdminUrlDel.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="Default.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Default.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="Global.asax.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Global.asax.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="Login.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Login.aspx.resx">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="Main.aspx.resx" Description="未能将文件备份为 D:\我的文档\网站\学生成绩管理系统\Backup\Main.aspx.resx">
+</Event><Event ErrorLevel="1" Project="GradeMis" Source="GradeMis.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="GradeMis" Source="GradeMis.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="GradeMis" Source="GradeMis.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="GradeMis" Source="GradeMis.csproj" Description="">
+</Event><Event ErrorLevel="0" Project="" Source="GradeMis.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="GradeMis.sln" Description="Converted">
+</Event></UpgradeLog>

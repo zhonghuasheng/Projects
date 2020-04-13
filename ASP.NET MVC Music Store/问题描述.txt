@@ -1,0 +1,8 @@
+1、登录之后不能显示用户名，如果可能的话有注销按钮
+2、未能实现修改密码，不知功能何在
+3、在配置管理工具的时候，我的电脑需要修改Windows->Microsoft.NET->Framework->v4.0.30319->Config->machine.comfig中的
+<connectionStrings>
+		<!--<add name="LocalSqlServer" connectionString="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true" providerName="System.Data.SqlClient"/>-->
+		<add name="LocalSqlServer" connectionString="Server=陈勇-PC;DataBase=aspnetdb;Integrated Security=true;Trusted_Connection=true"/>
+	</connectionStrings>  方能通过
+4、在于数据库进行交互的时候需要开启SQL Server服务

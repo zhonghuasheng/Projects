@@ -1,0 +1,31 @@
+﻿@model MvcMusicStore.Models.Album
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>详细信息</h2>
+
+<fieldset>
+    <legend>Album</legend>
+
+    <div class="display-label">年代</div>
+    <div class="display-field">@Model.GenreId</div>
+
+    <div class="display-label">艺术家</div>
+    <div class="display-field">@Model.ArtistId</div>
+
+    <div class="display-label">歌名</div>
+    <div class="display-field">@Model.Title</div>
+
+    <div class="display-label">价格</div>
+    <div class="display-field">@String.Format("{0:F}", Model.Price)</div>
+
+    <div class="display-label">专辑位置</div>
+    <div class="display-field">@Model.AlbumArtUrl</div>
+</fieldset>
+<p>
+    @Html.ActionLink("编辑", "Edit", new { id=Model.AlbumId }) |
+    @Html.ActionLink("返回列表", "Index")
+</p>
+

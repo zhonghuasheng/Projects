@@ -1,0 +1,21 @@
+﻿@model List<MvcMusicStore.Models.Album>
+@{
+    //设置页面的标题
+    ViewBag.Title = "ASP.NET MVC 音乐商店";
+}
+<div id="promotion">   
+</div>
+<h3>
+    <em>销售排名</em>
+</h3>
+<ul id="album-list">
+    @foreach (var album in Model)
+    {
+        <li>
+            <a href="@Url.Action("Details","Store",new {id=album.AlbumId})">
+                <img alt="@album.Title" src="@album.AlbumArtUrl" />
+                <span>@album.Title</span>
+            </a>
+        </li>
+    }
+</ul>
