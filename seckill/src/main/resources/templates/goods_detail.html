@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout"
+>
+<head>
+    <title>商品详情</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--jquery-->
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+    <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+    <!-- jquery-validator -->
+    <script type="text/javascript" th:src="@{/jquery-validation/jquery.validate.min.js}"></script>
+    <script type="text/javascript" th:src="@{/jquery-validation/localization/messages_zh.min.js}"></script>
+    <!-- layer -->
+    <script type="text/javascript" th:src="@{/layer/layer.js}"></script>
+    <!-- md5.js -->
+    <script type="text/javascript" th:src="@{/js/md5.min.js}"></script>
+    <!-- common.js -->
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+
+</head>
+<body>
+    <div class="panel panel-default">
+        <div class="panel-heading">秒杀商品详情</div>
+        <div class="panel-body">
+            <span th:if="${user eq null}">您还没有登陆，请登陆后再操作<br></span>
+            <span>没有收货地址的提示</span>
+        </div>
+
+        <table class="table" id="goodsList">
+            <tr>
+                <td>商品名称</td>
+                <td colspan="3" th:text="${goods.goodsName}"></td>
+            </tr>
+            <tr>
+                <td>商品图片</td>
+                <td colspan="3"><img th:src="@{${goods.goodsImg}}" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>秒杀开始时间</td>
+                <td th:text="${#dates.format(goods.startDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+                <td id="seckillTip">
+                    <input type="hidden" id="remainSeconds" th:value="${remainSeconds}">
+                    <span th:if="${seckillStatus eq 0}">秒杀倒计时：<span id="countDown" th:text="${remainSeconds}"></span></span>
+                    <span th:if="${seckillStatus eq 1}">秒杀进行中</span>
+                    <span th:if="${seckillStatus eq 2}">秒杀已结束</span>
+                </td>
+                <td>
+                    <form id="seckillForm" method="post" action="/seckill">
+                        <button id="buyButton" class="btn btn-primary btn-block" type="submit">立即秒杀</button>
+                        <input type="hidden" name="goodsId" th:value="${goods.id}">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>商品原价</td>
+                <td th:text="${goods.goodsPrice}"></td>
+            </tr>
+            <tr>
+                <td>秒杀价</td>
+                <td th:text="${goods.seckillPrice}"></td>
+            </tr>
+            <tr>
+                <td>库存数量</td>
+                <td th:text="${goods.stockCount}"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    var remainSeconds = $('#remainSeconds').val();
+    var timeout;
+    $(function() {
+        countDown();
+    });
+
+    function countDown() {
+        if(remainSeconds > 0) { //倒计时
+            $('#buyButton').attr('disabled', true);
+            timeout = setTimeout(function() {
+                --remainSeconds;
+                $('#countDown').text(remainSeconds);
+                $('#remainSeconds').val(remainSeconds);
+                countDown();
+            }, 1000);
+        } else if(remainSeconds == 0) { //进行中
+            $('#buyButton').attr('disabled', false);
+            if(timeout) {
+                clearTimeout(timeout);
+            }
+            $('#seckillTip').html("秒杀进行中");
+        } else { //已结束
+            $('#buyButton').attr('disabled', true);
+            $('#seckillTip').html("秒杀已结束");
+        }
+    }
+</script>
+</html>
