@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="musicstore-jsp:war exploded" />
+      <artifact name="musicstore-jsp:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="" />
+    <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/MusicDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/MusicDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/MusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/MusicServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,28 +81,29 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zhonghuasheng.musicstore.dao" />
+      <recent name="com.zhonghuasheng.musicstore.dao.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\workspace\Projects\musicstore-jsp\src\main" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\static\image" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\static\bootstrap\js" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\user" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\admin\user" />
       <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\admin\music" />
       <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\admin\artist" />
       <recent name="E:\code\musicstore-jsp\src\main\webapp\static\swiper" />
       <recent name="E:\code\musicstore-jsp\src\main\webapp\static\js\user" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.zhonghuasheng.musicstore.dao" />
-      <recent name="com.zhonghuasheng.musicstore.dao.impl" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\code\musicstore-jsp\src\main\webapp\static\image" />
-      <recent name="E:\code\musicstore-jsp\src\main\webapp\static\bootstrap\js" />
-      <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\user" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.MS">
@@ -127,10 +136,9 @@
       </method>
     </configuration>
     <configuration name="MS" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.39" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/musicstore/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="musicstore-jsp:war exploded">
+        <artifact name="musicstore-jsp:war">
           <settings>
             <option name="CONTEXT_PATH" value="/musicstore" />
           </settings>
@@ -139,11 +147,11 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_(1)_musicstore-jsp" />
       </server-settings>
-      <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
-      <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+      <log_file checked="false" alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
+      <log_file checked="false" alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+      <log_file checked="false" alias="Tomcat Catalina Log" path="%IDEA_RUN:CATALINA_BASE%/logs/catalina.*" />
+      <log_file checked="false" alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
       <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file enabled="true" id="Tomcat Host Manager" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="64844" />
       </RunnerSettings>
@@ -195,7 +203,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="musicstore-jsp:war exploded" />
+          <artifact name="musicstore-jsp:war" />
         </option>
       </method>
     </configuration>
@@ -301,7 +309,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.14914992" />
+          <option name="contentProportion" value="0.08037094" />
           <treeState>
             <expand>
               <path>
@@ -311,7 +319,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -332,7 +340,7 @@
       <updated>1558517283369</updated>
       <workItem from="1580479729703" duration="2250000" />
       <workItem from="1586659575140" duration="3178000" />
-      <workItem from="1586745605021" duration="609000" />
+      <workItem from="1586745605021" duration="4763000" />
     </task>
     <task id="LOCAL-00001" summary="feat(music): add basic structure of music component and music create function">
       <created>1577155492925</created>
@@ -401,66 +409,66 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="30" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1586659998942" />
-    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586660012942">
+    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586747825029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586660012942" />
-    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1586693260135">
+    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586747825029" />
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1586760183454">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586693260135" />
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586760183454" />
     <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1586659902304">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586659902304" />
-    <state width="1100" height="297" key="GridCell.Tab.0.bottom" timestamp="1586693988835">
+    <state width="1189" height="236" key="GridCell.Tab.0.bottom" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586693988835" />
-    <state width="1100" height="297" key="GridCell.Tab.0.center" timestamp="1586693988834">
+    <state width="1189" height="236" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.0.center" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586693988834" />
-    <state width="1100" height="297" key="GridCell.Tab.0.left" timestamp="1586693988834">
+    <state width="1189" height="236" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.0.left" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586693988834" />
-    <state width="1100" height="297" key="GridCell.Tab.0.right" timestamp="1586693988835">
+    <state width="1189" height="236" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.0.right" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586693988835" />
-    <state width="1100" height="297" key="GridCell.Tab.1.bottom" timestamp="1586693979846">
+    <state width="1189" height="236" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.1.bottom" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586693979846" />
-    <state width="1100" height="297" key="GridCell.Tab.1.center" timestamp="1586693979845">
+    <state width="1189" height="236" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.1.center" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1586693979845" />
-    <state width="1100" height="297" key="GridCell.Tab.1.left" timestamp="1586693979845">
+    <state width="1189" height="236" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.1.left" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1586693979845" />
-    <state width="1100" height="297" key="GridCell.Tab.1.right" timestamp="1586693979845">
+    <state width="1189" height="236" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.1.right" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1586693979845" />
-    <state width="1100" height="297" key="GridCell.Tab.2.bottom" timestamp="1586693962761">
+    <state width="1189" height="236" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.2.bottom" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586693962761" />
-    <state width="1100" height="297" key="GridCell.Tab.2.center" timestamp="1586693962761">
+    <state width="1189" height="236" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.2.center" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1586693962761" />
-    <state width="1100" height="297" key="GridCell.Tab.2.left" timestamp="1586693962761">
+    <state width="1189" height="236" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.2.left" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1586693962761" />
-    <state width="1100" height="297" key="GridCell.Tab.2.right" timestamp="1586693962761">
+    <state width="1189" height="236" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="236" key="GridCell.Tab.2.right" timestamp="1586760319011">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1100" height="297" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1586693962761" />
+    <state width="1189" height="236" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
     <state width="1100" height="297" key="GridCell.Tab.3.bottom" timestamp="1586693844548">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -525,18 +533,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1100" height="297" key="GridCell.Tab.6.right/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state x="404" y="109" width="549" height="524" key="StructurePopup" timestamp="1586760370602">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="404" y="109" width="549" height="524" key="StructurePopup/0.0.1366.738@0.0.1366.738" timestamp="1586760370602" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java</url>
-          <line>43</line>
+          <line>41</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java</url>
-          <line>38</line>
+          <line>36</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -545,18 +557,26 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/MusicServiceImpl.java</url>
           <line>30</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="((JDBC42PreparedStatement)preparedStatement).originalSql" custom="com.mysql.jdbc.JDBC42PreparedStatement" />
+      </configuration>
       <configuration name="com.poratu.idea.plugins.tomcat">
         <watch expression="request.getParameter(&quot;pageSize&quot;)" language="JAVA" />
         <watch expression="(artistService.count() + pageSize - 1) / pagination.getPageSize()" language="JAVA" />
