@@ -21,13 +21,8 @@ public class MusicRecommendationAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Pagination pagination = new Pagination();
-        pagination.setCurrentPage(1);
-        pagination.setTotalPage(10);
-
-        List<Music> musics = musicService.find(pagination);
-        pagination.setData(musics);
-        JSONObject result = new JSONObject(pagination);
+        List<Music> musics = musicService.getRecommendMusic();
+        JSONObject result = new JSONObject(musics);
         resp.getWriter().write(result.toString());
     }
 }

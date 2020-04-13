@@ -45,4 +45,9 @@ public class MusicServiceImpl implements MusicService {
     public Music get(String uuid) {
         return musicDAO.get(uuid);
     }
+
+    @Override
+    public List<Music> getRecommendMusic() {
+        return musicDAO.getRecommendMusic();
+    }
 }

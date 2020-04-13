@@ -9,4 +9,5 @@ public interface MusicDAO extends BaseDAO<Music> {
 
     int count();
     List<Music> find(Pagination pagination);
+    List<Music> getRecommendMusic();
 }

@@ -5,10 +5,7 @@ import com.zhonghuasheng.musicstore.dao.MusicDAO;
 import com.zhonghuasheng.musicstore.model.Music;
 import com.zhonghuasheng.musicstore.model.Pagination;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -21,6 +18,7 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
     private static final String SELECT_COUNT = "SELECT COUNT(1) FROM music";
     private static final String DELETE_MUSIC = "UPDATE music SET deleted = FALSE WHERE uuid=%s;";
     private static final String GET_MUSIC = "SELECT * FROM music WHERE uuid=?";
+    private static final String GET_RECOMMEND_MUSICS = "SELECT * FROM music ORDER BY last_modified_time DESC LIMIT 10";
 
     @Override
     public Music create(Music music) {
@@ -59,6 +57,22 @@ public class MusicDAOImpl extends AbstractBaseDAOImpl<Music> implements MusicDAO
             preparedStatement.setInt(2, pagination.getPageSize());
             preparedStatement.setInt(3, (pagination.getCurrentPage() - 1) * pagination.getPageSize());
             ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                musics.add(convertPOtoVO(resultSet));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return musics;
+    }
+
+    public List<Music> getRecommendMusic() {
+        Connection connection = JDBCUtils.getConnection();
+        List<Music> musics = new ArrayList<>();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(GET_RECOMMEND_MUSICS);
             while (resultSet.next()) {
                 musics.add(convertPOtoVO(resultSet));
             }

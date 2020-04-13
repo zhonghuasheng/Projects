@@ -12,4 +12,5 @@ public interface MusicService {
     int count();
     boolean delete(String uuid);
     Music get(String uuid);
+    List<Music> getRecommendMusic();
 }
