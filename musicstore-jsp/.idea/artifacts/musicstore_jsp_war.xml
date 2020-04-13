@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="musicstore-jsp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>musicstore-jsp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="musicstore.war">
+      <element id="artifact" artifact-name="musicstore-jsp:war exploded" />
+    </root>
+  </artifact>
+</component>

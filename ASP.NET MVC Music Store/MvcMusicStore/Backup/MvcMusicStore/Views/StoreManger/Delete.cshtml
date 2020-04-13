@@ -1,0 +1,20 @@
+﻿@model MvcMusicStore.Models.Album
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>删除</h2>
+
+<p>你确定要删除<strong>@Model.Title</strong>吗？</p>
+@using (Html.BeginForm())
+{ 
+    <p>
+        <input type="submit" value="删除"/>
+    </p>
+    <p>
+        @Html.ActionLink("返回列表","Index")
+    </p>
+}
+
+

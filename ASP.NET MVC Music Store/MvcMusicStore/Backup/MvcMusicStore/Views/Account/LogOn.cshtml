@@ -1,0 +1,49 @@
+﻿@model Mvc3ToolsUpdateWeb_Default.Models.LogOnModel
+
+@{
+    ViewBag.Title = "Log On";
+}
+
+<h2>登录页面</h2>
+<p>
+    请输入用户名和密码. @Html.ActionLink("注册", "Register") 没有注册过请注册.
+</p>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@Html.ValidationSummary(true, "登录失败. 请检查错误并重试.")
+
+
+@using (Html.BeginForm()) {
+    <div>
+        <fieldset>
+            <legend>账户信息</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.UserName,"用户名")
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Password,"密码")
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+
+            <div class="editor-label">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe, "记住密码")
+            </div>
+
+            <p>
+                <input type="submit" value="登录" />
+            </p>
+        </fieldset>
+    </div>
+}

@@ -1,0 +1,4 @@
+E:\C#\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.dll
+E:\C#\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.pdb
+E:\C#\MvcMusicStore\MvcMusicStore\obj\Release\MvcMusicStore.dll
+E:\C#\MvcMusicStore\MvcMusicStore\obj\Release\MvcMusicStore.pdb

@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{00000000-0000-0000-0000-000000000000}") = "GradeMis", "GradeMis.csproj", "{71D28FBF-F0C7-4489-844F-EAB7C702097A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71D28FBF-F0C7-4489-844F-EAB7C702097A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D28FBF-F0C7-4489-844F-EAB7C702097A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D28FBF-F0C7-4489-844F-EAB7C702097A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D28FBF-F0C7-4489-844F-EAB7C702097A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

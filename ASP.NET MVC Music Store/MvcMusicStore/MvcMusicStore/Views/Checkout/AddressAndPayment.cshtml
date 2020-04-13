@@ -1,0 +1,28 @@
+﻿@model MvcMusicStore.Models.Order
+
+@{
+    ViewBag.Title = "AddressAndPayment";
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validare.unobtrusive.min.js")" type="text/javascript"></script>
+@using (Html.BeginForm())
+{ 
+    <h2>填写信息-付款</h2>
+    <fieldset>
+        <legend>购物信息</legend>
+        @Html.EditorForModel();
+    </fieldset>
+    <fieldset>
+        <legend>付款</legend>
+        <p>新店开张，所有商品凭优惠码免费.</p>
+        <div class="editor-label">
+            @Html.Label("优惠码")
+        </div>
+        <div class="editor-field">
+            @Html.TextBox("PromCode")
+        </div>
+    </fieldset>
+    <input type="submit" value="提交订单" />
+}
+
+
