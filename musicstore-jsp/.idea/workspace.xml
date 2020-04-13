@@ -7,13 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/MusicDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/MusicDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/MusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/MusicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +337,7 @@
       <updated>1558517283369</updated>
       <workItem from="1580479729703" duration="2250000" />
       <workItem from="1586659575140" duration="3178000" />
-      <workItem from="1586745605021" duration="4763000" />
+      <workItem from="1586745605021" duration="9563000" />
     </task>
     <task id="LOCAL-00001" summary="feat(music): add basic structure of music component and music create function">
       <created>1577155492925</created>
@@ -417,58 +414,58 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586760183454" />
-    <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1586659902304">
+    <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1586760707161">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586659902304" />
-    <state width="1189" height="236" key="GridCell.Tab.0.bottom" timestamp="1586760319011">
+    <state x="463" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586760707161" />
+    <state width="1189" height="116" key="GridCell.Tab.0.bottom" timestamp="1586779451551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.0.center" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586779451551" />
+    <state width="1189" height="116" key="GridCell.Tab.0.center" timestamp="1586779451551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.0.left" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586779451551" />
+    <state width="1189" height="116" key="GridCell.Tab.0.left" timestamp="1586779451551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.0.right" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586779451551" />
+    <state width="1189" height="116" key="GridCell.Tab.0.right" timestamp="1586779451551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.1.bottom" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586779451551" />
+    <state width="1189" height="116" key="GridCell.Tab.1.bottom" timestamp="1586779451551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.1.center" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586779451551" />
+    <state width="1189" height="116" key="GridCell.Tab.1.center" timestamp="1586779451551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.1.left" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1586779451551" />
+    <state width="1189" height="116" key="GridCell.Tab.1.left" timestamp="1586779451551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.1.right" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1586779451551" />
+    <state width="1189" height="116" key="GridCell.Tab.1.right" timestamp="1586779451551">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.2.bottom" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1586779451551" />
+    <state width="1189" height="116" key="GridCell.Tab.2.bottom" timestamp="1586779451224">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.2.center" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586779451224" />
+    <state width="1189" height="116" key="GridCell.Tab.2.center" timestamp="1586779451224">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.2.left" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1586779451224" />
+    <state width="1189" height="116" key="GridCell.Tab.2.left" timestamp="1586779451224">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
-    <state width="1189" height="236" key="GridCell.Tab.2.right" timestamp="1586760319011">
+    <state width="1189" height="116" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1586779451224" />
+    <state width="1189" height="116" key="GridCell.Tab.2.right" timestamp="1586779451224">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="236" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1586760319011" />
+    <state width="1189" height="116" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1586779451224" />
     <state width="1100" height="297" key="GridCell.Tab.3.bottom" timestamp="1586693844548">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -537,6 +534,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="404" y="109" width="549" height="524" key="StructurePopup/0.0.1366.738@0.0.1366.738" timestamp="1586760370602" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586769301225">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1586769301225" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -565,11 +566,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java</url>
           <line>58</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

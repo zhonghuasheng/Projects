@@ -83,68 +83,7 @@ String basePath = request.getContextPath();
           <div class="recommend-hot">
               <div class="title">热门推荐</div>
               <div class="subnav-small"></div>
-              <div class="recommend-li">
-                <div class="recommend-item">
-                  <img src="http://p2.music.126.net/gHHw9kV30B7WbRjtfBOWSw==/109951164589959996.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">[华语速爆新歌] 最新华语音乐推荐</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p2.music.126.net/5TkiXM8TgvmJ_K-THmQOcw==/19141397928073048.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">流行金属乐 | 风中摇滚的长发！</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p2.music.126.net/2yV7awHozWl6l4I6hHdevw==/109951164478650119.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">好听到可以单曲循环鸭</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p1.music.126.net/4T7p6yhhzQEEeLn0e4dwKA==/109951164183879192.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">声声慢 - y9</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p2.music.126.net/hLv4YJOiLTE16LlRpdxZgQ==/109951164152314267.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">用音乐保持你每天的嘴角上扬</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p1.music.126.net/uoQxwMYeHNaSY5ZUkVtlzA==/109951164586388885.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">录音棚年终小总结（第三期聊天电台）</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p2.music.126.net/Q90yZS6jznXxPsH9Vxipng==/109951163953207517.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">Cover&amp;原唱『超好听的合集』</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p1.music.126.net/YpjQOkKQg1HiugDh6LI2Sg==/109951164580476363.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">大眠</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p2.music.126.net/ebFrgGdxqmOmUwe9w_GP3g==/109951164488966478.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">[宝贝的八音盒] 为宝宝准备的哄睡音乐</a>
-                  </div>
-                </div>
-                <div class="recommend-item">
-                  <img src="http://p2.music.126.net/FT7h6zQv8F_P-IFBfRfayg==/109951164223437502.jpg?param=140y140">
-                  <div class="recommend-item-title">
-                    <a href="/playlist?id=924680166">纯音乐图书馆✦简单干净钢琴旋律</a>
-                  </div>
-                </div>
-              </div>
+              <div class="recommend-li"></div>
           </div>
           <div class="recommend-artist">
             <div class="title">艺人推荐</div>
