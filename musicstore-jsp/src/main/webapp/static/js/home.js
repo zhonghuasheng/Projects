@@ -86,7 +86,7 @@ $(document).ready(function() {
             if (users.length > 0) {
                 let html = "";
                 users.forEach(function(item) {
-                    html += '<div class="vistor"><div class="avator"><img src="/muscistore/document-upload/avatar/'
+                    html += '<div class="vistor"><div class="avator"><img src="/musicstore/document-upload/avatar/'
                          + item.avatar
                          + '"></div><div class="vistor-info"><p>'
                          + item.username
