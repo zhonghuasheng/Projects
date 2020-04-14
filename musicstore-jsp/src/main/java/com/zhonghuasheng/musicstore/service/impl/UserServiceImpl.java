@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User signUp(User user) {
         user.setUuid(UUID.randomUUID());
-        user.setAvatar(Constants.BLANK);
+        user.setAvatar(Constants.DEFAULT_USER_AVATAR);
         user.setRole(Role.USER);
         user.setGender(Gender.UNKNOW);
         user.setCreateTime(new Timestamp(new Date().getTime()));
