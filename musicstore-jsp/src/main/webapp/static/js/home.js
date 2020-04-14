@@ -62,7 +62,9 @@ $(document).ready(function() {
                 artists.forEach(function (item) {
                     html += '<div class="recommend-item"><img src="/musicstore/document-upload/avatar/'
                          + item.avatar
-                         + '"><div class="recommend-item-title"><a href="/playlist?id=924680166">'
+                         + '"><div class="recommend-item-title"><a href="/musicstore/artist/view?uuid='
+                         + item.uuid
+                         + '">'
                          + item.name
                          + '</a></div></div>';
                 });
