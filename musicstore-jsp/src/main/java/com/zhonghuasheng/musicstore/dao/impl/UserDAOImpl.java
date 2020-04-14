@@ -22,7 +22,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
     private static final String GET_USER_BY_UUID = "SELECT * FROM user_ WHERE uuid=?";
     private static final String SELECT_COUNT = "SELECT COUNT(1) FROM user_";
     private static final String UPDATE_USER = "UPDATE user_ SET username=?, gender=?, birthday=?, last_modified_time=?, last_modified_by=? WHERE uuid=?";
-    private static final String GET_NEW_TESTER = "SELECT * FROM user_ ORDER BY last_modified_time DESC LIMIT 6";
+    private static final String GET_NEW_TESTER = "SELECT * FROM user_ ORDER BY last_modified_time DESC LIMIT 3";
 
     @Override
     public User create(User user) {
