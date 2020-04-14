@@ -1,10 +1,6 @@
 package com.zhonghuasheng.musicstore.dao.impl;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -26,6 +22,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
     private static final String GET_USER_BY_UUID = "SELECT * FROM user_ WHERE uuid=?";
     private static final String SELECT_COUNT = "SELECT COUNT(1) FROM user_";
     private static final String UPDATE_USER = "UPDATE user_ SET username=?, gender=?, birthday=?, last_modified_time=?, last_modified_by=? WHERE uuid=?";
+    private static final String GET_NEW_TESTER = "SELECT * FROM user_ ORDER BY last_modified_time DESC LIMIT 6";
 
     @Override
     public User create(User user) {
@@ -57,6 +54,23 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
     }
 
     @Override
+    public List<User> getNewTester() {
+        Connection connection = JDBCUtils.getConnection();
+        List<User> users = new ArrayList<>();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(GET_NEW_TESTER);
+            while (resultSet.next()) {
+                users.add(convertPOtoVO(resultSet));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return users;
+    }
+
+    @Override
     public User getUserByEmailAndPassword(String email, String password) {
         if (email == null || email.equals("")) {
             return null;
@@ -74,8 +88,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while(resultSet.next()) {
-                user = new User();
-                convertPOtoVO(resultSet, user);
+                user = convertPOtoVO(resultSet);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -162,14 +175,14 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
     @Override
     public User get(String uuid) {
         Connection connection = JDBCUtils.getConnection();
-        User user = new User();
+        User user = null;
         PreparedStatement preparedStatement = null;
         try {
             preparedStatement = connection.prepareStatement(GET_USER_BY_UUID);
             preparedStatement.setString(1, uuid);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
-                convertPOtoVO(resultSet, user);
+                user = convertPOtoVO(resultSet);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -206,7 +219,8 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         return result;
     }
 
-    private void convertPOtoVO(ResultSet resultSet, User user) throws SQLException {
+    private User convertPOtoVO(ResultSet resultSet) throws SQLException {
+        User user = new User();
         user.setUuid(UUID.fromString(resultSet.getString("uuid")));
         user.setUsername(resultSet.getString("username"));
         user.setEmail(resultSet.getString("email"));
@@ -220,5 +234,7 @@ public class UserDAOImpl extends AbstractBaseDAOImpl<User> implements UserDAO {
         user.setCreateTime(resultSet.getTimestamp("create_time"));
         user.setLastModifiedTime(resultSet.getTimestamp("last_modified_time"));
         user.setLastModifiedBy(resultSet.getString("last_modified_by"));
+
+        return user;
     }
 }

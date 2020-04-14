@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var mySwiper = new Swiper('.swiper-container',{
+    let mySwiper = new Swiper('.swiper-container',{
         effect : 'coverflow',
         slidesPerView: 3,
         centeredSlides: true,
@@ -26,9 +26,9 @@ $(document).ready(function() {
         dataType: "json",
         success: function(data) {
             console.log(data);
-            var musics = data.data;
+            const musics = data.data;
             if (musics.length != 0) {
-                var html = "";
+                let html = "";
                 musics.forEach(function(item) {
                     html += '<div class="recommend-item"><img src="'
                          + item.uuid
@@ -56,9 +56,9 @@ $(document).ready(function() {
         dataType: "json",
         success: function(data) {
             console.log(data);
-            var artists = data.data;
+            const artists = data.data;
             if (artists.length > 0) {
-                var html = "";
+                let html = "";
                 artists.forEach(function (item) {
                     html += '<div class="recommend-item"><img src="/musicstore/document-upload/avatar/'
                          + item.avatar
@@ -72,7 +72,33 @@ $(document).ready(function() {
         error: function() {
             $(".recommend-artist").hide();
         }
-    })
+    });
+
+    // 最新入驻
+    $.ajax({
+        url: "/musicstore/tester",
+        type: "get",
+        async: true,
+        dataType: "json",
+        success: function(data) {
+            console.log(data);
+            const users = data.data;
+            if (users.length > 0) {
+                let html = "";
+                users.forEach(function(item) {
+                    html += '<div class="vistor"><div class="avator"><img src="/muscistore/document-upload/avatar/'
+                         + item.avatar
+                         + '"></div><div class="vistor-info"><p>'
+                         + item.username
+                         + '</p></div></div>';
+                });
+                $('.new-user-li').append(html);
+            }
+        },
+        error: function() {
+            $('.new-user-li').hide();
+        }
+    });
 });
 
 

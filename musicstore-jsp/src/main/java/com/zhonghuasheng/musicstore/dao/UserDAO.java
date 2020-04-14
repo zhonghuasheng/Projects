@@ -11,4 +11,5 @@ public interface UserDAO extends BaseDAO<User> {
     List<User> list(Pagination pagination);
     int count();
     User getUserByEmailAndPassword(String email, String password);
+    List<User> getNewTester();
 }

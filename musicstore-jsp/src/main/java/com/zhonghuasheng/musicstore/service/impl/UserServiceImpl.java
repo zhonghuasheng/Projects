@@ -81,4 +81,9 @@ public class UserServiceImpl implements UserService {
         user.setLastModifiedTime(new Timestamp(new Date().getTime()));
         return userDao.update(user);
     }
+
+    @Override
+    public List<User> getNewTester() {
+        return userDao.getNewTester();
+    }
 }

@@ -16,4 +16,5 @@ public interface UserService {
     User get(String uuid);
     int count();
     boolean update(User user);
+    List<User> getNewTester();
 }
