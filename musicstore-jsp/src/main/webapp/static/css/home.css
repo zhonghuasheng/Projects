@@ -226,12 +226,13 @@ a:hover {
 }
 
 .vistor-info p {
-    margin-bottom: 0;
     margin-left: 8px;
 }
 
 .vistor img {
     border-radius: 50%;
+    width: 80px;
+    height: 80px;
 }
 
 .apply {
