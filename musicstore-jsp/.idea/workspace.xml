@@ -7,15 +7,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/NewTesterAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_alibaba_fastjson_1_2_38.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_45.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_aop_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_beans_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_context_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_core_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_expression_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_tx_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_web_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../seckill/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/ArtistRecommendationAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/ArtistRecommendationAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/home/MusicRecommendationAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/ArtistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/ArtistDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/ArtistDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/ArtistDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/ArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/ArtistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/ArtistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/ArtistServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seckill/seckill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../seckill/seckill.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +144,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../seckill" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -326,7 +403,8 @@
       <updated>1558517283369</updated>
       <workItem from="1580479729703" duration="2250000" />
       <workItem from="1586659575140" duration="3178000" />
-      <workItem from="1586745605021" duration="13157000" />
+      <workItem from="1586745605021" duration="13995000" />
+      <workItem from="1586826989107" duration="5380000" />
     </task>
     <task id="LOCAL-00001" summary="feat(music): add basic structure of music component and music create function">
       <created>1577155492925</created>
@@ -403,62 +481,62 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586747825029" />
-    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1586780589445">
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1586830414763">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586780589445" />
-    <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1586760707161">
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586830414763" />
+    <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1586827077377">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586760707161" />
-    <state width="1189" height="150" key="GridCell.Tab.0.bottom" timestamp="1586783095450">
+    <state x="463" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586827077377" />
+    <state width="1189" height="150" key="GridCell.Tab.0.bottom" timestamp="1586842802151">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.0.center" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586842802151" />
+    <state width="1189" height="150" key="GridCell.Tab.0.center" timestamp="1586842802150">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.0.left" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586842802150" />
+    <state width="1189" height="150" key="GridCell.Tab.0.left" timestamp="1586842802150">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.0.right" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586842802150" />
+    <state width="1189" height="150" key="GridCell.Tab.0.right" timestamp="1586842802150">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.1.bottom" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586842802150" />
+    <state width="1189" height="150" key="GridCell.Tab.1.bottom" timestamp="1586842996385">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.1.center" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586842996385" />
+    <state width="1189" height="150" key="GridCell.Tab.1.center" timestamp="1586842996385">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.1.left" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1586842996385" />
+    <state width="1189" height="150" key="GridCell.Tab.1.left" timestamp="1586842996384">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.1.right" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1586842996384" />
+    <state width="1189" height="150" key="GridCell.Tab.1.right" timestamp="1586842996385">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.2.bottom" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1586842996385" />
+    <state width="1189" height="150" key="GridCell.Tab.2.bottom" timestamp="1586842801720">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.2.center" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586842801720" />
+    <state width="1189" height="150" key="GridCell.Tab.2.center" timestamp="1586842801719">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.2.left" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1586842801719" />
+    <state width="1189" height="150" key="GridCell.Tab.2.left" timestamp="1586842801719">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
-    <state width="1189" height="150" key="GridCell.Tab.2.right" timestamp="1586783095450">
+    <state width="1189" height="150" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1586842801719" />
+    <state width="1189" height="150" key="GridCell.Tab.2.right" timestamp="1586842801719">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1189" height="150" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1586783095450" />
+    <state width="1189" height="150" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1586842801719" />
     <state width="1100" height="297" key="GridCell.Tab.3.bottom" timestamp="1586693844548">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -527,10 +605,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="404" y="109" width="549" height="524" key="StructurePopup/0.0.1366.738@0.0.1366.738" timestamp="1586760370602" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586769301225">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586842176139">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1586769301225" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1586842176139" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -559,6 +637,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java</url>
           <line>58</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/UserDAOImpl.java</url>
+          <line>232</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

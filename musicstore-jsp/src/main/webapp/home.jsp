@@ -39,45 +39,10 @@ String basePath = request.getContextPath();
         <div class="recommend-left">
           <div>最新入驻</div>
           <div class="subnav-small"></div>
-          <div class="vistor">
-            <div class="avator">
-              <img src="https://p1.music.126.net/trwwNtVci3Udu5ilCZvCjA==/109951163170492501.jpg?param=62y62">
-            </div>
-            <div class="vistor-info">
-              <p>测试1</p>
-              <p>最新添加歌曲</p>
-            </div>
+          <div class="new-user-li"></div>
+          <div class="apply">
+            <a type="button" class="btn btn-outline-secondary wd-8" href="<%=basePath%>/register">加入测试</a>
           </div>
-          <div class="vistor">
-              <div class="avator">
-                <img src="https://p2.music.126.net/sxyGTra05rFof5i9w3PXzQ==/109951163710520009.jpg?param=62y62">
-              </div>
-              <div class="vistor-info">
-                <p>测试2</p>
-                <p>最新添加歌曲</p>
-              </div>
-            </div>
-            <div class="vistor">
-              <div class="avator">
-                <img class="j-img" src="http://p2.music.126.net/6wPGl_ddgAbJTx5kOohcyw==/109951163892302996.jpg?param=62y62">
-              </div>
-              <div class="vistor-info">
-                <p>测试3</p>
-                <p>最新添加歌曲</p>
-              </div>
-            </div>
-            <div class="vistor">
-              <div class="avator">
-                <img src="https://p2.music.126.net/s8OI0XtIyZYrijkQA8WjhQ==/109951164432772995.jpg?param=62y62">
-              </div>
-              <div class="vistor-info">
-                <p>测试4</p>
-                <p>最新添加歌曲</p>
-              </div>
-            </div>
-            <div class="apply">
-              <a type="button" class="btn btn-outline-secondary wd-8" href="<%=basePath%>/register">加入测试</a>
-            </div>
         </div>
         <div class="recommend-right">
           <div class="recommend-hot">
