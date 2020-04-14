@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="musicstore-jsp:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/home.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSPTemplate" />
+        <option value="Interface" />
+        <option value="ServletTemplate" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aQEli032F7xKHS4qyFeuGAMbTy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/document-upload/avatar" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\admin\user" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\admin\music" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\admin\artist" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\static\swiper" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\static\js\user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\workspace\Projects\musicstore-jsp\src\main\webapp\document-upload\avatar" />
+      <recent name="I:\workspace\Projects\musicstore-jsp\src\main" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\static\image" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\static\bootstrap\js" />
+      <recent name="E:\code\musicstore-jsp\src\main\webapp\WEB-INF\html\user" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zhonghuasheng.musicstore.dao" />
+      <recent name="com.zhonghuasheng.musicstore.dao.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.MS">
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="DOC_BASE" value="E:\code\musicstore-jsp\src\main\webapp" />
+      <option name="CONTEXT_PATH" value="/musicstore-jsp" />
+      <option name="TOMCAT_PORT" value="8080" />
+      <option name="AJP_PORT" value="8009" />
+      <option name="ADMIN_PORT" value="8005" />
+      <option name="VM_OPTIONS" value="" />
+      <option name="PASS_PARENT_ENV_OPTIONS" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCConnectionTest.testJDBCConnection" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="musicstore-jsp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="musicstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="musicstore" />
+      <option name="MAIN_CLASS_NAME" value="musicstore.JDBCConnectionTest" />
+      <option name="METHOD_NAME" value="testJDBCConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MS" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.39" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="musicstore-jsp:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/musicstore" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_(1)_musicstore-jsp" />
+      </server-settings>
+      <log_file checked="false" alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
+      <log_file checked="false" alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+      <log_file checked="false" alias="Tomcat Catalina Log" path="%IDEA_RUN:CATALINA_BASE%/logs/catalina.*" />
+      <log_file checked="false" alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64844" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="musicstore-jsp:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_musicstore-jsp" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65115" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" value="" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65116" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.JDBCConnectionTest.testJDBCConnection" />
+      <item itemvalue="Tomcat Server.MS" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.08037094" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="986906e6-0956-48c8-bb19-1e80649e805b" name="Default Changelist" comment="" />
+      <created>1558517283369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558517283369</updated>
+      <workItem from="1580479729703" duration="2250000" />
+      <workItem from="1586659575140" duration="3178000" />
+      <workItem from="1586745605021" duration="13995000" />
+      <workItem from="1586826989107" duration="8604000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(music): add basic structure of music component and music create function">
+      <created>1577155492925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577155492925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="JDBCConnectionTest_testJDBCConnection - 2019.06.18 at 15h 34m 29s.xml">
+      <configuration name="JDBCConnectionTest.testJDBCConnection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBCConnectionTest_testJDBCConnection - 2019.06.18 at 15h 37m 13s.xml">
+      <configuration name="JDBCConnectionTest.testJDBCConnection" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat(music): add basic structure of music component and music create function" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(music): add basic structure of music component and music create function" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="177" key="#BuildArtifactsBeforeRunChooser" timestamp="1586659937110">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="177" key="#BuildArtifactsBeforeRunChooser/0.0.1366.738@0.0.1366.738" timestamp="1586659937110" />
+    <state x="275" y="30" key="#Project_Structure" timestamp="1586659998942">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="30" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1586659998942" />
+    <state x="513" y="227" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1586781871097">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="513" y="227" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1366.738@0.0.1366.738" timestamp="1586781871097" />
+    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586747825029">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1586747825029" />
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1586830414763">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586830414763" />
+    <state x="463" y="127" key="FileChooserDialogImpl" timestamp="1586827077377">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="127" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586827077377" />
+    <state width="1189" height="232" key="GridCell.Tab.0.bottom" timestamp="1586850318846">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586850318846" />
+    <state width="1189" height="232" key="GridCell.Tab.0.center" timestamp="1586850318845">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586850318845" />
+    <state width="1189" height="232" key="GridCell.Tab.0.left" timestamp="1586850318845">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586850318845" />
+    <state width="1189" height="232" key="GridCell.Tab.0.right" timestamp="1586850318846">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586850318846" />
+    <state width="1189" height="232" key="GridCell.Tab.1.bottom" timestamp="1586850318847">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586850318847" />
+    <state width="1189" height="232" key="GridCell.Tab.1.center" timestamp="1586850318846">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1586850318846" />
+    <state width="1189" height="232" key="GridCell.Tab.1.left" timestamp="1586850318846">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1586850318846" />
+    <state width="1189" height="232" key="GridCell.Tab.1.right" timestamp="1586850318847">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1586850318847" />
+    <state width="1189" height="232" key="GridCell.Tab.2.bottom" timestamp="1586850318441">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586850318441" />
+    <state width="1189" height="232" key="GridCell.Tab.2.center" timestamp="1586850318440">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1586850318440" />
+    <state width="1189" height="232" key="GridCell.Tab.2.left" timestamp="1586850318440">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1586850318440" />
+    <state width="1189" height="232" key="GridCell.Tab.2.right" timestamp="1586850318440">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1189" height="232" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1586850318440" />
+    <state width="1100" height="297" key="GridCell.Tab.3.bottom" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.3.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.3.center" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.3.center/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.3.left" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.3.left/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.3.right" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.4.bottom" timestamp="1586693991274">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.4.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586693991274" />
+    <state width="1100" height="297" key="GridCell.Tab.4.center" timestamp="1586693991273">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.4.center/0.0.1366.738@0.0.1366.738" timestamp="1586693991273" />
+    <state width="1100" height="297" key="GridCell.Tab.4.left" timestamp="1586693991273">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.4.left/0.0.1366.738@0.0.1366.738" timestamp="1586693991273" />
+    <state width="1100" height="297" key="GridCell.Tab.4.right" timestamp="1586693991274">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.4.right/0.0.1366.738@0.0.1366.738" timestamp="1586693991274" />
+    <state width="1100" height="297" key="GridCell.Tab.5.bottom" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.5.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.5.center" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.5.center/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.5.left" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.5.left/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.5.right" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.5.right/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.6.bottom" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.6.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.6.center" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.6.center/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.6.left" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.6.left/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state width="1100" height="297" key="GridCell.Tab.6.right" timestamp="1586693844548">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1100" height="297" key="GridCell.Tab.6.right/0.0.1366.738@0.0.1366.738" timestamp="1586693844548" />
+    <state x="404" y="109" width="549" height="524" key="StructurePopup" timestamp="1586760370602">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="404" y="109" width="549" height="524" key="StructurePopup/0.0.1366.738@0.0.1366.738" timestamp="1586760370602" />
+    <state x="413" y="139" key="extract.method.dialog" timestamp="1586848811170">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="139" key="extract.method.dialog/0.0.1366.738@0.0.1366.738" timestamp="1586848811170" />
+    <state width="329" height="326" key="javadoc.popup.new" timestamp="1586849329017">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="329" height="326" key="javadoc.popup.new/0.0.1366.738@0.0.1366.738" timestamp="1586849329017" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586842176139">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1586842176139" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/action/admin/user/ViewAction.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/service/impl/MusicServiceImpl.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhonghuasheng/musicstore/dao/impl/MusicDAOImpl.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="((JDBC42PreparedStatement)preparedStatement).originalSql" custom="com.mysql.jdbc.JDBC42PreparedStatement" />
+      </configuration>
+      <configuration name="com.poratu.idea.plugins.tomcat">
+        <watch expression="request.getParameter(&quot;pageSize&quot;)" language="JAVA" />
+        <watch expression="(artistService.count() + pageSize - 1) / pagination.getPageSize()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>(artistService.count() + pageSize - 1) / pagination.getPageSize()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.ceil(2/5)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getParameter(&quot;pageSize&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getParameter(&quot;data&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getAttribute(&quot;data&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getAttribute(&quot;pageSize&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getAttribute(&quot;&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getRequestURI()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getAttribute(&quot;search&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>rs.getInt(1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getParameter(&quot;pageSize&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean package  -Dmaven.test.skip=true" />
+    <option value="clean package install  -Dmaven.test.skip=true" />
+    <option value="clean package install" />
+  </component>
+</project>

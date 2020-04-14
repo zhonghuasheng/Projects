@@ -1,0 +1,30 @@
+C:\Documents and Settings\Administrator\桌面\screenword\obj\Debug\Interop.XDICTGRB.dll
+C:\Documents and Settings\Administrator\桌面\screenword\obj\Debug\WinApp2005.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\桌面\screenword\bin\Debug\WinApp2005.exe
+C:\Documents and Settings\Administrator\桌面\screenword\bin\Debug\WinApp2005.pdb
+C:\Documents and Settings\Administrator\桌面\screenword\bin\Debug\Interop.XDICTGRB.dll
+C:\Documents and Settings\Administrator\桌面\screenword\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\screenword\obj\Debug\WinApp2005.Form1.resources
+C:\Documents and Settings\Administrator\桌面\screenword\obj\Debug\WinApp2005.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\screenword\obj\Debug\WinApp2005.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\screenword\obj\Debug\WinApp2005.exe
+C:\Documents and Settings\Administrator\桌面\screenword\obj\Debug\WinApp2005.pdb
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\WinApp2005.csproj.ResolveComReference.cache
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\WinApp2005.exe
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\WinApp2005.pdb
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\ResolveAssemblyReference.cache
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\WinApp2005.Form1.resources
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\WinApp2005.Properties.Resources.resources
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\WinApp2005.csproj.GenerateResource.Cache
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\Interop.VBIDE.dll
+F:\C#学习\C#屏幕取词程序\screenword\obj\Debug\Interop.XDICTGRB.dll
+E:\screenword\obj\Debug\Interop.VBIDE.dll
+E:\screenword\obj\Debug\Interop.XDICTGRB.dll
+E:\screenword\obj\Debug\WinApp2005.csproj.ResolveComReference.cache
+E:\screenword\obj\Debug\WinApp2005.exe
+E:\screenword\obj\Debug\WinApp2005.pdb
+E:\screenword\obj\Debug\ResolveAssemblyReference.cache
+E:\screenword\obj\Debug\WinApp2005.Form1.resources
+E:\screenword\obj\Debug\WinApp2005.Properties.Resources.resources
+E:\screenword\obj\Debug\ResGen.read.1.tlog
+E:\screenword\obj\Debug\ResGen.write.1.tlog

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WinApp2005">
+</Property><Property Name="解决方案文件" Value="E:\screenword\WinApp2005.sln">
+</Property><Property Name="用户选项文件" Value="E:\screenword\WinApp2005.suo">
+</Property><Property Name="Date" Value="2013年7月11日">
+</Property><Property Name="Time" Value="09:22">
+</Property><Property Name="日志号" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WinApp2005.sln" Description="文件已成功备份为 E:\screenword\Backup1\WinApp2005.sln">
+</Event><Event ErrorLevel="0" Project="" Source="WinApp2005.suo" Description="文件已成功备份为 E:\screenword\Backup1\WinApp2005.suo">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="WinApp2005.csproj" Description="项目文件已成功备份为 E:\screenword\Backup1\WinApp2005.csproj">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="WinApp2005.csproj.user" Description="项目用户文件成功备份为 E:\screenword\Backup1\WinApp2005.csproj.user">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Form1.cs" Description="文件已成功备份为 E:\screenword\Backup1\Form1.cs">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Form1.Designer.cs" Description="文件已成功备份为 E:\screenword\Backup1\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Program.cs" Description="文件已成功备份为 E:\screenword\Backup1\Program.cs">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 E:\screenword\Backup1\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Properties\Resources.Designer.cs" Description="文件已成功备份为 E:\screenword\Backup1\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Properties\Settings.Designer.cs" Description="文件已成功备份为 E:\screenword\Backup1\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Properties\Settings.settings" Description="文件已成功备份为 E:\screenword\Backup1\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Form1.resx" Description="文件已成功备份为 E:\screenword\Backup1\Form1.resx">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="Properties\Resources.resx" Description="文件已成功备份为 E:\screenword\Backup1\Properties\Resources.resx">
+</Event><Event ErrorLevel="1" Project="WinApp2005" Source="WinApp2005.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="WinApp2005.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="WinApp2005" Source="WinApp2005.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WinApp2005.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="WinApp2005.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WinApp2005" Source="WinApp2005.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

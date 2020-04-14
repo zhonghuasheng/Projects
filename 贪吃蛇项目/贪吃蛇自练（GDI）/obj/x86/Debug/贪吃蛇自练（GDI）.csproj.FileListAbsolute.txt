@@ -1,0 +1,17 @@
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\bin\Debug\贪吃蛇自练（GDI）.exe
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\bin\Debug\贪吃蛇自练（GDI）.pdb
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练_GDI_.Form1.resources
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练_GDI_.Properties.Resources.resources
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练（GDI）.exe
+D:\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练（GDI）.pdb
+H:\学习资料\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\bin\Debug\贪吃蛇自练（GDI）.exe
+H:\学习资料\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\bin\Debug\贪吃蛇自练（GDI）.pdb
+H:\学习资料\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练_GDI_.Form1.resources
+H:\学习资料\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练_GDI_.Properties.Resources.resources
+H:\学习资料\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练（GDI）.csproj.GenerateResource.Cache
+H:\学习资料\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练（GDI）.exe
+H:\学习资料\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练（GDI）.pdb
+H:\学习资料\C# 窗体应用程序\自练\贪吃蛇自练（GDI）\obj\x86\Debug\贪吃蛇自练（GDI）.csprojResolveAssemblyReference.cache

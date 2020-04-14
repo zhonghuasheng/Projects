@@ -1,0 +1,22 @@
+body {
+    background-image: url(../image/register-background.jpg);
+    background-size: cover;
+}
+
+.register {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.transucent-fillet {
+    background-color: rgba(245, 245, 245, 0.4);
+    border-radius: 7px;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-group label {
+    margin-bottom: 3px;
+}
