@@ -4,6 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.2.RELEASE</version>
+    </parent>
+
     <groupId>com.zhonghuasheng</groupId>
     <artifactId>ms-platform</artifactId>
     <packaging>pom</packaging>
@@ -11,7 +17,14 @@
     <modules>
         <module>ms-core</module>
         <module>ms-business</module>
+        <module>ms-common</module>
+        <module>ms-test</module>
     </modules>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 </project>

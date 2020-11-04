@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ms-common" />
+        <module name="ms-test" />
         <module name="ms-core" />
         <module name="ms-business" />
       </profile>
@@ -13,5 +15,13 @@
     <bytecodeTargetLevel>
       <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ms-business" options="-parameters" />
+      <module name="ms-common" options="-parameters" />
+      <module name="ms-core" options="-parameters" />
+      <module name="ms-test" options="-parameters" />
+    </option>
   </component>
 </project>
