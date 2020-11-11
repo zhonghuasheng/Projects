@@ -1,0 +1,4 @@
+core:
+  qrCodePath: /bucket/qrcode/
+server:
+  port:8080

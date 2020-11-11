@@ -11,5 +11,12 @@
 
     <artifactId>ms-core</artifactId>
 
-
+    <dependencies>
+        <!--二维码生成JAR依赖-->
+        <dependency>
+            <groupId>com.github.hiwepy</groupId>
+            <artifactId>zxing-spring-boot-starter</artifactId>
+            <version>1.0.1.RELEASE</version>
+        </dependency>
+    </dependencies>
 </project>
