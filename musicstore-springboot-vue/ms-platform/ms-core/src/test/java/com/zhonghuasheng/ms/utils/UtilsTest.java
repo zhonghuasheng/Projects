@@ -6,6 +6,6 @@ public class UtilsTest {
 
     @Test
     public void testQrCode() {
-        QRCodeUtil.qrCode("http://www.baidu.com/", System.getProperty("user.dir") + "/bucket/qrcode", "baidu");
+        QRCodeUtil.qrCode("content", System.getProperty("user.dir") + "/bucket/xxx/", "987654321");
     }
 }

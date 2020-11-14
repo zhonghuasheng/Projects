@@ -18,5 +18,11 @@
             <artifactId>zxing-spring-boot-starter</artifactId>
             <version>1.0.1.RELEASE</version>
         </dependency>
+        <!--案例与oss依赖-->
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>3.10.2</version>
+        </dependency>
     </dependencies>
 </project>
