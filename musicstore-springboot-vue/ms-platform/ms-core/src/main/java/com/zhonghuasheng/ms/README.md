@@ -1,0 +1,1 @@
+* QRCodeUtil - 二维码工具类。生成的二维码放在了bucket/qrcode中。
