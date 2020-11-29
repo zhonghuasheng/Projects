@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ms-doc" />
         <module name="ms-test" />
         <module name="ms-db-spring-boot-starter" />
         <module name="ms-core" />
@@ -22,6 +23,7 @@
       <module name="ms-common" options="-parameters" />
       <module name="ms-core" options="-parameters" />
       <module name="ms-db-spring-boot-starter" options="-parameters" />
+      <module name="ms-doc" options="-parameters" />
       <module name="ms-test" options="-parameters" />
     </option>
   </component>

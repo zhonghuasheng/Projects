@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/ms-business/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-common/ms-db-spring-boot-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-doc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-test/src/main/java" charset="UTF-8" />
   </component>
 </project>
