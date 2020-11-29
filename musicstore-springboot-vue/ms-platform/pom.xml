@@ -19,6 +19,7 @@
         <module>ms-business</module>
         <module>ms-common</module>
         <module>ms-test</module>
+        <module>ms-doc</module>
     </modules>
 
     <dependencies>
