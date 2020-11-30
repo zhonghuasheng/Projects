@@ -30,3 +30,6 @@
   -- ms-job 定时任务模块
   -- ms-administrator 系统管理模块
 ```
+
+### 技术点跟踪
+* [20201130-MyBatis实现多数据源，自己写了个例子](https://github.com/zhonghuasheng/Tutorial/blob/master/plugins/mybatis-plus.md)
