@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ms-doc" />
-        <module name="ms-test" />
-        <module name="ms-db-spring-boot-starter" />
         <module name="ms-core" />
+        <module name="ms-config" />
+        <module name="ms-db-spring-boot-starter" />
+        <module name="ms-test" />
         <module name="ms-business" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ms-business" options="-parameters" />
       <module name="ms-common" options="-parameters" />
+      <module name="ms-config" options="-parameters" />
       <module name="ms-core" options="-parameters" />
       <module name="ms-db-spring-boot-starter" options="-parameters" />
       <module name="ms-doc" options="-parameters" />

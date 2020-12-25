@@ -14,13 +14,10 @@
     <artifactId>ms-platform</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>ms-core</module>
-        <module>ms-business</module>
-        <module>ms-common</module>
-        <module>ms-test</module>
-        <module>ms-doc</module>
-    </modules>
+
+    <properties>
+        <project.build.version>1.0.0</project.build.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -32,4 +29,35 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.zhonghuasheng</groupId>
+                <artifactId>ms-config</artifactId>
+                <version>${project.build.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>2.1.1.RELEASE</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <modules>
+        <module>ms-core</module>
+        <module>ms-business</module>
+        <module>ms-common</module>
+        <module>ms-test</module>
+        <module>ms-doc</module>
+        <module>ms-config</module>
+    </modules>
 </project>
