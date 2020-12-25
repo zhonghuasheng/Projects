@@ -1,0 +1,38 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: user-service
+  datasource:
+    dynamic:
+      primary: master # 设置主数据源
+      strict: false
+      datasource:
+        master:
+          url: jdbc:mysql://mysql.host:3306/musicstore_springcloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+          username: musicstore
+          password: Abcde12345_
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        slave_1:
+          url: jdbc:mysql://mysql.host:3306/musicstore_springcloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+          username: musicstore
+          password: Abcde12345_
+          driver-class-name: com.mysql.cj.jdbc.Driver
+      druid:
+        initial-size: 1 # 这里的配置对上面配置的两个数据源都是生效的
+        max-active: 5
+        min-idle: 1
+        max-wait: 30000
+    druid:
+      keep-alive: true
+      stat-view-servlet: # 开启监控页面
+        login-username: root
+        login-password: Abcde12345_
+      filter:
+        slf4j:
+          enabled: true
+        log4j2:
+          enabled: true
+      time-between-log-stats-millis: 30000
+mybatis-plus:
+  type-aliases-package: com.zhonghuasheng.ms.model

@@ -11,7 +11,7 @@
         <module name="ms-config" />
         <module name="ms-db-spring-boot-starter" />
         <module name="ms-test" />
-        <module name="ms-business" />
+        <module name="ms-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +27,7 @@
       <module name="ms-db-spring-boot-starter" options="-parameters" />
       <module name="ms-doc" options="-parameters" />
       <module name="ms-test" options="-parameters" />
+      <module name="ms-user" options="-parameters" />
     </option>
   </component>
 </project>

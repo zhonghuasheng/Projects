@@ -45,3 +45,7 @@ https://blog.csdn.net/nsplnpbjy/article/details/106377110
 问题的原因是各spring-boot-starter中都可能含有logging，一般的做法是移除web中的，但是移除不干净
 https://blog.csdn.net/blueheart20/article/details/78111350
 ```
+* [20201225-添加ms-config中的profile]()
+```
+TODO 我的想法是parent pom中控制版本号，然后子module都会按照此版本号生成对应的jar
+```
