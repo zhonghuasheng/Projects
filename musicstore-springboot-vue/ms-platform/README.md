@@ -32,4 +32,16 @@
 ```
 
 ### 技术点跟踪
-* [20201130-MyBatis实现多数据源，自己写了个例子](https://github.com/zhonghuasheng/Tutorial/blob/master/plugins/mybatis-plus.md)
+* [20201130-MyBatisPlus实现多数据源，自己写了个例子](https://github.com/zhonghuasheng/Tutorial/blob/master/plugins/mybatis-plus.md)
+* [20201201-MyBatisPlus Dynamic Datasource与Druid连接池一起使用时报错]
+```
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+问题的原因时Dynamic Source和Druid中都有关于数据源的自动配置，导致springboot启动时不知道选哪个，如下博客解决了这个问题
+https://blog.csdn.net/nsplnpbjy/article/details/106377110
+```
+* [20201201-Druid中使用log4j2进行日志输出](https://github.com/alibaba/druid/wiki/Druid%E4%B8%AD%E4%BD%BF%E7%94%A8log4j2%E8%BF%9B%E8%A1%8C%E6%97%A5%E5%BF%97%E8%BE%93%E5%87%BA)
+```
+报错： Spring Boot与Log4j2集成之java.lang.IllegalStateException: Logback configuration error detected:
+问题的原因是各spring-boot-starter中都可能含有logging，一般的做法是移除web中的，但是移除不干净
+https://blog.csdn.net/blueheart20/article/details/78111350
+```
