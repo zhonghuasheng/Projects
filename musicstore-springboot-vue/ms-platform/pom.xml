@@ -14,13 +14,11 @@
     <artifactId>ms-platform</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>ms-core</module>
-        <module>ms-business</module>
-        <module>ms-common</module>
-        <module>ms-test</module>
-        <module>ms-doc</module>
-    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -31,5 +29,61 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.21</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <!--数据库连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <!--<dependencies>
+            <dependency>
+                <groupId>com.zhonghuasheng</groupId>
+                <artifactId>ms-config</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>-->
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>2.1.1.RELEASE</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <modules>
+        <module>ms-core</module>
+        <module>ms-business</module>
+        <module>ms-common</module>
+        <module>ms-test</module>
+        <module>ms-doc</module>
+        <module>ms-config</module>
+    </modules>
 </project>

@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://mysql.host:3306/musicstore_springcloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: musicstore
+    password: Abcde12345_
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      keep-alive: true
+      stat-view-servlet: # 开启监控页面
+        login-username: root
+        login-password: Abcde12345_
+      filter:
+        slf4j:
+          enabled: true
+        log4j2:
+          enabled: true
+      time-between-log-stats-millis: 30000
+mybatis-plus:
+  type-aliases-package: com.zhonghuasheng.ms.model
