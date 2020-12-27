@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>ms-db-spring-boot-starter</module>
+        <module>ms-log-spring-boot-starter</module>
     </modules>
 
 

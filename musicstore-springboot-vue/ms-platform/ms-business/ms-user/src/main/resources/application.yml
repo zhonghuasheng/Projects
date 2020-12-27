@@ -36,3 +36,6 @@ spring:
       time-between-log-stats-millis: 30000
 mybatis-plus:
   type-aliases-package: com.zhonghuasheng.ms.model
+logging:
+  file:
+    path: /var/logs/ms-platform/
