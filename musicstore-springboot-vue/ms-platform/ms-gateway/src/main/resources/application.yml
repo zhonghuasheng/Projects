@@ -6,17 +6,19 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: nacos.host
+        server-addr: localhost:8848
     gateway:
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/api-user/**
+        - id: user-service           # 当前路由标识，要求唯一
+          uri: lb://user-service     # load balance lb指是从nacos中按照名称获取微服务，并遵循负载均衡策略
+          predicates:                # 断言 路由器满足一定的条件
+            - Path=/api-user/**      # 当请求的路径满足Path指定的规则时，才进行路由转发
+          filters:                   # 过滤器，请求在传递过程中可以通过过滤器对其进行一定的修改
+            - StripPrefix=1          # 转发之前去掉一层路径
 logging:
   file:
     path: /var/logs/ms-platform/

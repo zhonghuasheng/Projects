@@ -37,7 +37,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.88.127:8848
+        server-addr: localhost:8848
 mybatis-plus:
   type-aliases-package: com.zhonghuasheng.ms.model
 logging:
