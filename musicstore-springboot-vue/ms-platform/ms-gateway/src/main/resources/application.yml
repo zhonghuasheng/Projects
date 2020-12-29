@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: ms-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos.host
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: user
+          uri: lb://user-service
+          predicates:
+            - Path=/api-user/**
+logging:
+  file:
+    path: /var/logs/ms-platform/

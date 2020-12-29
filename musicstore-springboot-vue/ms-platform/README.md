@@ -49,3 +49,12 @@ https://blog.csdn.net/blueheart20/article/details/78111350
 ```
 TODO 我的想法是parent pom中控制版本号，然后子module都会按照此版本号生成对应的jar
 ```
+* [20201229-集成gateway时报SLF4J: Class path contains multiple SLF4J bindings.]
+```
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/Ant/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.13.3/log4j-slf4j-impl-2.13.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/Ant/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+原因：spring-boot/cloud的各种starter都集成了内置logging，在pom中使用execultion移除掉即可
+```
