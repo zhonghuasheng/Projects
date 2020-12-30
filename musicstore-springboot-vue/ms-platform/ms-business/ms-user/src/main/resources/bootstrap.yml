@@ -9,14 +9,14 @@ spring:
       strict: false
       datasource:
         master:
-          url: jdbc:mysql://mysql.host:3306/musicstore_springcloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
-          username: musicstore
-          password: Abcde12345_
+          url: jdbc:mysql://${ms.datasource.master.url}:3306/musicstore_springcloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+          username: ${ms.datasource.master.username}
+          password: ${ms.datasource.master.password}
           driver-class-name: com.mysql.cj.jdbc.Driver
         slave_1:
-          url: jdbc:mysql://mysql.host:3306/musicstore_springcloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
-          username: musicstore
-          password: Abcde12345_
+          url: jdbc:mysql://${ms.datasource.slave_1.url}:3306/musicstore_springcloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+          username: ${ms.datasource.slave_1.username}
+          password: ${ms.datasource.slave_1.password}
           driver-class-name: com.mysql.cj.jdbc.Driver
       druid:
         initial-size: 1 # 这里的配置对上面配置的两个数据源都是生效的

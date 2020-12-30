@@ -31,6 +31,8 @@
   -- ms-administrator 系统管理模块
 ```
 
+* druid监控界面 http://localhost:8080/druid/index.html
+
 ### 技术点跟踪
 * [20201130-MyBatisPlus实现多数据源，自己写了个例子](https://github.com/zhonghuasheng/Tutorial/blob/master/plugins/mybatis-plus.md)
 * [20201201-MyBatisPlus Dynamic Datasource与Druid连接池一起使用时报错]
@@ -57,4 +59,9 @@ SLF4J: Found binding in [jar:file:/C:/Users/Ant/.m2/repository/ch/qos/logback/lo
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
 原因：spring-boot/cloud的各种starter都集成了内置logging，在pom中使用execultion移除掉即可
+```
+* [20201230-解决config,gateway,user中配置文件的先后顺序问题]
+```
+1. properties比yml配置文件的优先级高，bootstrap优先级比application优先级高，config中同级别的配置文件比module中的高
+2. nacos在项目启动的时候就去找配置文件了，所以nacos的配置在module中【module中使用bootstrap.yml级别】，并且变量要先获取到【变量放到bootstrap.properties中】
 ```
