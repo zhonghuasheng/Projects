@@ -32,6 +32,7 @@
 ```
 
 * druid监控界面 http://localhost:8080/druid/index.html
+* admin管理界面 http://localhost:1010/login
 
 ### 技术点跟踪
 * [20201130-MyBatisPlus实现多数据源，自己写了个例子](https://github.com/zhonghuasheng/Tutorial/blob/master/plugins/mybatis-plus.md)

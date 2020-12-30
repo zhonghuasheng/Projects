@@ -77,5 +77,6 @@
         <module>ms-doc</module>
         <module>ms-config</module>
         <module>ms-gateway</module>
+        <module>ms-monitor</module>
     </modules>
 </project>
