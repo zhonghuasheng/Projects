@@ -1,12 +1,16 @@
 server:
   port: 8888
+# nacos是优先启动的，properties配置优先于yml，故我在config中配置了bootstrap.properties中。同时gateway的配置文件也改为比config的application-x
+# 优先级高的bootstrap.yml否则，config中的application-x.properties优先启动，然而那里面没有配置nacos的信息，导致前面会报错
 spring:
   application:
     name: ms-gateway
   cloud:
     nacos:
+      config:
+        server-addr: ${ms.nacos.host}
       discovery:
-        server-addr: localhost:8848
+        server-addr: ${ms.nacos.host}
     gateway:
       discovery:
         locator:

@@ -15,7 +15,7 @@ public class UserApplication {
 
     public static void main(String[] args) {
         YamlPropertiesFactoryBean yaml = new YamlPropertiesFactoryBean();
-        yaml.setResources(new ClassPathResource("application.yml"));
+        yaml.setResources(new ClassPathResource("bootstrap.yml"));
         Properties property = yaml.getObject();
         System.setProperty("SERVICE_NAME", property.getProperty("spring.application.name"));
         System.setProperty("FILE_PATH", property.getProperty("logging.file.path"));

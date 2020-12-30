@@ -36,8 +36,10 @@ spring:
       time-between-log-stats-millis: 30000
   cloud:
     nacos:
+      config:
+        server-addr: ${ms.nacos.host}
       discovery:
-        server-addr: localhost:8848
+        server-addr: ${ms.nacos.host}
 mybatis-plus:
   type-aliases-package: com.zhonghuasheng.ms.model
 logging:
