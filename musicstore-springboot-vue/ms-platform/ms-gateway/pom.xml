@@ -49,5 +49,9 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
             <version>2.2.3.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>com.zhonghuasheng</groupId>
+            <artifactId>ms-config</artifactId>
+        </dependency>
     </dependencies>
 </project>

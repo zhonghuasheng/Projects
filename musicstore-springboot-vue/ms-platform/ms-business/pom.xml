@@ -28,6 +28,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>com.zhonghuasheng</groupId>
+            <artifactId>ms-config</artifactId>
+        </dependency>
     </dependencies>
 
     <modules>

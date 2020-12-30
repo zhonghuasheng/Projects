@@ -1,0 +1,28 @@
+server:
+  port: 8888
+# nacos是优先启动的，properties配置优先于yml，故我在config中配置了bootstrap.properties中。同时gateway的配置文件也改为比config的application-x
+# 优先级高的bootstrap.yml否则，config中的application-x.properties优先启动，然而那里面没有配置nacos的信息，导致前面会报错
+spring:
+  application:
+    name: ms-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: ${ms.nacos.host}
+      discovery:
+        server-addr: ${ms.nacos.host}
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: user-service           # 当前路由标识，要求唯一
+          uri: lb://user-service     # load balance lb指是从nacos中按照名称获取微服务，并遵循负载均衡策略
+          predicates:                # 断言 路由器满足一定的条件
+            - Path=/api-user/**      # 当请求的路径满足Path指定的规则时，才进行路由转发
+          filters:                   # 过滤器，请求在传递过程中可以通过过滤器对其进行一定的修改
+            - StripPrefix=1          # 转发之前去掉一层路径
+logging:
+  file:
+    path: /var/logs/ms-platform/
