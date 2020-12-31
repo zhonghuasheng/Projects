@@ -16,3 +16,11 @@ spring:
         server-addr: ${ms.nacos.host}
       config:
         server-addr: ${ms.nacos.host}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
