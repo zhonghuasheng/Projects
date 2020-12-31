@@ -40,6 +40,14 @@ spring:
         server-addr: ${ms.nacos.host}
       discovery:
         server-addr: ${ms.nacos.host}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
 mybatis-plus:
   type-aliases-package: com.zhonghuasheng.ms.model
 logging:

@@ -1,0 +1,26 @@
+server:
+  port: 1010
+spring:
+  application:
+    name: ms-monitor
+  security:
+    user:
+      name: 'admin'
+      password: 'admin'
+  cloud:
+    nacos:
+      discovery:
+        metadata:
+          user.name: ${spring.security.user.name}
+          user.password: ${spring.security.user.password}
+        server-addr: ${ms.nacos.host}
+      config:
+        server-addr: ${ms.nacos.host}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
