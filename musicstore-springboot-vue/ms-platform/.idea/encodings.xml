@@ -4,8 +4,6 @@
     <file url="file://$PROJECT_DIR$/ms-business/ms-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-business/ms-user/src/main/resources/bootstrap.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-common/ms-db-spring-boot-starter/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ms-common/ms-log-spring-boot-starter/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ms-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-config/src/main/resources/application.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-gateway/src/main/java" charset="UTF-8" />
