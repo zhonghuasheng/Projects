@@ -59,6 +59,32 @@ struct sdshdr {
     char buf[];
 };
 
+// V3.2之后
+// 对应的字符串长度小于 1<<8
+struct __attribute__ ((__packed__)) sdshdr8 {
+    // buf 中已占用空间的长度
+    uint8_t len;
+    //已经分配的总长度
+    uint8_t alloc;
+    // 3 lsb of type, 5 unused bits 3bit来标明类型,其余5bit目前没有使用
+    unsigned char flags;
+    char buf[];
+};
+// RedisObject对象
+struct RedisObject { // 一共占用16字节
+    int4 type; // 4bits  类型
+    int4 encoding; // 4bits 存储格式
+    int24 lru; // 24bits 记录LRU信息
+    int32 refcount; // 4bytes 
+    void *ptr; // 8bytes，64-bit system 
+} robj;
+
+// 通过buf获取头指针
+#define SDS_HDR_VAR(T,s) struct sdshdr##T *sh = (void*)((s)-(sizeof(struct sdshdr##T)));
+#define SDS_HDR(T,s) ((struct sdshdr##T *)((s)-(sizeof(struct sdshdr##T))))
+
+// 通过buf的-1下标拿到flags值
+unsigned char flags = s[-1];
 /*
  * 返回 sds 实际保存的字符串的长度
  *
