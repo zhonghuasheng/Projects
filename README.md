@@ -3,7 +3,7 @@
 | 时间 | 项目名称 | 技术 | 备注 |
 |:----|:--------|:-----|:----|
 | 2021 | Redis 6.2.6 源码注解 | Redis | 用于企业学习分享 |
-| 2020 | Microservices Platform二开 | SpringCloud Alibaba | 基于开源项目，构建微服务架构脚手架，被用于Timing在线教育，支撑百万日活 |
+| 2020 | [Microservices Platform二开](https://github.com/zhonghuasheng/microservices-platform) | SpringCloud Alibaba | 基于开源项目，构建微服务架构脚手架，被用于Timing在线教育，支撑百万日活 |
 | 2020 | 舆情分析 - 爬虫 | SpringBoot + Vue + Spark + Mongo + Redis + RocketMQ | http://www.fibing.cn/ |
 | 2020 | Redis 源码注解 | Redis | |
 | 2018 | 音乐商店(muscistore-springboot-vue) | SpringBoot + Vue + Mysql | 音乐商店技术升级版本 |
