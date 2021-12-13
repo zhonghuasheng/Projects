@@ -14,7 +14,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.7",
     "element-ui": "^2.11.1",
