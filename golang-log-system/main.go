@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+	"strings"
+	"time"
+)
+
 type LogProcess struct {
 	rc          chan string // 读取chan
 	wc          chan string // 写入chan
@@ -9,14 +15,20 @@ type LogProcess struct {
 
 func (l *LogProcess) ReadFromFile() {
 	// 日志读取模块
+	m := "message"
+	l.rc <- m
 }
 
 func (l *LogProcess) Process() {
 	// 日志解析模块
+	m := <-l.rc
+	s := strings.ToUpper(m)
+	l.wc <- s
 }
 
 func (l *LogProcess) WriteToInfluxDB() {
 	// 日志写入模块
+	fmt.Println(<-l.wc)
 }
 
 func main() {
@@ -30,4 +42,5 @@ func main() {
 	go l.ReadFromFile()
 	go l.Process()
 	go l.WriteToInfluxDB()
+	time.Sleep(1 * time.Second)
 }
