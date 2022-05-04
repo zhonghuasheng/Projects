@@ -7,40 +7,58 @@ import (
 )
 
 type LogProcess struct {
-	rc          chan string // 读取chan
-	wc          chan string // 写入chan
-	path        string      // 文件路径
-	influxDBDsn string      // influxDB路径
+	rc     chan string
+	wc     chan string
+	reader Reader
+	writer Writer
 }
 
-func (l *LogProcess) ReadFromFile() {
-	// 日志读取模块
-	m := "message"
-	l.rc <- m
+type Reader interface {
+	Read(rc chan string)
+}
+
+type Writer interface {
+	Write(wc chan string)
+}
+
+type ReadFromFile struct {
+	filePath string
+}
+
+func (r *ReadFromFile) Read(rc chan string) {
+	line := "message"
+	rc <- line
+}
+
+type WriteToInfluxDB struct {
+	influxDBDsn string
+}
+
+func (w *WriteToInfluxDB) Write(wc chan string) {
+	fmt.Println(<-wc)
 }
 
 func (l *LogProcess) Process() {
-	// 日志解析模块
 	m := <-l.rc
 	s := strings.ToUpper(m)
 	l.wc <- s
 }
 
-func (l *LogProcess) WriteToInfluxDB() {
-	// 日志写入模块
-	fmt.Println(<-l.wc)
-}
-
 func main() {
-	l := &LogProcess{
-		rc:          make(chan string),
-		wc:          make(chan string),
-		path:        "/tmp/log",
-		influxDBDsn: "userName&password",
+	reader := &ReadFromFile{
+		filePath: "/tmp/log",
 	}
-	// 异步执行
-	go l.ReadFromFile()
+	writer := &WriteToInfluxDB{
+		influxDBDsn: "username&password",
+	}
+	l := &LogProcess{
+		rc:     make(chan string),
+		wc:     make(chan string),
+		reader: reader,
+		writer: writer,
+	}
+	go l.reader.Read(l.rc)
+	go l.writer.Write(l.wc)
 	go l.Process()
-	go l.WriteToInfluxDB()
 	time.Sleep(1 * time.Second)
 }
