@@ -21,7 +21,7 @@
     "jquery": "^3.4.1",
     "vue": "^2.5.2",
     "vue-axios": "^2.1.4",
-    "vue-resource": "^1.5.1",
+    "vue-resource": "^1.5.3",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
